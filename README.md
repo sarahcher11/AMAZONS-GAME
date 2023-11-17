@@ -5,6 +5,8 @@
 Il s'agit d'implémenter le [jeu des amazones](https://en.wikipedia.org/wiki/Game_of_the_Amazons)
 ainsi que  des intelligences artificielles simples pour y jouer. 
 
-### Menbres du projet 
+### Menbres du projet
 
-nom prénom 
+
+CHERCHEM, Sarah, G03
+MEDERBEL , Inesn G03 
