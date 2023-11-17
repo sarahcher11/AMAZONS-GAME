@@ -18,11 +18,23 @@ public class Position implements Serializable {
     public int getY() {return 0;}
 
 
-    //TODO
+
+
+    /**
+     * doit renvoyer vrai si et seulement si la position this n'est pas  celle d’une case dans une grille
+     * ayant numberOfColumns colonnes et numberOfRows lignes
+     * @param numberOfColumns = nombre de colonnes de la grille
+     * @param numberOfRows= nombre de lignes de la grille
+     * @return
+     */
     public boolean isOutOfBounds(int numberOfColumns, int numberOfRows){
-        return true;
+        if( x>numberOfRows-1 && y>numberOfColumns-1)
+        {
+            return true;
+        }
+        return false;
     }
-    // TODO
+
     public Position next(CardinalDirection direction) {
         return new Position();
     }
