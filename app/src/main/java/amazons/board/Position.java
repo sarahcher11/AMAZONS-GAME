@@ -13,7 +13,11 @@ public class Position implements Serializable {
    int x;
    int y;
 
-   //TODO
+    public Position(int x,int y)
+    {
+        this.x=x;
+        this.y=y;
+    }
     public int getX() {return 0;}
     public int getY() {return 0;}
 
@@ -21,11 +25,11 @@ public class Position implements Serializable {
 
 
     /**
-     * doit renvoyer vrai si et seulement si la position this n'est pas  celle d’une case dans une grille
+     * renvoyer vrai si et seulement si la position this n'est pas  celle d’une case dans une grille
      * ayant numberOfColumns colonnes et numberOfRows lignes
      * @param numberOfColumns = nombre de colonnes de la grille
      * @param numberOfRows= nombre de lignes de la grille
-     * @return
+     * @return un booleen
      */
     public boolean isOutOfBounds(int numberOfColumns, int numberOfRows){
         if( x>numberOfRows-1 && y>numberOfColumns-1)
@@ -35,8 +39,13 @@ public class Position implements Serializable {
         return false;
     }
 
+    /**
+     * renvoyer la position voisine de this dans la direction direction.
+     * @param direction=la direction qu'on souhaite prendre
+     * @return un objet de type position
+     */
     public Position next(CardinalDirection direction) {
-        return new Position();
+        return new Position(this.x+direction.deltaRow,this.y+ direction.deltaColumn);
     }
     public CardinalDirection getDirection(Position destPosition){
         return CardinalDirection.getDirection(x,y, destPosition.x, destPosition.y);
