@@ -5,6 +5,17 @@ import amazons.board.Position;
 import amazons.player.PlayerID;
 
 public class ArrowFigure implements Figure{
+
+
+
+
+    public static ArrowFigure ARROW_FIGURE =new ArrowFigure();
+
+
+
+    private ArrowFigure(){
+
+    }
     /**
      * Check if this figure can move to {@code position} according to its displacement rules.
      *
