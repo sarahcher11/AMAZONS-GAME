@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +152,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700228624309</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ajout de la methode Position next">
+      <created>1700229168893</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700229168893</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Ajout de la methode String toString">
+      <created>1700229272769</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700229272769</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +185,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajout de la methode boolean isOutOfBounds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la methode boolean isOutOfBounds" />
+    <MESSAGE value="Ajout de la methode Position next" />
+    <MESSAGE value="Ajout de la methode String toString" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la methode String toString" />
   </component>
 </project>
