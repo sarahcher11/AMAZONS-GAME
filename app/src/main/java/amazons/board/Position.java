@@ -51,4 +51,10 @@ public class Position implements Serializable {
         return CardinalDirection.getDirection(x,y, destPosition.x, destPosition.y);
     }
 
+    @Override
+
+    public String toString()
+    {
+        return "("+x+","+y+")";
+    }
 }
