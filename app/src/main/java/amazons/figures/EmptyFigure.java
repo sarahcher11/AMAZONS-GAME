@@ -5,6 +5,15 @@ import amazons.board.Position;
 import amazons.player.PlayerID;
 
 public class EmptyFigure implements Figure {
+
+
+        public static EmptyFigure EMPTY_FIGURE =new EmptyFigure();
+
+
+
+    private EmptyFigure(){
+
+    }
     /**
      * Check if this figure can move to {@code position} according to its displacement rules.
      *
