@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.*;
 
 class PositionTest {
 
-    /*
+
     private final Position position00 = new Position(0,0);
     private final Position position10 = new Position(1,0);
     private final Position position20 = new Position(2,0);
@@ -64,7 +64,7 @@ class PositionTest {
         assertThat(position12.toString()).isEqualTo("(1,2)");
     }
 
-     */
+
 
     /*
     @Test

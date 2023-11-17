@@ -18,10 +18,13 @@ public class Position implements Serializable {
         this.x=x;
         this.y=y;
     }
+
+
     public int getX() {return x;}
+
+
+
     public int getY() {return y;}
-
-
 
 
     /**
@@ -32,12 +35,17 @@ public class Position implements Serializable {
      * @return un booleen
      */
     public boolean isOutOfBounds(int numberOfColumns, int numberOfRows){
-        if( x>numberOfRows-1 && y>numberOfColumns-1)
+        if( x>(numberOfColumns-1) || y>(numberOfRows-1) || this.x<0 || this.y<0)
         {
             return true;
         }
-        return false;
+        else {
+            return false;
+        }
     }
+
+
+
 
     /**
      * renvoyer la position voisine de this dans la direction direction.
@@ -45,17 +53,23 @@ public class Position implements Serializable {
      * @return un objet de type position
      */
     public Position next(CardinalDirection direction) {
-        return new Position(this.x+direction.deltaRow,this.y+ direction.deltaColumn);
+        return new Position(this.y+ direction.deltaColumn,this.x+direction.deltaRow);
     }
+
+
+
     public CardinalDirection getDirection(Position destPosition){
         return CardinalDirection.getDirection(x,y, destPosition.x, destPosition.y);
     }
+
 
     @Override
     public String toString()
     {
         return "("+x+","+y+")";
     }
+
+
 
     @Override
     public boolean equals(Object o) {
