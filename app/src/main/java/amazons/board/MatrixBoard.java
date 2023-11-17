@@ -1,8 +1,23 @@
 package amazons.board;
 
+import amazons.figures.EmptyFigure;
 import amazons.figures.Figure;
 
 public class MatrixBoard implements Board{
+
+
+
+    private Figure[][] plateau;
+
+    public MatrixBoard(int numberOfColumns,int numberOfRows){
+         plateau=new Figure[numberOfRows][numberOfColumns];
+         for(int i=0;i<numberOfRows;i++){
+             for(int j=0;j<numberOfColumns;j++){
+                 plateau[i][j]=EmptyFigure.EMPTY_FIGURE;
+
+             }
+         }
+    }
     /**
      * Place the given figure {@code figure} at the position {@code position}. Nothing happens if {@code position}
      * is outside this board.
