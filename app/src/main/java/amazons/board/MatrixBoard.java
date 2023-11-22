@@ -41,8 +41,9 @@ public class MatrixBoard implements Board{
      * @return : the figure at the specified position in the board
      */
     @Override
-    public Figure getFigure(Position position) {
-        return null;
+    public Figure getFigure(Position position)
+    {
+        return plateau[position.getX()][position.getY()];
     }
 
     /**
@@ -52,8 +53,9 @@ public class MatrixBoard implements Board{
      * @return {@code true} if the specified position is empty in the board.
      */
     @Override
-    public boolean isEmpty(Position position) {
-        return false;
+    public boolean isEmpty(Position position)
+    {
+        return (plateau[position.getX()][position.getY()]);
     }
 
     /**
