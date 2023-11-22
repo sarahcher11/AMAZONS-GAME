@@ -83,7 +83,7 @@ public class Amazon extends MovableFigure implements Figure{
 
         for (CardinalDirection direction : CardinalDirection.values()) {
             Position nextPosition = position.next(direction);
-            
+
             while (!board.isOutOfBoard(nextPosition) && (position.equals(EmptyFigure.EMPTY_FIGURE) || position.equals(ArrowFigure.ARROW_FIGURE))) {
                 Positions.add(nextPosition);
                 nextPosition = nextPosition.next(direction);
