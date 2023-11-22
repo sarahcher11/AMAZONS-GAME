@@ -55,7 +55,7 @@ public class MatrixBoard implements Board{
     @Override
     public boolean isEmpty(Position position)
     {
-        return (plateau[position.getX()][position.getY()]);
+        return (plateau[position.getX()][position.getY()].equals(EmptyFigure.EMPTY_FIGURE));
     }
 
     /**
