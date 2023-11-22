@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700229272769</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="La methode setFigure de MatrixBoard">
+      <created>1700684714705</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700684714705</updated>
+    </task>
+    <task id="LOCAL-00005" summary="La methode getFigure de MatrixBoard">
+      <created>1700684848535</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700684848535</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +208,8 @@
     <MESSAGE value="Ajout de la methode boolean isOutOfBounds" />
     <MESSAGE value="Ajout de la methode Position next" />
     <MESSAGE value="Ajout de la methode String toString" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la methode String toString" />
+    <MESSAGE value="La methode setFigure de MatrixBoard" />
+    <MESSAGE value="La methode getFigure de MatrixBoard" />
+    <option name="LAST_COMMIT_MESSAGE" value="La methode getFigure de MatrixBoard" />
   </component>
 </project>

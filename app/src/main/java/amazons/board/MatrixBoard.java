@@ -65,7 +65,8 @@ public class MatrixBoard implements Board{
      * @return {@code true} if the specified position is out of the board
      */
     @Override
-    public boolean isOutOfBoard(Position position) {
-        return false;
+    public boolean isOutOfBoard(Position position)
+    {
+        return (position.isOutOfBounds(numberOfColumns,numberOfRows));
     }
 }
