@@ -49,7 +49,7 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public void setPosition(Position position) {
-
+        this.position=position;
     }
 
     /**

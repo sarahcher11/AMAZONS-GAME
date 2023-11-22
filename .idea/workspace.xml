@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/ArrowFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/ArrowFigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700684848535</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="La methode isEmpty de MatrixBoard">
+      <created>1700685024876</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700685024876</updated>
+    </task>
+    <task id="LOCAL-00007" summary="La methode isOutOfBoard de MatrixBoard">
+      <created>1700685081591</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700685081591</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +226,8 @@
     <MESSAGE value="Ajout de la methode String toString" />
     <MESSAGE value="La methode setFigure de MatrixBoard" />
     <MESSAGE value="La methode getFigure de MatrixBoard" />
-    <option name="LAST_COMMIT_MESSAGE" value="La methode getFigure de MatrixBoard" />
+    <MESSAGE value="La methode isEmpty de MatrixBoard" />
+    <MESSAGE value="La methode isOutOfBoard de MatrixBoard" />
+    <option name="LAST_COMMIT_MESSAGE" value="La methode isOutOfBoard de MatrixBoard" />
   </component>
 </project>
