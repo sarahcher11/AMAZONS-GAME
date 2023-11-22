@@ -45,7 +45,15 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public void moveTo(Position position, Board board) {
+        if( canMoveTo(position,board))
+        {
+            // mettre la figure EmptyFigure dans la case position dans bord
+            board.setFigure(this.position,EmptyFigure.EMPTY_FIGURE);
+            this.position=position;
+            //mettre la figure amazon ( this ) dans la position this.position 
+            board.setFigure(this.position,this);
 
+        }
     }
 
     /**

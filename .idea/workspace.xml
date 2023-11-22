@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/ArrowFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/ArrowFigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +202,28 @@
       <option name="project" value="LOCAL" />
       <updated>1700685081591</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="La methode getPlayerId de Amazon">
+      <created>1700685885826</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700685885826</updated>
+    </task>
+    <task id="LOCAL-00009" summary="La methode setPosition de Amazon">
+      <created>1700685934140</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700685934140</updated>
+    </task>
+    <task id="LOCAL-00010" summary="La methode canMoveTo de Amazon">
+      <created>1700686923067</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700686923067</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +248,9 @@
     <MESSAGE value="La methode getFigure de MatrixBoard" />
     <MESSAGE value="La methode isEmpty de MatrixBoard" />
     <MESSAGE value="La methode isOutOfBoard de MatrixBoard" />
-    <option name="LAST_COMMIT_MESSAGE" value="La methode isOutOfBoard de MatrixBoard" />
+    <MESSAGE value="La methode getPlayerId de Amazon" />
+    <MESSAGE value="La methode setPosition de Amazon" />
+    <MESSAGE value="La methode canMoveTo de Amazon" />
+    <option name="LAST_COMMIT_MESSAGE" value="La methode canMoveTo de Amazon" />
   </component>
 </project>
