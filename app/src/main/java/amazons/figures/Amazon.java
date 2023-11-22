@@ -27,7 +27,13 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public boolean canMoveTo(Position position, Board board) {
-        return false;
+        if (board.isOutOfBoard(position) || position.equals(EmptyFigure.EMPTY_FIGURE) || position.equals(ArrowFigure.ARROW_FIGURE))
+                 { return false ;}
+        // voir si elle peut se deplacer diagonalement ou verticalement ou horizentalement
+
+        int row= position.getX()-this.position.getX();
+        int column= position.getY()-this.position.getY();
+        return (row==0 || column==0 || Math.abs(row)==Math.abs(column));
     }
 
     /**
