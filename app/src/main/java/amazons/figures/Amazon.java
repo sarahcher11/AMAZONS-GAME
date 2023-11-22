@@ -1,6 +1,7 @@
 package amazons.figures;
 
 import amazons.board.Board;
+import amazons.board.CardinalDirection;
 import amazons.board.Position;
 import amazons.player.PlayerID;
 
@@ -50,7 +51,7 @@ public class Amazon extends MovableFigure implements Figure{
             // mettre la figure EmptyFigure dans la case position dans bord
             board.setFigure(this.position,EmptyFigure.EMPTY_FIGURE);
             this.position=position;
-            //mettre la figure amazon ( this ) dans la position this.position 
+            //mettre la figure amazon ( this ) dans la position this.position
             board.setFigure(this.position,this);
 
         }
@@ -78,7 +79,18 @@ public class Amazon extends MovableFigure implements Figure{
 
     @Override
     public List<Position> getAccessiblePositions(Board board) {
-        List<Position> accessiblePositions = new ArrayList<>();
+        List<Position>  Positions = new ArrayList<>();
+
+        for (CardinalDirection direction : CardinalDirection.values()) {
+            Position nextPosition = position.next(direction);
+            
+            while (!board.isOutOfBoard(nextPosition) && (position.equals(EmptyFigure.EMPTY_FIGURE) || position.equals(ArrowFigure.ARROW_FIGURE))) {
+                Positions.add(nextPosition);
+                nextPosition = nextPosition.next(direction);
+            }
+        }
+
+        return Positions;
 
     }
 }
