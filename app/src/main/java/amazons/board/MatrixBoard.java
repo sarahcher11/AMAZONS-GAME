@@ -6,11 +6,14 @@ import amazons.figures.Figure;
 public class MatrixBoard implements Board{
 
 
-
+    private int numberOfRows;
+    private int numberOfColumns;
     private Figure[][] plateau;
 
     public MatrixBoard(int numberOfColumns,int numberOfRows){
          plateau=new Figure[numberOfRows][numberOfColumns];
+         this.numberOfColumns=numberOfColumns;
+         this.numberOfRows=numberOfRows;
          for(int i=0;i<numberOfRows;i++){
              for(int j=0;j<numberOfColumns;j++){
                  plateau[i][j]=EmptyFigure.EMPTY_FIGURE;
@@ -27,7 +30,8 @@ public class MatrixBoard implements Board{
      */
     @Override
     public void setFigure(Position position, Figure figure) {
-
+        if (! position.isOutOfBounds(numberOfColumns,numberOfRows))
+           plateau[position.getX()][position.getY()]=figure;
     }
 
     /**
