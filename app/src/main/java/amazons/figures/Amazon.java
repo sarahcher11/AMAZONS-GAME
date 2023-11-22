@@ -9,12 +9,13 @@ import java.util.List;
 
 public class Amazon extends MovableFigure implements Figure{
 
-
-
     private Position position;
 
-    public Amazon(Position initialPosition) {
+    private PlayerID playerID;
+
+    public Amazon(Position initialPosition,PlayerID playerID) {
         this.position = initialPosition;
+        this.playerID=playerID;
     }
     /**
      * Check if this figure can move to {@code position} according to its displacement rules.
@@ -58,7 +59,7 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public PlayerID getPlayerID() {
-        return null;
+        return this.playerID;
     }
 
     @Override

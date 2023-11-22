@@ -56,6 +56,7 @@ public class EmptyFigure implements Figure {
      */
     @Override
     public PlayerID getPlayerID() {
-        return null;
+       return PlayerID.NONE;
+
     }
 }

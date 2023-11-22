@@ -58,6 +58,6 @@ public class ArrowFigure implements Figure{
      */
     @Override
     public PlayerID getPlayerID() {
-        return null;
+        return PlayerID.NONE;
     }
 }
