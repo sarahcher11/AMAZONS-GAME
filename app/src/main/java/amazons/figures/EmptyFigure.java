@@ -1,5 +1,6 @@
 package amazons.figures;
 
+import amazons.IllegalMoveException;
 import amazons.board.Board;
 import amazons.board.Position;
 import amazons.player.PlayerID;
@@ -35,8 +36,8 @@ public class EmptyFigure implements Figure {
      * @param board
      */
     @Override
-    public void moveTo(Position position, Board board) {
-
+    public void moveTo(Position position, Board board) throws IllegalMoveException {
+        throw new IllegalMoveException("La figure est vide");
     }
 
     /**

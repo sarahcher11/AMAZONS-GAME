@@ -1,5 +1,6 @@
 package amazons.figures;
 
+import amazons.IllegalMoveException;
 import amazons.board.Board;
 import amazons.board.CardinalDirection;
 import amazons.board.Position;
@@ -54,6 +55,10 @@ public class Amazon extends MovableFigure implements Figure{
             //mettre la figure amazon ( this ) dans la position this.position
             board.setFigure(this.position,this);
 
+        }
+        else
+        {
+            throw new IllegalMoveException("On peut pas deplacer l'amazon");
         }
     }
 
