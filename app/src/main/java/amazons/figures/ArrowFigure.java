@@ -59,6 +59,6 @@ public class ArrowFigure implements Figure{
      */
     @Override
     public PlayerID getPlayerID() {
-        return playerID;
+        return playerID ;
     }
 }

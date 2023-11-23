@@ -3,10 +3,11 @@ package amazons.figures;
 import amazons.board.Board;
 import amazons.board.Position;
 import amazons.player.PlayerID;
+import javafx.geometry.Pos;
 
 public class EmptyFigure implements Figure {
 
-
+    private Position position;
     public static EmptyFigure EMPTY_FIGURE =new EmptyFigure();
     private PlayerID playerID=PlayerID.NONE;
 
@@ -47,7 +48,7 @@ public class EmptyFigure implements Figure {
      */
     @Override
     public void setPosition(Position position) {
-
+          this.position=position;
     }
 
     /**
