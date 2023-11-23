@@ -1,9 +1,11 @@
 package amazons.figures;
 
 import amazons.board.Board;
+import amazons.board.CardinalDirection;
 import amazons.board.Position;
 import amazons.player.PlayerID;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Amazon extends MovableFigure implements Figure{
@@ -49,6 +51,7 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public void setPosition(Position position) {
+        this.position=position;
 
     }
 
@@ -59,11 +62,24 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public PlayerID getPlayerID() {
-        return null;
+        return playerID;
     }
 
     @Override
     public List<Position> getAccessiblePositions(Board board) {
-        return null;
+
+         List<Position> positions=new ArrayList<>();
+        int newX,newY;
+        for(CardinalDirection card : CardinalDirection.values())
+        {
+            newX=this.position.getX()+ card.deltaRow;
+            newY=this.position.getY()+ card.deltaColumn;
+
+            if(board.isEmpty(new Position(newX,newY)) && (!board.isOutOfBoard(new Position(newX,newY))))
+            {
+                positions.add(new Position(newX,newY));
+            }
+        }
+        return positions;
     }
 }
