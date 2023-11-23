@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout des attributs dans la classe BoardMatrix">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Compléter isEmpty de MatrixBoard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +207,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700769102473</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Compléter getFigure()">
+      <created>1700769388219</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700769388219</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Compléter isEmpty de MatrixBoard">
+      <created>1700769603918</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700769603918</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +248,8 @@
     <MESSAGE value="Ajout de la classe MatrixBoard" />
     <MESSAGE value="Ajout du constructeur de  MatrixBoard" />
     <MESSAGE value="Ajout des attributs dans la classe BoardMatrix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout des attributs dans la classe BoardMatrix" />
+    <MESSAGE value="Compléter getFigure()" />
+    <MESSAGE value="Compléter isEmpty de MatrixBoard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compléter isEmpty de MatrixBoard" />
   </component>
 </project>
