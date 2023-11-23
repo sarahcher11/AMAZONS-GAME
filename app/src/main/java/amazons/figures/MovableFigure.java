@@ -12,4 +12,7 @@ public abstract  class MovableFigure {
     protected PlayerID playerID;
     abstract  public List<Position> getAccessiblePositions(Board board);
 
+    public Position getPosition() {
+        return position;
+    }
 }
