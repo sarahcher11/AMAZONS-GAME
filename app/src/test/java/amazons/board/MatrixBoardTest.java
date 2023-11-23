@@ -1,6 +1,6 @@
 package amazons.board;
 
-/*
+
 import amazons.IllegalMoveException;
 import amazons.board.*;
 import amazons.figures.Amazon;
@@ -14,10 +14,10 @@ import java.util.*;
 import static amazons.figures.ArrowFigure.ARROW_FIGURE;
 import static amazons.figures.EmptyFigure.EMPTY_FIGURE;
 import static org.assertj.core.api.Assertions.*;
-*/
+
 
 class MatrixBoardTest {
-/*
+
     private MatrixBoard testBoard;
     private final Random random = new Random();
     private final int NUMBER_OF_COLUMNS = 4;

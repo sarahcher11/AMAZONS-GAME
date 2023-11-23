@@ -9,6 +9,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Amazon extends MovableFigure implements Figure{
+
+
+
+
+
+
+
+    public Amazon(Position position,int num)
+    {
+        this.position=position;
+        if(num==0)
+        {
+            this.playerID=PlayerID.PLAYER_ZERO;
+        }
+        else
+        {
+            this.playerID=PlayerID.PLAYER_ONE;
+        }
+
+    }
     /**
      * Check if this figure can move to {@code position} according to its displacement rules.
      *

@@ -82,4 +82,12 @@ public class MatrixBoard implements Board{
             setFigure(source,EmptyFigure.EMPTY_FIGURE);
         }
     }
+
+    public int getNumberOfRows() {
+        return numberOfRows;
+    }
+
+    public int getNumberOfColumns() {
+        return numberOfColumns;
+    }
 }
