@@ -31,6 +31,14 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public void moveTo(Position position, Board board) {
+        if(canMoveTo(position,board))
+        {
+            try {
+                board.moveFigure(this.position,position);
+            } catch (IllegalMoveException e) {
+                e.printStackTrace();
+            }
+        }
 
     }
 

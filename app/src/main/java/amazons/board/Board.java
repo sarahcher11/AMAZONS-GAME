@@ -2,6 +2,7 @@ package amazons.board;
 
 
 import amazons.figures.Figure;
+import amazons.figures.IllegalMoveException;
 
 import java.util.Iterator;
 
@@ -43,7 +44,7 @@ public interface Board {
      * @throws IllegalMoveException: if position {@code startPosition} is empty, or the figure
      * at position {@code startPosition} cannot move to {@code dstPosition}
      */
-    //void moveFigure(Position startPosition, Position dstPosition) throws IllegalMoveException;
+     void moveFigure(Position startPosition, Position dstPosition) throws IllegalMoveException;
 
     /**
      * Place an arrow at  {@code dstPosition}. The arrow originates from {@code startPosition}

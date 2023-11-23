@@ -75,7 +75,7 @@ public class MatrixBoard implements Board{
         return false;
     }
 
-    public void deplacer(Position source,Position destination){
+    public void moveFigure(Position source,Position destination){
         if(!destination.isOutOfBounds(numberOfColumns,numberOfRows) && !source.isOutOfBounds(numberOfColumns,numberOfRows))
         {
             setFigure(destination,getFigure(source));
