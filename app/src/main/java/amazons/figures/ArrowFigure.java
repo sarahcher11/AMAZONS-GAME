@@ -6,10 +6,11 @@ import amazons.player.PlayerID;
 
 public class ArrowFigure implements Figure{
 
-
-
+    private Position position;
 
     public static ArrowFigure ARROW_FIGURE =new ArrowFigure();
+
+    private PlayerID playerID=PlayerID.NONE;
 
 
 
@@ -48,7 +49,7 @@ public class ArrowFigure implements Figure{
      */
     @Override
     public void setPosition(Position position) {
-
+        this.position=position;
     }
 
     /**
@@ -58,6 +59,6 @@ public class ArrowFigure implements Figure{
      */
     @Override
     public PlayerID getPlayerID() {
-        return null;
+        return playerID;
     }
 }

@@ -8,6 +8,7 @@ public class EmptyFigure implements Figure {
 
 
     public static EmptyFigure EMPTY_FIGURE =new EmptyFigure();
+    private PlayerID playerID=PlayerID.NONE;
 
 
 
@@ -56,6 +57,6 @@ public class EmptyFigure implements Figure {
      */
     @Override
     public PlayerID getPlayerID() {
-        return PlayerID.NONE;
+        return playerID;
     }
 }
