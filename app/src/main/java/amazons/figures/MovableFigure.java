@@ -8,7 +8,8 @@ import java.util.List;
 
 public abstract  class MovableFigure {
 
-
+    protected Position position;
+    protected PlayerID playerID;
     abstract  public List<Position> getAccessiblePositions(Board board);
 
 }

@@ -7,7 +7,7 @@ import amazons.player.PlayerID;
 public class EmptyFigure implements Figure {
 
 
-        public static EmptyFigure EMPTY_FIGURE =new EmptyFigure();
+    public static EmptyFigure EMPTY_FIGURE =new EmptyFigure();
 
 
 

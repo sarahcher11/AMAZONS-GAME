@@ -79,7 +79,7 @@ public class MatrixBoard implements Board{
         if(!destination.isOutOfBounds(numberOfColumns,numberOfRows) && !source.isOutOfBounds(numberOfColumns,numberOfRows))
         {
             setFigure(destination,getFigure(source));
-            //setFigure(source,new Empty TODO ********************************************//
+            setFigure(source,EmptyFigure.EMPTY_FIGURE);
         }
     }
 }
