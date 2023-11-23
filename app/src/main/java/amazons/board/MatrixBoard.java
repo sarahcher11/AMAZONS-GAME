@@ -41,7 +41,7 @@ public class MatrixBoard implements Board{
      */
     @Override
     public Figure getFigure(Position position) {
-        return null;
+        return plateau[position.getX()][position.getY()];
     }
 
     /**
