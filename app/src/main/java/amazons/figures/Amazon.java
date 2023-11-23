@@ -39,9 +39,8 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public boolean canMoveTo(Position position, Board board) {
-        if((!board.isOutOfBoard(position))&& board.isEmpty(position))
-            return true;
-        return false;
+        return !board.isOutOfBoard(position) && board.isEmpty(position);
+
     }
 
     /**
@@ -101,5 +100,24 @@ public class Amazon extends MovableFigure implements Figure{
             }
         }
         return positions;
+    }
+
+    private boolean pathIsBlocked(Position destination, Board board) {
+        // Check if the path is blocked by arrows
+        int deltaX = destination.getX() - this.position.getX();
+        int deltaY = destination.getY() - this.position.getY();
+
+        int xStep = Integer.compare(deltaX, 0);
+        int yStep = Integer.compare(deltaY, 0);
+
+        for (int x = this.position.getX() + xStep, y = this.position.getY() + yStep;
+             x != destination.getX() || y != destination.getY();
+             x += xStep, y += yStep) {
+            Position currentPosition = new Position(x, y);
+            if (!(board.isEmpty(currentPosition) || board.getFigure(currentPosition) instanceof Amazon)) {
+                return true; // Path is blocked
+            }
+        }
+        return false; // Path is not blocked
     }
 }

@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Completer getAccessiblePositions de Amazon">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de getPosition() dans MovableFigure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/EmptyFigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Figure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/IllegalMoveException.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/IllegalMoveException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -329,7 +332,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700775900446</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Ajout d&quot;un constructeur pour la classe Amazon">
+      <created>1700777634453</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1700777634453</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Ajout de getPosition() dans MovableFigure">
+      <created>1700778304086</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1700778304086</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +385,8 @@
     <MESSAGE value="Completer canMoveTo de Amazon" />
     <MESSAGE value="Ajout de la classe IllegalMoveException" />
     <MESSAGE value="Completer getAccessiblePositions de Amazon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completer getAccessiblePositions de Amazon" />
+    <MESSAGE value="Ajout d&quot;un constructeur pour la classe Amazon" />
+    <MESSAGE value="Ajout de getPosition() dans MovableFigure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de getPosition() dans MovableFigure" />
   </component>
 </project>

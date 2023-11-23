@@ -23,7 +23,7 @@ public interface  Figure extends Serializable {
      * is illegal according to the rules of the game.
      * @param position: the position to which this should be moved
      */
-    void moveTo(Position position, Board board) throws IllegalMoveException;
+    void moveTo(Position position, Board board) throws amazons.figures.IllegalMoveException;
 
     /**
      * Set the position of this figure to the given position.

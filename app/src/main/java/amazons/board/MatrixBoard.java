@@ -1,8 +1,6 @@
 package amazons.board;
 
-import amazons.figures.ArrowFigure;
-import amazons.figures.EmptyFigure;
-import amazons.figures.Figure;
+import amazons.figures.*;
 
 public class MatrixBoard implements Board{
 
@@ -75,13 +73,27 @@ public class MatrixBoard implements Board{
         return false;
     }
 
-    public void moveFigure(Position source,Position destination){
-        if(!destination.isOutOfBounds(numberOfColumns,numberOfRows) && !source.isOutOfBounds(numberOfColumns,numberOfRows))
+    public void moveFigure(Position source,Position destination) throws IllegalMoveException {
+        if(!destination.isOutOfBounds(numberOfColumns,numberOfRows)
+                && isEmpty(destination)
+                && (getFigure(source) instanceof Amazon)
+                && !source.isOutOfBounds(numberOfColumns,numberOfRows)
+
+        )
         {
-            setFigure(destination,getFigure(source));
-            setFigure(source,EmptyFigure.EMPTY_FIGURE);
+
+            getFigure(source).moveTo(destination,this);
+
+        }
+        else
+        {
+            throw new IllegalMoveException("Impossible de se deplacer");
+
         }
     }
+
+
+
 
     public int getNumberOfRows() {
         return numberOfRows;
@@ -90,4 +102,6 @@ public class MatrixBoard implements Board{
     public int getNumberOfColumns() {
         return numberOfColumns;
     }
+
+
 }

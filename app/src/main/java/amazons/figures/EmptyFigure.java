@@ -3,7 +3,6 @@ package amazons.figures;
 import amazons.board.Board;
 import amazons.board.Position;
 import amazons.player.PlayerID;
-import javafx.geometry.Pos;
 
 public class EmptyFigure implements Figure {
 
@@ -37,7 +36,8 @@ public class EmptyFigure implements Figure {
      * @param board
      */
     @Override
-    public void moveTo(Position position, Board board) {
+    public void moveTo(Position position, Board board) throws amazons.figures.IllegalMoveException {
+
 
     }
 

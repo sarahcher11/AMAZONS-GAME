@@ -44,7 +44,7 @@ public interface Board {
      * @throws IllegalMoveException: if position {@code startPosition} is empty, or the figure
      * at position {@code startPosition} cannot move to {@code dstPosition}
      */
-     void moveFigure(Position startPosition, Position dstPosition) throws IllegalMoveException;
+     void moveFigure(Position startPosition, Position dstPosition) throws amazons.figures.IllegalMoveException;
 
     /**
      * Place an arrow at  {@code dstPosition}. The arrow originates from {@code startPosition}
