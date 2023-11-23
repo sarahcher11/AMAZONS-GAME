@@ -52,6 +52,9 @@ public class MatrixBoard implements Board{
      */
     @Override
     public boolean isEmpty(Position position) {
+
+        if(getFigure(position) instanceof EmptyFigure)
+         return true;
         return false;
     }
 
