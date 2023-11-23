@@ -1,5 +1,6 @@
 package amazons.board;
 
+import amazons.figures.ArrowFigure;
 import amazons.figures.EmptyFigure;
 import amazons.figures.Figure;
 
@@ -69,5 +70,13 @@ public class MatrixBoard implements Board{
     @Override
     public boolean isOutOfBoard(Position position) {
         return false;
+    }
+
+    public void deplacer(Position source,Position destination){
+        if(!destination.isOutOfBounds(numberOfColumns,numberOfRows) && !source.isOutOfBounds(numberOfColumns,numberOfRows))
+        {
+            setFigure(destination,getFigure(source));
+            //setFigure(source,new Empty TODO ********************************************//
+        }
     }
 }
