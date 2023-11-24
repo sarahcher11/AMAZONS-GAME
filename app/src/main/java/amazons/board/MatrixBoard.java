@@ -10,15 +10,27 @@ public class MatrixBoard implements Board{
     private Figure[][] plateau;
 
     public MatrixBoard(int numberOfColumns,int numberOfRows){
-         plateau=new Figure[numberOfRows][numberOfColumns];
+         plateau=new Figure[numberOfColumns][numberOfRows];
          this.numberOfColumns=numberOfColumns;
          this.numberOfRows=numberOfRows;
-         for(int i=0;i<numberOfRows;i++){
-             for(int j=0;j<numberOfColumns;j++){
+         for(int i=0;i<numberOfColumns;i++){
+             for(int j=0;j<numberOfRows;j++){
                  plateau[i][j]=EmptyFigure.EMPTY_FIGURE;
 
              }
          }
+    }
+
+
+    public void afficherBord()
+    {
+        for(int i=0;i<numberOfColumns;i++){
+            for(int j=0;j<numberOfRows;j++){
+                System.out.println("( "+i+" , "+ j+" ");
+                System.out.println(plateau[i][j].getClass());
+
+            }
+        }
     }
     /**
      * Place the given figure {@code figure} at the position {@code position}. Nothing happens if {@code position}
@@ -30,7 +42,7 @@ public class MatrixBoard implements Board{
     @Override
     public void setFigure(Position position, Figure figure) {
 
-        plateau[position.getX()][position.getY()]=figure;
+        plateau[position.getY()][position.getX()]=figure;
 
     }
 
@@ -42,7 +54,7 @@ public class MatrixBoard implements Board{
      */
     @Override
     public Figure getFigure(Position position) {
-        return plateau[position.getX()][position.getY()];
+        return plateau[position.getY()][position.getX()];
     }
 
     /**
@@ -54,9 +66,7 @@ public class MatrixBoard implements Board{
     @Override
     public boolean isEmpty(Position position) {
 
-        if(getFigure(position) instanceof EmptyFigure)
-         return true;
-        return false;
+        return getFigure(position) instanceof EmptyFigure;
     }
 
     /**
@@ -75,10 +85,8 @@ public class MatrixBoard implements Board{
 
     public void moveFigure(Position source,Position destination) throws IllegalMoveException {
         if(!destination.isOutOfBounds(numberOfColumns,numberOfRows)
-                && isEmpty(destination)
+            && isEmpty(destination)
                 && (getFigure(source) instanceof Amazon)
-                && !source.isOutOfBounds(numberOfColumns,numberOfRows)
-
         )
         {
 

@@ -55,7 +55,7 @@ public interface Board {
      */
     //void shootArrow(Position startPosition, Position arrowDstPosition) throws IllegalMoveException;
 
-
+      public void afficherBord();
 
 
 }

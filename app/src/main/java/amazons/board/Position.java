@@ -59,7 +59,7 @@ public class Position implements Serializable {
 
 
     public CardinalDirection getDirection(Position destPosition){
-        return CardinalDirection.getDirection(x,y, destPosition.x, destPosition.y);
+        return CardinalDirection.getDirection(y,x, destPosition.y, destPosition.x);
     }
 
 

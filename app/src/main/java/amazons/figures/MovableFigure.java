@@ -15,4 +15,21 @@ public abstract  class MovableFigure {
     public Position getPosition() {
         return position;
     }
+
+    public boolean isHorizental(Position position){
+       return this.position.getX()== position.getX();
+    }
+    public boolean isVertical(Position position){
+        return this.position.getY()== position.getY();
+    }
+
+    public boolean isOnTheSameDiagonal(Position position)
+    {
+        int deltaX=Math.abs(this.position.getX()- position.getX());
+        int deltaY=Math.abs(this.position.getY()- position.getY());
+
+        return deltaY==deltaX;
+    }
+
+
 }

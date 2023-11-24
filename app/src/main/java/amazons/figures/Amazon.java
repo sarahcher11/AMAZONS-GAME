@@ -19,14 +19,8 @@ public class Amazon extends MovableFigure implements Figure{
     public Amazon(Position position,int num)
     {
         this.position=position;
-        if(num==0)
-        {
-            this.playerID=PlayerID.PLAYER_ZERO;
-        }
-        else
-        {
-            this.playerID=PlayerID.PLAYER_ONE;
-        }
+        this.playerID=PlayerID.getPlayerIDFromIndex(num);
+
 
     }
     /**
@@ -39,7 +33,12 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public boolean canMoveTo(Position position, Board board) {
-        return !board.isOutOfBoard(position) && board.isEmpty(position);
+
+
+        return !board.isOutOfBoard(position)
+                && board.isEmpty(position)
+                && !pathIsBlocked(position, board)
+                && ( isHorizental(position) || isVertical(position) || isOnTheSameDiagonal(position));
 
     }
 
@@ -103,7 +102,6 @@ public class Amazon extends MovableFigure implements Figure{
     }
 
     private boolean pathIsBlocked(Position destination, Board board) {
-        // Check if the path is blocked by arrows
         int deltaX = destination.getX() - this.position.getX();
         int deltaY = destination.getY() - this.position.getY();
 
@@ -114,10 +112,11 @@ public class Amazon extends MovableFigure implements Figure{
              x != destination.getX() || y != destination.getY();
              x += xStep, y += yStep) {
             Position currentPosition = new Position(x, y);
-            if (!(board.isEmpty(currentPosition) || board.getFigure(currentPosition) instanceof Amazon)) {
+            if (board.isOutOfBoard(currentPosition) || !(board.isEmpty(currentPosition) || board.getFigure(currentPosition) instanceof Amazon)) {
                 return true; // Path is blocked
             }
         }
         return false; // Path is not blocked
     }
+
 }
