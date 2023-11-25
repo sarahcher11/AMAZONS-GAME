@@ -114,20 +114,16 @@ public class MatrixBoard implements Board{
      */
     @Override
     public void shootArrow(Position startPosition, Position arrowDstPosition) throws IllegalMoveException {
-        if(!startPosition.isOutOfBounds(numberOfColumns,numberOfRows)
-                && isEmpty(arrowDstPosition)
-                && (getFigure(startPosition) instanceof ArrowFigure)
-                && !arrowDstPosition.isOutOfBounds(numberOfColumns,numberOfRows)
-        )
+        if(getFigure(startPosition) instanceof Amazon)
         {
-
-            getFigure(startPosition).moveTo(arrowDstPosition,this);
-
+            Amazon amazon= (Amazon) getFigure(startPosition);
+            if( amazon.canMoveTo(startPosition,this))
+                setFigure(arrowDstPosition,ArrowFigure.ARROW_FIGURE);
+            throw new IllegalMoveException("Impossible de se deplacer");
         }
         else
         {
-            throw new IllegalMoveException("Impossible de se deplacer");
-
+            throw new IllegalMoveException(" move impossible");
         }
     }
 
