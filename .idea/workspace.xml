@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Test et finalisation de la tache 13">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="methode string et test tache 14">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +69,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <branch-grouping />
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -97,10 +97,10 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "tasks.servers"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="Push.Settings">
@@ -243,13 +243,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00019" summary="Ajout de la classe IllegalMoveException">
-      <created>1700775466018</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1700775466018</updated>
     </task>
     <task id="LOCAL-00020" summary="Completer getAccessiblePositions de Amazon">
       <created>1700775900446</created>
@@ -587,9 +580,20 @@
       <option name="project" value="LOCAL" />
       <updated>1700940505246</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="methode string et test tache 14">
+      <created>1700944151928</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1700944151928</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers>
-      <Gitlab url="https://etulab.univ-amu.fr/m23024284" />
+      <Gitlab url="https://etulab.univ-amu.fr/m23024284">
+        <option name="currentProject">
+          <GitlabProject id="-1" />
+        </option>
+      </Gitlab>
     </servers>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,16 +602,47 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="MAIN">
+        <entry key="0905f813-42e7-4b0b-8cc9-672c0517aa11">
           <value>
             <State />
+          </value>
+        </entry>
+        <entry key="0c7867b9-de98-4777-b7c8-d34961a946df">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="4e86c153-f7fe-4c96-92b4-50250a5b5e92">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="8ca68f9a-72fc-44fb-aecf-c09d4a6ab504">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter isOutOfBoard de MapBoard" />
     <MESSAGE value="Compléter moveFigure de MapBoard" />
     <MESSAGE value="Compléter shootArrow de MapBoard" />
     <MESSAGE value="Ajout de la classe MapBoardTest" />
@@ -632,7 +667,8 @@
     <MESSAGE value="Ajout de getRandomFigure" />
     <MESSAGE value="Ajout de nextFigure et correction d'erreurs" />
     <MESSAGE value="Test et finalisation de la tache 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test et finalisation de la tache 13" />
+    <MESSAGE value="methode string et test tache 14" />
+    <option name="LAST_COMMIT_MESSAGE" value="methode string et test tache 14" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
