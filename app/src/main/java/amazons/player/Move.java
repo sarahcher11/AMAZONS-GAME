@@ -52,7 +52,13 @@ public class Move {
     }
 
 
-    // TODO method equals
-    // TODO method toString
-    // TODO method hashCode
+    @Override
+    public String toString()
+    {
+        return "("+amazonStartPosition.getX()+","+amazonStartPosition.getY()+") : "+
+                "("+amazonDstPosition.getX()+","+amazonDstPosition.getY()+")->("+
+                arrowDstPosition.getX()+","+arrowDstPosition.getY()+")";
+    }
+
+
 }
