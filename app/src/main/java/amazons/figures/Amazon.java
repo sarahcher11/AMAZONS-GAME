@@ -12,10 +12,11 @@ import java.util.List;
 public class Amazon extends MovableFigure implements Figure{
 
 
-
-
-
-
+    /**
+     * Un constructeur de la classse Amazon
+     * @param position la position de l'amazon dans la grille
+     * @param num le numéro du joueur
+     */
 
     public Amazon(Position position,int num)
     {
@@ -90,6 +91,12 @@ public class Amazon extends MovableFigure implements Figure{
         return playerID;
     }
 
+    /**
+     * Get a list of accessible position for this amazon
+     * @param board
+     * @return  return a list of positions
+     */
+
     @Override
     public List<Position> getAccessiblePositions(Board board) {
 
@@ -110,6 +117,14 @@ public class Amazon extends MovableFigure implements Figure{
         return positions;
     }
 
+    /**
+     * Retourner vrai si la position ou se dirige l'amazon n'est pas bloqué
+     * c'est à dire une Amazone ne peut pas sauter une case occupée
+     * @param destination la case de destination de l'amazone
+     * @param board
+     * @return   retoune un booléen
+     */
+
     private boolean pathIsBlocked(Position destination, Board board) {
         int deltaX = destination.getX() - this.position.getX();
         int deltaY = destination.getY() - this.position.getY();
@@ -122,7 +137,7 @@ public class Amazon extends MovableFigure implements Figure{
              x += xStep, y += yStep) {
             Position currentPosition = new Position(x, y);
             if (board.isOutOfBoard(currentPosition) || !board.isEmpty(currentPosition)) {
-                return true; // Path is blocked
+                return true; // Path is blocked if we find an occupied position
             }
         }
         // Vérifier la case de destination
