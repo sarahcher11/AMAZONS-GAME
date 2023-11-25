@@ -113,10 +113,17 @@ class AmazonTest {
     }
 
     @Test
-    void isHorizental()
+    void isHorizentalTest()
     {
         assertThat(amazon11.isHorizental(allPositions[1][3])).isTrue();
         assertThat(amazon11.isHorizental(allPositions[2][3])).isTrue();
+    }
+
+    @Test
+    void isVerticalTest()
+    {
+        assertThat(amazon11.isVertical(allPositions[1][3])).isFalse();
+        assertThat(amazon11.isHorizental(allPositions[2][1])).isTrue();
     }
 
 
