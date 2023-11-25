@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.*;
 
 
 class MoveTest {
-/*
+
     private Move testMove;
     private final Position amazonStartPosition = new Position(0,0);
     private final Position amazonDstPosition = new Position(1,1);
@@ -24,6 +24,11 @@ class MoveTest {
         assertThat(testMove.getAmazonDstPosition()).isEqualTo(amazonDstPosition);
         assertThat(testMove.getArrowDestPosition()).isEqualTo(arrowDstPosition);
     }
+    @Test
+    void testToString() {
+        String expectedToString = "(0,0):(1,1)->(1,2)";
+        assertThat(testMove.toString()).isEqualTo(expectedToString);
+    }
 
- */
+
 }

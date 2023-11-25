@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout des attributs de la classe Move" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Redéfinition de toString">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,27 +242,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00022" summary="Ajout de getPosition() dans MovableFigure">
-      <created>1700778304086</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1700778304086</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Ajout de la méthode pathIsBlocked dans Amazon">
-      <created>1700783817817</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1700783817817</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Correction des methodes">
-      <created>1700818309632</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1700818309632</updated>
     </task>
     <task id="LOCAL-00025" summary="Correction de la méthode isBlockedPath">
       <created>1700913486229</created>
@@ -584,7 +565,28 @@
       <option name="project" value="LOCAL" />
       <updated>1700946658634</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Compléter la méthode getAmazonDstPosition">
+      <created>1700947005696</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1700947005697</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Redéfinition de hashCode et equals">
+      <created>1700947202110</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1700947202110</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Redéfinition de toString">
+      <created>1700947498289</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1700947498289</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -640,12 +642,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout de la classe MapBoardTest" />
-    <MESSAGE value="Test de la classe MapBoard et finalisation de la tache 10" />
-    <MESSAGE value="Ajout de la classe MatrixIterator" />
-    <MESSAGE value="Ajout du constructeur MatrixIterator" />
-    <MESSAGE value="implémentation de hasNext" />
-    <MESSAGE value="Ajout de next" />
     <MESSAGE value="Test et finalisation de la tache 11" />
     <MESSAGE value="Ajout de positionIterator dans Board" />
     <MESSAGE value="Ajout du constructeur PositionIterator" />
@@ -665,7 +661,13 @@
     <MESSAGE value="methode string et test tache 14" />
     <MESSAGE value="Realisation de la tache 15" />
     <MESSAGE value="Ajout des attributs de la classe Move" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout des attributs de la classe Move" />
+    <MESSAGE value="Compléter la méthode getAmazonStartPosition" />
+    <MESSAGE value="Compléter la méthode getAmazonDstPosition" />
+    <MESSAGE value="Compléter la méthode getArrowDestPosition" />
+    <MESSAGE value="Compléter le constructeur Move" />
+    <MESSAGE value="Redéfinition de hashCode et equals" />
+    <MESSAGE value="Redéfinition de toString" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redéfinition de toString" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
