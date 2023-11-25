@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de la classe PresetFigureGenerator">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/PresetFigureGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/PresetFigureGenerator.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de nextFigure dans PresetFigureGenerator">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,20 +238,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00012" summary="Ajout de la méthode déplacer dans MatrixBoard">
-      <created>1700770976141</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1700770976141</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Compléter isOutOfBoard de MatrixBoard">
-      <created>1700771058930</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1700771058930</updated>
     </task>
     <task id="LOCAL-00014" summary="Finaliser deplacer de MatrixBoard">
       <created>1700773848390</created>
@@ -581,7 +568,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700925516262</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Ajout du constructeur PresetFigureGenerator">
+      <created>1700925710011</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1700925710011</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Ajout de nextFigure dans PresetFigureGenerator">
+      <created>1700925928520</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1700925928520</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,8 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modification du constructeur de MatrixBoard" />
-    <MESSAGE value="Correction et finalisation de la tache 9" />
     <MESSAGE value="Ajout de la méthode hashcode()" />
     <MESSAGE value="Ajout de la classe MapBoard" />
     <MESSAGE value="Ajout de la méthode fill dans MapBoard" />
@@ -624,6 +623,8 @@
     <MESSAGE value="implementation de positionIterator dans MapBoard" />
     <MESSAGE value="Test et finalisation de la tache 12" />
     <MESSAGE value="Ajout de la classe PresetFigureGenerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe PresetFigureGenerator" />
+    <MESSAGE value="Ajout du constructeur PresetFigureGenerator" />
+    <MESSAGE value="Ajout de nextFigure dans PresetFigureGenerator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de nextFigure dans PresetFigureGenerator" />
   </component>
 </project>

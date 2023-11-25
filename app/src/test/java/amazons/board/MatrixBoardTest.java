@@ -106,7 +106,7 @@ class MatrixBoardTest {
         assertThat(testBoard.getFigure(position30)).isSameAs(amazon30Player1);
         assertThat(testBoard.getFigure(new Position(2,1))).isSameAs(EMPTY_FIGURE);
         assertThat(testBoard.getFigure(new Position(3,1))).isSameAs(EMPTY_FIGURE);
-    }*/
+    }
 
   /*  @Test
     void testInitializeRandom() {
