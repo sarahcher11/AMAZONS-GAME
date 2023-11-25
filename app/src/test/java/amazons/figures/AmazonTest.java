@@ -116,7 +116,7 @@ class AmazonTest {
     void isHorizentalTest()
     {
         assertThat(amazon11.isHorizental(allPositions[1][3])).isTrue();
-        assertThat(amazon11.isHorizental(allPositions[2][3])).isTrue();
+        assertThat(amazon11.isHorizental(allPositions[2][3])).isFalse();
     }
 
     @Test
@@ -130,7 +130,7 @@ class AmazonTest {
     {
         assertThat(amazon11.isOnTheSameDiagonal(allPositions[1][3])).isFalse();
         assertThat(amazon11.isOnTheSameDiagonal(allPositions[0][2])).isTrue();
-        assertThat(amazon11.isOnTheSameDiagonal(allPositions[2][3])).isTrue();
+        assertThat(amazon11.isOnTheSameDiagonal(allPositions[2][2])).isTrue();
     }
 
 
