@@ -1,9 +1,6 @@
 package amazons.board;
 
-import amazons.figures.Amazon;
-import amazons.figures.EmptyFigure;
-import amazons.figures.Figure;
-import amazons.figures.IllegalMoveException;
+import amazons.figures.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -112,7 +109,21 @@ public class MapBoard implements Board{
      */
     @Override
     public void shootArrow(Position startPosition, Position arrowDstPosition) throws IllegalMoveException {
-
+        if(getFigure(startPosition) instanceof Amazon)
+        {
+            Amazon amazon= (Amazon) getFigure(startPosition);
+            if( amazon.canMoveTo(arrowDstPosition,this))
+            {
+                setFigure(arrowDstPosition, ArrowFigure.ARROW_FIGURE);
+            }
+            else {
+                throw new IllegalMoveException("Impossible de se deplacer");
+            }
+        }
+        else
+        {
+            throw new IllegalMoveException(" move impossible");
+        }
     }
 
     @Override
