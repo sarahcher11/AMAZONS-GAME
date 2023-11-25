@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout des commentaires pour la classe Amazon">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout du test de isOnTheSameDiagonal">
       <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -422,7 +420,35 @@
       <option name="project" value="LOCAL" />
       <updated>1700913836011</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Ajout du test pathIsBlocked">
+      <created>1700914401668</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1700914401668</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Ajout du test isHorizental">
+      <created>1700914427319</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1700914427319</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Ajout du test de isVertical">
+      <created>1700914520595</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1700914520595</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Ajout du test de isOnTheSameDiagonal">
+      <created>1700914667863</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1700914667863</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,10 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout du constructeur" />
-    <MESSAGE value="Ajout de l'attribut EMPTY_FIGURE" />
-    <MESSAGE value="Ajout de la classe MatrixBoard" />
-    <MESSAGE value="Ajout du constructeur de  MatrixBoard" />
     <MESSAGE value="Ajout des attributs dans la classe BoardMatrix" />
     <MESSAGE value="Compléter getFigure()" />
     <MESSAGE value="Compléter isEmpty de MatrixBoard" />
@@ -465,6 +487,10 @@
     <MESSAGE value="Correction des methodes" />
     <MESSAGE value="Correction de la méthode isBlockedPath" />
     <MESSAGE value="Ajout des commentaires pour la classe Amazon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout des commentaires pour la classe Amazon" />
+    <MESSAGE value="Ajout du test pathIsBlocked" />
+    <MESSAGE value="Ajout du test isHorizental" />
+    <MESSAGE value="Ajout du test de isVertical" />
+    <MESSAGE value="Ajout du test de isOnTheSameDiagonal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout du test de isOnTheSameDiagonal" />
   </component>
 </project>

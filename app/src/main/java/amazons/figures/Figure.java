@@ -1,6 +1,5 @@
 package amazons.figures;
 
-import amazons.IllegalMoveException;
 import amazons.board.Board;
 import amazons.board.Position;
 import amazons.player.PlayerID;
@@ -23,7 +22,7 @@ public interface  Figure extends Serializable {
      * is illegal according to the rules of the game.
      * @param position: the position to which this should be moved
      */
-    void moveTo(Position position, Board board) throws amazons.figures.IllegalMoveException;
+    void moveTo(Position position, Board board) throws IllegalMoveException;
 
     /**
      * Set the position of this figure to the given position.
