@@ -141,6 +141,11 @@ public class MapBoard implements Board{
     }
 
     @Override
+    public Iterator<Position> positionIterator() {
+        return new PositionIterator(numberOfColumns,numberOfRows);
+    }
+
+    @Override
     public void afficherBord() {
 
     }
