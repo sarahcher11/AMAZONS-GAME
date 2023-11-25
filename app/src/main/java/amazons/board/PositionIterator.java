@@ -29,7 +29,7 @@ public class PositionIterator implements Iterator<Position> {
      */
     @Override
     public boolean hasNext() {
-        return false;
+         return currentRow < numberOfRows && currentColumn < numberOfColumns;;
     }
 
     /**
@@ -40,6 +40,19 @@ public class PositionIterator implements Iterator<Position> {
      */
     @Override
     public Position next() {
-        return null;
+        if (!hasNext()) {
+            throw new NoSuchElementException("No more positions in the grid");
+        }
+
+        Position position = new Position(currentRow, currentColumn);
+
+        // Move to the next position
+        currentColumn++;
+        if (currentColumn >= numberOfColumns) {
+            currentColumn = 0;
+            currentRow++;
+        }
+
+        return position;
     }
 }
