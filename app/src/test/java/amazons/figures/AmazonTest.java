@@ -56,13 +56,18 @@ class AmazonTest {
          board.setFigure(allPositions[2][0], new Amazon(allPositions[2][0],1));
          board.setFigure(allPositions[2][2], ARROW_FIGURE);
          board.afficherBord();
-         System.out.println("03"+ board.getFigure(allPositions[0][3]).toString());
+         System.out.println("03"+ board.getFigure(allPositions[2][1]).toString());
+         accessiblePositions.clear();
          accessiblePositions.add(allPositions[0][0]);
          accessiblePositions.add(allPositions[0][1]);
-         accessiblePositions.add(allPositions[0][2]);
          accessiblePositions.add(allPositions[1][0]);
+         accessiblePositions.add(allPositions[0][2]);
          accessiblePositions.add(allPositions[2][1]);
-        // accessiblePositions.add(allPositions[3][1]);
+
+
+        // accessiblePositions.add(allPositions[2][1]);
+
+          //accessiblePositions.add(allPositions[1][3]);
      }
 
 
@@ -94,6 +99,7 @@ class AmazonTest {
     @Test
     void testGetAccessiblePositions() {
          setUp();
+        System.out.println("taille "+accessiblePositions.size());
          assertThat(amazon11.getAccessiblePositions(board))
                  .hasSameElementsAs(accessiblePositions)
                  .hasSize(accessiblePositions.size());

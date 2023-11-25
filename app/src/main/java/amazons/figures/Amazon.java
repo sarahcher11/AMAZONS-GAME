@@ -2,6 +2,7 @@ package amazons.figures;
 
 import amazons.board.Board;
 import amazons.board.CardinalDirection;
+import amazons.board.MatrixBoard;
 import amazons.board.Position;
 import amazons.player.PlayerID;
 
@@ -35,11 +36,16 @@ public class Amazon extends MovableFigure implements Figure{
     public boolean canMoveTo(Position position, Board board) {
 
 
-        return !board.isOutOfBoard(position)
+       if( !board.isOutOfBoard(position)
                 && board.isEmpty(position)
                 && !pathIsBlocked(position, board)
-                && ( isHorizental(position) || isVertical(position) || isOnTheSameDiagonal(position));
+                && ( isHorizental(position) || isVertical(position) || isOnTheSameDiagonal(position)))
+       {
 
+           System.out.println("is empty");
+           return true;
+       }
+          return false;
     }
 
     /**
@@ -51,6 +57,7 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public void moveTo(Position position, Board board) {
+
         if(canMoveTo(position,board))
         {
             try {
@@ -87,17 +94,19 @@ public class Amazon extends MovableFigure implements Figure{
     public List<Position> getAccessiblePositions(Board board) {
 
          List<Position> positions=new ArrayList<>();
+         int i=0,j=0;
         int newX,newY;
         for(CardinalDirection card : CardinalDirection.values())
         {
             newX=this.position.getX()+ card.deltaRow;
             newY=this.position.getY()+ card.deltaColumn;
 
-            if(board.isEmpty(new Position(newX,newY)) && (!board.isOutOfBoard(new Position(newX,newY))))
+           if(canMoveTo(new Position(newX,newY),board))
             {
                 positions.add(new Position(newX,newY));
             }
         }
+
         return positions;
     }
 
@@ -112,11 +121,17 @@ public class Amazon extends MovableFigure implements Figure{
              x != destination.getX() || y != destination.getY();
              x += xStep, y += yStep) {
             Position currentPosition = new Position(x, y);
-            if (board.isOutOfBoard(currentPosition) || !(board.isEmpty(currentPosition) || board.getFigure(currentPosition) instanceof Amazon)) {
+            if (board.isOutOfBoard(currentPosition) || !board.isEmpty(currentPosition)) {
                 return true; // Path is blocked
             }
         }
-        return false; // Path is not blocked
+        // Vérifier la case de destination
+        if (!board.isEmpty(destination)) {
+            return true; // La case de destination est bloquée
+        }
+
+        return false; // Le chemin n'est pas bloqué
     }
+
 
 }

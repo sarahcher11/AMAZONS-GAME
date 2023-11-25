@@ -42,7 +42,7 @@ public class MatrixBoard implements Board{
     @Override
     public void setFigure(Position position, Figure figure) {
 
-        plateau[position.getY()][position.getX()]=figure;
+        plateau[position.getX() ][position.getY()]=figure;
 
     }
 
@@ -54,7 +54,7 @@ public class MatrixBoard implements Board{
      */
     @Override
     public Figure getFigure(Position position) {
-        return plateau[position.getY()][position.getX()];
+        return plateau[position.getX()][position.getY()];
     }
 
     /**
