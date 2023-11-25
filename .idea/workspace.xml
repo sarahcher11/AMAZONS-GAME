@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de next">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de positionIterator dans Board">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/PositionIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,20 +238,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00004" summary="Ajout de la classe EmptyFigure">
-      <created>1700231569947</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1700231569947</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Ajout de l'attribut EMPTY_FIGURE">
-      <created>1700231735964</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1700231735964</updated>
     </task>
     <task id="LOCAL-00006" summary="Ajout de la classe MatrixBoard">
       <created>1700231886557</created>
@@ -581,7 +568,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700924123651</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Test et finalisation de la tache 11">
+      <created>1700924419400</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1700924419400</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Ajout de positionIterator dans Board">
+      <created>1700924494399</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1700924494399</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,8 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout des méthodes shootArrow et moveFigure" />
-    <MESSAGE value="Implémentation de moveFigure" />
     <MESSAGE value="Implémentation de shootArrow dans MatrixBoard" />
     <MESSAGE value="modification de shootArrow dans MatrixBoard" />
     <MESSAGE value="Test des méthodes et finalisation de T8" />
@@ -624,6 +623,8 @@
     <MESSAGE value="Ajout du constructeur MatrixIterator" />
     <MESSAGE value="implémentation de hasNext" />
     <MESSAGE value="Ajout de next" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de next" />
+    <MESSAGE value="Test et finalisation de la tache 11" />
+    <MESSAGE value="Ajout de positionIterator dans Board" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de positionIterator dans Board" />
   </component>
 </project>
