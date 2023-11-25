@@ -123,7 +123,14 @@ class AmazonTest {
     void isVerticalTest()
     {
         assertThat(amazon11.isVertical(allPositions[1][3])).isFalse();
-        assertThat(amazon11.isHorizental(allPositions[2][1])).isTrue();
+        assertThat(amazon11.isVertical(allPositions[2][1])).isTrue();
+    }
+    @Test
+    void isOnTheSameDiagonalTest()
+    {
+        assertThat(amazon11.isOnTheSameDiagonal(allPositions[1][3])).isFalse();
+        assertThat(amazon11.isOnTheSameDiagonal(allPositions[0][2])).isTrue();
+        assertThat(amazon11.isOnTheSameDiagonal(allPositions[2][3])).isTrue();
     }
 
 
