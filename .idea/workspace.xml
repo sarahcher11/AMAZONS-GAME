@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de la classe MatrixIterator">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout du constructeur MatrixIterator">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixIterator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,13 +237,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00001" summary="Ajout de la methode boolean isOutOfBounds">
-      <created>1700228624309</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1700228624309</updated>
     </task>
     <task id="LOCAL-00002" summary="Ajout de la methode Position next">
       <created>1700229168893</created>
@@ -585,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700922857601</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Ajout du constructeur MatrixIterator">
+      <created>1700923822779</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1700923822779</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +599,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout du test de isOnTheSameDiagonal" />
     <MESSAGE value="Finalisation de la tache 5" />
     <MESSAGE value="Finalisation de la tache 6" />
     <MESSAGE value="Ajout des méthodes shootArrow et moveFigure" />
@@ -628,6 +623,7 @@
     <MESSAGE value="Ajout de la classe MapBoardTest" />
     <MESSAGE value="Test de la classe MapBoard et finalisation de la tache 10" />
     <MESSAGE value="Ajout de la classe MatrixIterator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe MatrixIterator" />
+    <MESSAGE value="Ajout du constructeur MatrixIterator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout du constructeur MatrixIterator" />
   </component>
 </project>

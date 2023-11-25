@@ -2,7 +2,7 @@ package amazons.board;
 
 import java.util.Iterator;
 
-public class MatrixIterator <T> implements Iterable<T>{
+public class MatrixIterator <T> implements Iterator<T>{
 
 
     private final int numberOfRows;
@@ -22,13 +22,21 @@ public class MatrixIterator <T> implements Iterable<T>{
         this.currentRow=0;
     }
 
+
+
+    public boolean hasNext()
+    {
+        return currentRow < numberOfRows && currentColumn < numberOfColumns;
+    }
+
     /**
-     * Returns an iterator over elements of type {@code T}.
+     * Returns the next element in the iteration.
      *
-     * @return an Iterator.
+     * @return the next element in the iteration
+     * @throws NoSuchElementException if the iteration has no more elements
      */
     @Override
-    public Iterator<T> iterator() {
+    public T next() {
         return null;
     }
 }
