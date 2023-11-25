@@ -26,6 +26,11 @@ public class Amazon extends MovableFigure implements Figure{
 
 
     }
+    public Amazon(Position position,PlayerID player)
+    {
+        this.position=position;
+        this.playerID=player;
+    }
     /**
      * Check if this figure can move to {@code position} according to its displacement rules.
      *
