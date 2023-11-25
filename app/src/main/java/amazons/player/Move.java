@@ -16,12 +16,12 @@ public class Move {
     // TODO complete the code of this class
 
     public Position getAmazonStartPosition() {
-        return null;
+        return amazonStartPosition;
         // TODO
     }
 
     public Position getAmazonDstPosition() {
-        return null;
+        return amazonDstPosition;
         // TODO
     }
 

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Realisation de la tache 15">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout des attributs de la classe Move" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,13 +240,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00021" summary="Ajout d&quot;un constructeur pour la classe Amazon">
-      <created>1700777634453</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1700777634453</updated>
     </task>
     <task id="LOCAL-00022" summary="Ajout de getPosition() dans MovableFigure">
       <created>1700778304086</created>
@@ -586,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700946018002</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Ajout des attributs de la classe Move">
+      <created>1700946658634</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1700946658634</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -642,7 +640,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter shootArrow de MapBoard" />
     <MESSAGE value="Ajout de la classe MapBoardTest" />
     <MESSAGE value="Test de la classe MapBoard et finalisation de la tache 10" />
     <MESSAGE value="Ajout de la classe MatrixIterator" />
@@ -667,7 +664,8 @@
     <MESSAGE value="Test et finalisation de la tache 13" />
     <MESSAGE value="methode string et test tache 14" />
     <MESSAGE value="Realisation de la tache 15" />
-    <option name="LAST_COMMIT_MESSAGE" value="Realisation de la tache 15" />
+    <MESSAGE value="Ajout des attributs de la classe Move" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout des attributs de la classe Move" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
