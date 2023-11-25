@@ -150,7 +150,7 @@ public class MatrixBoard implements Board{
         return numberOfColumns;
     }
     public Iterator<Figure> iterator(){
-        return null;
+        return new MatrixIterator<>(numberOfColumns,numberOfRows,plateau);
     }
 
 

@@ -216,7 +216,7 @@ class MatrixBoardTest {
                 rowIndex++;
             }
         }
-    }
+    }*/
 
     @Test
     void testIterator() {
@@ -248,7 +248,7 @@ class MatrixBoardTest {
         assertThat(figures).hasSize(3)
                 .doesNotHaveDuplicates()
                 .containsExactlyInAnyOrder(amazon00Player0, amazon01Player0, amazon32Player0);
-    }*/
+    }
     @Test
     void testIsEmpty() {
         testBoard.setFigure(position00,EMPTY_FIGURE);

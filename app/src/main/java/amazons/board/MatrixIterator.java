@@ -42,7 +42,7 @@ public class MatrixIterator <T> implements Iterator<T>{
             throw new NoSuchElementException("No more elements in the matrix.");
         }
 
-        T element = matrix[currentRow][currentColumn];
+        T element = matrix[currentColumn][currentRow];
 
         // Move to the next position
         currentColumn++;
