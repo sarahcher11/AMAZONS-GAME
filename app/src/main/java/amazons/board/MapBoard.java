@@ -1,5 +1,6 @@
 package amazons.board;
 
+import amazons.figures.EmptyFigure;
 import amazons.figures.Figure;
 import amazons.figures.IllegalMoveException;
 
@@ -45,7 +46,7 @@ public class MapBoard implements Board{
      */
     @Override
     public Figure getFigure(Position position) {
-        return null;
+        return plateau.get(position);
     }
 
     /**
@@ -56,7 +57,7 @@ public class MapBoard implements Board{
      */
     @Override
     public boolean isEmpty(Position position) {
-        return false;
+        return (getFigure(position) instanceof EmptyFigure);
     }
 
     /**
@@ -67,7 +68,7 @@ public class MapBoard implements Board{
      */
     @Override
     public boolean isOutOfBoard(Position position) {
-        return false;
+        return (position.isOutOfBounds(numberOfColumns,numberOfRows))
     }
 
     /**
