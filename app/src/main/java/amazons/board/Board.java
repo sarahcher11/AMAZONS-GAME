@@ -56,7 +56,10 @@ public interface Board extends Iterable<Figure> {
       void shootArrow(Position startPosition, Position arrowDstPosition) throws amazons.figures.IllegalMoveException;
 
 
+
      void fill(FigureGenerator generator);
+
+    Iterator<Position> positionIterator();
       public void afficherBord();
 
 
