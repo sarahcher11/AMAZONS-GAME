@@ -55,6 +55,8 @@ public interface Board {
      */
       void shootArrow(Position startPosition, Position arrowDstPosition) throws amazons.figures.IllegalMoveException;
 
+
+     void fill(FigureGenerator generator);
       public void afficherBord();
 
 
