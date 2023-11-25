@@ -106,10 +106,11 @@ class MatrixBoardTest {
         assertThat(testBoard.getFigure(position30)).isSameAs(amazon30Player1);
         assertThat(testBoard.getFigure(new Position(2,1))).isSameAs(EMPTY_FIGURE);
         assertThat(testBoard.getFigure(new Position(3,1))).isSameAs(EMPTY_FIGURE);
-    }
+    }*/
 
-  /*  @Test
+    @Test
     void testInitializeRandom() {
+        setTestBoard();
         List<MovableFigure> figures  = List.of(amazon11Player1,amazon00Player0,amazon01Player0,amazon12Player1,amazon32Player0,amazon30Player1);
         testBoard.fill(new RandomFigureGenerator(random,figures,testBoard.positionIterator()));
         List<Position> nonEmptyPositions = new ArrayList<>();
@@ -117,13 +118,24 @@ class MatrixBoardTest {
         assertThat(nonEmptyPositions.stream().map(p -> testBoard.getFigure(p))).containsExactlyInAnyOrder(
                 amazon00Player0, amazon01Player0, amazon32Player0,
                 amazon30Player1, amazon12Player1, amazon11Player1);
-        assertThat(nonEmptyPositions).contains(amazon00Player0.getPosition());
+
+        System.out.println(testBoard.isEmpty(new Position(2,0)));
+        System.out.println(amazon00Player0.getPosition());
+        System.out.println(amazon01Player0.getPosition());
+        System.out.println(amazon32Player0.getPosition());
+        System.out.println(amazon30Player1.getPosition());
+        System.out.println(amazon12Player1.getPosition());
+        System.out.println(amazon11Player1.getPosition());
+
+
+
+       assertThat(nonEmptyPositions).contains(amazon00Player0.getPosition());
         assertThat(nonEmptyPositions).contains(amazon01Player0.getPosition());
         assertThat(nonEmptyPositions).contains(amazon32Player0.getPosition());
         assertThat(nonEmptyPositions).contains(amazon30Player1.getPosition());
         assertThat(nonEmptyPositions).contains(amazon12Player1.getPosition());
         assertThat(nonEmptyPositions).contains(amazon11Player1.getPosition());
-    }*/
+    }
 
 
     @Test
@@ -143,7 +155,7 @@ class MatrixBoardTest {
        assertThatThrownBy(() -> testBoard.shootArrow(position12,position00)).isInstanceOf(IllegalMoveException.class);
         testBoard.setFigure(position21,EMPTY_FIGURE);
         testBoard.setFigure(position12,amazon12Player1);
-        testBoard.afficherBord();
+        //testBoard.afficherBord();
         try {
             testBoard.shootArrow(position12, position21);
         } catch(IllegalMoveException e) {
@@ -155,7 +167,7 @@ class MatrixBoardTest {
     @Test
     void testMoveAmazonFigure() {
        testBoard.setFigure(position12,amazon12Player1);
-        testBoard.afficherBord();
+        //testBoard.afficherBord();
        assertThatThrownBy(() -> testBoard.moveFigure(position12,position00)).isInstanceOf(IllegalMoveException.class);
        testBoard.setFigure(position00,amazon12Player1);
         try {

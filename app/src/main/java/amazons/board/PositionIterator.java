@@ -55,4 +55,12 @@ public class PositionIterator implements Iterator<Position> {
 
         return position;
     }
+
+    public int getNumberOfColumns() {
+        return numberOfColumns;
+    }
+
+    public int getNumberOfRows() {
+        return numberOfRows;
+    }
 }

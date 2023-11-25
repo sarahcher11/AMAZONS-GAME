@@ -5,6 +5,7 @@ import amazons.board.Position;
 import amazons.player.PlayerID;
 
 import java.util.List;
+import java.util.Objects;
 
 public abstract  class MovableFigure {
 
@@ -35,5 +36,11 @@ public abstract  class MovableFigure {
         this.position = position;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof MovableFigure that)) return false;
+        return Objects.equals(position, that.position) && playerID == that.playerID;
+    }
 
 }

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout du constructeur RandomFigureGenerator">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de nextFigure et correction d'erreurs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/PositionIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/PositionIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/RandomFigureGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/RandomFigureGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/MovableFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/MovableFigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,20 +242,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00016" summary="completer setPosition() de EmptyFigure">
-      <created>1700774275752</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1700774275752</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Ajout de la classe Amazon">
-      <created>1700774439037</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1700774439037</updated>
     </task>
     <task id="LOCAL-00018" summary="Completer canMoveTo de Amazon">
       <created>1700774995900</created>
@@ -582,7 +572,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700926607446</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Ajout de getRandomFigure">
+      <created>1700928901741</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1700928901741</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Ajout de nextFigure et correction d'erreurs">
+      <created>1700928945532</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1700928945532</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,8 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout de la méthode fill dans MapBoard" />
-    <MESSAGE value="Compléter setFigure de MapBoard" />
     <MESSAGE value="Compléter getFigure de MapBoard" />
     <MESSAGE value="Compléter isOutOfBoard de MapBoard" />
     <MESSAGE value="Compléter moveFigure de MapBoard" />
@@ -625,6 +627,8 @@
     <MESSAGE value="Ajout de nextFigure dans PresetFigureGenerator" />
     <MESSAGE value="Ajout de la classe RandomFigureGenerator" />
     <MESSAGE value="Ajout du constructeur RandomFigureGenerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout du constructeur RandomFigureGenerator" />
+    <MESSAGE value="Ajout de getRandomFigure" />
+    <MESSAGE value="Ajout de nextFigure et correction d'erreurs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de nextFigure et correction d'erreurs" />
   </component>
 </project>

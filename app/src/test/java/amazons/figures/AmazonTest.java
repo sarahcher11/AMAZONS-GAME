@@ -55,7 +55,7 @@ class AmazonTest {
          board.setFigure(allPositions[1][2], new Amazon(allPositions[1][2],0));
          board.setFigure(allPositions[2][0], new Amazon(allPositions[2][0],1));
          board.setFigure(allPositions[2][2], ARROW_FIGURE);
-         board.afficherBord();
+       //  board.afficherBord();
         // System.out.println("03"+ board.getFigure(allPositions[2][1]).toString());
          accessiblePositions.clear();
          accessiblePositions.add(allPositions[0][0]);
