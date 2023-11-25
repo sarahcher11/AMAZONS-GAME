@@ -43,7 +43,6 @@ public class Amazon extends MovableFigure implements Figure{
                 && ( isHorizental(position) || isVertical(position) || isOnTheSameDiagonal(position)))
        {
 
-           System.out.println("is empty");
            return true;
        }
           return false;
@@ -125,7 +124,7 @@ public class Amazon extends MovableFigure implements Figure{
      * @return   retoune un booléen
      */
 
-    private boolean pathIsBlocked(Position destination, Board board) {
+    public boolean pathIsBlocked(Position destination, Board board) {
         int deltaX = destination.getX() - this.position.getX();
         int deltaY = destination.getY() - this.position.getY();
 

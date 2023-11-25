@@ -42,7 +42,7 @@ class AmazonTest {
      void setUp(){
          for(int x=0; x<NUMBER_OF_COLUMNS; x++){
              for(int y=0; y<NUMBER_OF_ROWS; y++){
-                 System.out.println("la colonne "+ x +" la ligne "+ y);
+                // System.out.println("la colonne "+ x +" la ligne "+ y);
                  allPositions[x][y] = new Position(x,y);
              }
          }
@@ -56,7 +56,7 @@ class AmazonTest {
          board.setFigure(allPositions[2][0], new Amazon(allPositions[2][0],1));
          board.setFigure(allPositions[2][2], ARROW_FIGURE);
          board.afficherBord();
-         System.out.println("03"+ board.getFigure(allPositions[2][1]).toString());
+        // System.out.println("03"+ board.getFigure(allPositions[2][1]).toString());
          accessiblePositions.clear();
          accessiblePositions.add(allPositions[0][0]);
          accessiblePositions.add(allPositions[0][1]);
@@ -77,15 +77,15 @@ class AmazonTest {
         setUp();
         for (int x = 0; x < NUMBER_OF_COLUMNS; x++) {
             for (int y = 0; y < NUMBER_OF_ROWS; y++) {
-                System.out.println("Testing position: " + x + ", " + y);
+               // System.out.println("Testing position: " + x + ", " + y);
                 try {
                     boolean canMoveResult = amazon11.canMoveTo(allPositions[x][y], board);
                     boolean isAccessible = accessiblePositions.contains(allPositions[x][y]);
-                    System.out.println("canMove: " + canMoveResult);
-                    System.out.println("Accessible: " + isAccessible);
+                   // System.out.println("canMove: " + canMoveResult);
+                  //  System.out.println("Accessible: " + isAccessible);
                     assertThat(canMoveResult).isEqualTo(isAccessible);
                 } catch (ArrayIndexOutOfBoundsException e) {
-                    System.err.println("Error accessing position: " + x + ", " + y);
+                  //  System.err.println("Error accessing position: " + x + ", " + y);
                     e.printStackTrace();
                     throw e; // Rethrow the exception to fail the test
                 }
@@ -99,11 +99,20 @@ class AmazonTest {
     @Test
     void testGetAccessiblePositions() {
          setUp();
-        System.out.println("taille "+accessiblePositions.size());
+      //  System.out.println("taille "+accessiblePositions.size());
          assertThat(amazon11.getAccessiblePositions(board))
                  .hasSameElementsAs(accessiblePositions)
                  .hasSize(accessiblePositions.size());
     }
+
+    @Test
+    void pathIsBlockedTest()
+    {
+        assertThat(amazon11.pathIsBlocked(allPositions[1][3],board)).isTrue();
+        assertThat(amazon11.pathIsBlocked(allPositions[0][0],board)).isFalse();
+    }
+
+
 
 
 }

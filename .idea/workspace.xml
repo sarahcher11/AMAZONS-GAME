@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Correction des methodes">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout des commentaires pour la classe Amazon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" afterDir="false" />
     </list>
@@ -410,7 +408,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700818309632</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Correction de la méthode isBlockedPath">
+      <created>1700913486229</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1700913486229</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Ajout des commentaires pour la classe Amazon">
+      <created>1700913836011</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1700913836011</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,8 +440,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout de la methode String toString" />
-    <MESSAGE value="Ajout de la classe EmptyFigure" />
     <MESSAGE value="Ajout du constructeur" />
     <MESSAGE value="Ajout de l'attribut EMPTY_FIGURE" />
     <MESSAGE value="Ajout de la classe MatrixBoard" />
@@ -453,6 +463,8 @@
     <MESSAGE value="Ajout de la méthode  isHorizental" />
     <MESSAGE value="Ajout de la méthode isVertical" />
     <MESSAGE value="Correction des methodes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction des methodes" />
+    <MESSAGE value="Correction de la méthode isBlockedPath" />
+    <MESSAGE value="Ajout des commentaires pour la classe Amazon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout des commentaires pour la classe Amazon" />
   </component>
 </project>
