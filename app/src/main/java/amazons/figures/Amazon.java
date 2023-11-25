@@ -1,5 +1,6 @@
 package amazons.figures;
 
+
 import amazons.board.Board;
 import amazons.board.CardinalDirection;
 import amazons.board.MatrixBoard;
@@ -56,15 +57,13 @@ public class Amazon extends MovableFigure implements Figure{
      * @param board
      */
     @Override
-    public void moveTo(Position position, Board board) {
+    public void moveTo(Position position, Board board) throws IllegalMoveException {
 
         if(canMoveTo(position,board))
         {
-            try {
+
                 board.moveFigure(this.position,position);
-            } catch (IllegalMoveException e) {
-                e.printStackTrace();
-            }
+
         }
 
     }

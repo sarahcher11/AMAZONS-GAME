@@ -1,6 +1,7 @@
 package amazons.board;
 
 import amazons.figures.*;
+import amazons.figures.IllegalMoveException;
 
 public class MatrixBoard implements Board{
 
@@ -84,13 +85,43 @@ public class MatrixBoard implements Board{
     }
 
     public void moveFigure(Position source,Position destination) throws IllegalMoveException {
-        if(!destination.isOutOfBounds(numberOfColumns,numberOfRows)
-            && isEmpty(destination)
-                && (getFigure(source) instanceof Amazon)
+        if(getFigure(source) instanceof Amazon)
+        {
+            Amazon amazon= (Amazon) getFigure(source);
+            if( amazon.canMoveTo(destination,this))
+            {      setFigure(destination,amazon);
+                   setFigure(source,EmptyFigure.EMPTY_FIGURE);
+            }
+            else
+            {
+                throw new IllegalMoveException("Impossible de se deplacer");
+            }
+        }
+        else
+        {
+            throw new IllegalMoveException(" move impossible");
+        }
+
+    }
+
+    /**
+     * Place an arrow at  {@code dstPosition}. The arrow originates from {@code startPosition}
+     *
+     * @param startPosition    : the origin of the arrow shot
+     * @param arrowDstPosition : the destination of the arrow
+     * @throws IllegalMoveException: if {@code dstPosition} is not empty occupied or there is no amazon
+     *                               at position {@code startPosition} or it is not legal for the amazon to shoot an arrow to {@code dstPosition}
+     */
+    @Override
+    public void shootArrow(Position startPosition, Position arrowDstPosition) throws IllegalMoveException {
+        if(!startPosition.isOutOfBounds(numberOfColumns,numberOfRows)
+                && isEmpty(arrowDstPosition)
+                && (getFigure(startPosition) instanceof ArrowFigure)
+                && !arrowDstPosition.isOutOfBounds(numberOfColumns,numberOfRows)
         )
         {
 
-            getFigure(source).moveTo(destination,this);
+            getFigure(startPosition).moveTo(arrowDstPosition,this);
 
         }
         else
@@ -99,8 +130,6 @@ public class MatrixBoard implements Board{
 
         }
     }
-
-
 
 
     public int getNumberOfRows() {

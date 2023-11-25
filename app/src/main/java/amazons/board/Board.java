@@ -53,7 +53,7 @@ public interface Board {
      * @throws IllegalMoveException: if {@code dstPosition} is not empty occupied or there is no amazon
      * at position {@code startPosition} or it is not legal for the amazon to shoot an arrow to {@code dstPosition}
      */
-      void shootArrow(Position startPosition, Position arrowDstPosition) throws IllegalMoveException;
+      void shootArrow(Position startPosition, Position arrowDstPosition) throws amazons.figures.IllegalMoveException;
 
       public void afficherBord();
 

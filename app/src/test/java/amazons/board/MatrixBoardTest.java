@@ -137,9 +137,10 @@ class MatrixBoardTest {
         assertThatThrownBy(() -> testBoard.moveFigure(position12,position00)).isInstanceOf(IllegalMoveException.class);
     }
 
-   /* @Test
+    @Test
     void testMoveAmazonFigure() {
        testBoard.setFigure(position12,amazon12Player1);
+        testBoard.afficherBord();
        assertThatThrownBy(() -> testBoard.moveFigure(position12,position00)).isInstanceOf(IllegalMoveException.class);
        testBoard.setFigure(position00,amazon12Player1);
         try {
