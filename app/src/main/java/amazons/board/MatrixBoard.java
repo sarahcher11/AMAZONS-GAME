@@ -14,7 +14,8 @@ public class MatrixBoard implements Board{
          plateau=new Figure[numberOfColumns][numberOfRows];
          this.numberOfColumns=numberOfColumns;
          this.numberOfRows=numberOfRows;
-        fill(new EmptyFigureGenerator());
+         fill(new EmptyFigureGenerator());
+
     }
 
 
@@ -128,12 +129,13 @@ public class MatrixBoard implements Board{
 
     @Override
     public void fill(FigureGenerator generator) {
-        int i,j;
         Position position;
-        for (i=0,j=0;i<numberOfColumns || j<numberOfRows;i++,j++)
-        {
-             position=new Position(i,j);
-                 setFigure(position,generator.nextFigure(position));
+        for(int i=0;i<numberOfColumns;i++){
+            for(int j=0;j<numberOfRows;j++){
+                position=new Position(i,j);
+                plateau[i][j]=generator.nextFigure(position);
+
+            }
         }
     }
 

@@ -81,7 +81,7 @@ class MatrixBoardTest {
         assertThat(board.getNumberOfColumns()).isEqualTo(2);
     }
 
-   /* @Test
+    /*@Test
     void testInitializeEmpty() {
 
         assertThat(testBoard.getFigure(new Position(0,0))).isSameAs(EMPTY_FIGURE);
