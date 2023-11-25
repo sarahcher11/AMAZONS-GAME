@@ -79,7 +79,8 @@ public class Position implements Serializable {
         return x == position.x && y == position.y;
     }
 
-
-
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
+    }
 }
