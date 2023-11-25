@@ -117,9 +117,13 @@ public class MatrixBoard implements Board{
         if(getFigure(startPosition) instanceof Amazon)
         {
             Amazon amazon= (Amazon) getFigure(startPosition);
-            if( amazon.canMoveTo(startPosition,this))
+            if( amazon.canMoveTo(arrowDstPosition,this))
+            {
                 setFigure(arrowDstPosition,ArrowFigure.ARROW_FIGURE);
-            throw new IllegalMoveException("Impossible de se deplacer");
+            }
+            else {
+                throw new IllegalMoveException("Impossible de se deplacer");
+            }
         }
         else
         {

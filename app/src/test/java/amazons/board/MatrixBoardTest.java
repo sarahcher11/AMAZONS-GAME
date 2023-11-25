@@ -40,6 +40,8 @@ class MatrixBoardTest {
     private Amazon amazon12Player1;
     private final Position position12 = new Position(1,2);
 
+    private final Position position21=new Position(2,1);
+
 
 
     @BeforeEach
@@ -135,6 +137,14 @@ class MatrixBoardTest {
     void testMoveArrowFigure() {
         testBoard.setFigure(position12,ARROW_FIGURE);
         assertThatThrownBy(() -> testBoard.moveFigure(position12,position00)).isInstanceOf(IllegalMoveException.class);
+        // test ajouté
+        // essayer de tirer une fleche
+        testBoard.setFigure(position12,amazon12Player1);
+       assertThatThrownBy(() -> testBoard.shootArrow(position12,position00)).isInstanceOf(IllegalMoveException.class);
+        testBoard.setFigure(position21,EMPTY_FIGURE);
+        assertThatThrownBy(() -> testBoard.shootArrow(position12,position01)).isNotInstanceOf(IllegalMoveException.class);
+
+
     }
 
     @Test
