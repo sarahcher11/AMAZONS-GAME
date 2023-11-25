@@ -3,6 +3,8 @@ package amazons.board;
 import amazons.figures.*;
 import amazons.figures.IllegalMoveException;
 
+import java.util.Iterator;
+
 public class MatrixBoard implements Board{
 
 
@@ -146,6 +148,9 @@ public class MatrixBoard implements Board{
 
     public int getNumberOfColumns() {
         return numberOfColumns;
+    }
+    public Iterator<Figure> iterator(){
+        return null;
     }
 
 

@@ -3,6 +3,7 @@ package amazons.board;
 import amazons.figures.*;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class MapBoard implements Board{
@@ -150,5 +151,9 @@ public class MapBoard implements Board{
 
     public int getNumberOfRows() {
         return numberOfRows;
+    }
+    public Iterator<Figure> iterator()
+    {
+      return null;
     }
 }

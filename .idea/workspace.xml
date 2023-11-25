@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de la classe MapBoardTest">
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MapBoardTest.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de la classe MatrixIterator">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -576,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700922566835</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Test de la classe MapBoard et finalisation de la tache 10">
+      <created>1700922857601</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1700922857601</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,8 +603,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout du test isHorizental" />
-    <MESSAGE value="Ajout du test de isVertical" />
     <MESSAGE value="Ajout du test de isOnTheSameDiagonal" />
     <MESSAGE value="Finalisation de la tache 5" />
     <MESSAGE value="Finalisation de la tache 6" />
@@ -619,6 +626,8 @@
     <MESSAGE value="Compléter moveFigure de MapBoard" />
     <MESSAGE value="Compléter shootArrow de MapBoard" />
     <MESSAGE value="Ajout de la classe MapBoardTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe MapBoardTest" />
+    <MESSAGE value="Test de la classe MapBoard et finalisation de la tache 10" />
+    <MESSAGE value="Ajout de la classe MatrixIterator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe MatrixIterator" />
   </component>
 </project>
