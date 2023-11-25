@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de la classe MapBoard">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de la classe MapBoardTest">
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MapBoardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MapBoard.java" afterDir="false" />
     </list>
@@ -540,7 +541,42 @@
       <option name="project" value="LOCAL" />
       <updated>1700921855330</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Ajout de la méthode fill dans MapBoard">
+      <created>1700922173747</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1700922173747</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Compléter setFigure de MapBoard">
+      <created>1700922271487</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1700922271487</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Compléter isOutOfBoard de MapBoard">
+      <created>1700922395497</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1700922395497</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Compléter moveFigure de MapBoard">
+      <created>1700922528546</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1700922528546</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Compléter shootArrow de MapBoard">
+      <created>1700922566835</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1700922566835</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,13 +594,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout de la méthode pathIsBlocked dans Amazon" />
-    <MESSAGE value="Ajout de la méthode  isHorizental" />
-    <MESSAGE value="Ajout de la méthode isVertical" />
-    <MESSAGE value="Correction des methodes" />
-    <MESSAGE value="Correction de la méthode isBlockedPath" />
-    <MESSAGE value="Ajout des commentaires pour la classe Amazon" />
-    <MESSAGE value="Ajout du test pathIsBlocked" />
     <MESSAGE value="Ajout du test isHorizental" />
     <MESSAGE value="Ajout du test de isVertical" />
     <MESSAGE value="Ajout du test de isOnTheSameDiagonal" />
@@ -583,6 +612,13 @@
     <MESSAGE value="Correction et finalisation de la tache 9" />
     <MESSAGE value="Ajout de la méthode hashcode()" />
     <MESSAGE value="Ajout de la classe MapBoard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe MapBoard" />
+    <MESSAGE value="Ajout de la méthode fill dans MapBoard" />
+    <MESSAGE value="Compléter setFigure de MapBoard" />
+    <MESSAGE value="Compléter getFigure de MapBoard" />
+    <MESSAGE value="Compléter isOutOfBoard de MapBoard" />
+    <MESSAGE value="Compléter moveFigure de MapBoard" />
+    <MESSAGE value="Compléter shootArrow de MapBoard" />
+    <MESSAGE value="Ajout de la classe MapBoardTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe MapBoardTest" />
   </component>
 </project>

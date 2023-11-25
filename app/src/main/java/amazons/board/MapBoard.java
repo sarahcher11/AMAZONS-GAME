@@ -143,4 +143,12 @@ public class MapBoard implements Board{
     public void afficherBord() {
 
     }
+
+    public int getNumberOfColumns() {
+        return numberOfColumns;
+    }
+
+    public int getNumberOfRows() {
+        return numberOfRows;
+    }
 }
