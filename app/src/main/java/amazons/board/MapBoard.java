@@ -1,5 +1,6 @@
 package amazons.board;
 
+import amazons.figures.Amazon;
 import amazons.figures.EmptyFigure;
 import amazons.figures.Figure;
 import amazons.figures.IllegalMoveException;
@@ -68,7 +69,7 @@ public class MapBoard implements Board{
      */
     @Override
     public boolean isOutOfBoard(Position position) {
-        return (position.isOutOfBounds(numberOfColumns,numberOfRows))
+        return (position.isOutOfBounds(numberOfColumns,numberOfRows));
     }
 
     /**
@@ -82,6 +83,22 @@ public class MapBoard implements Board{
      */
     @Override
     public void moveFigure(Position startPosition, Position dstPosition) throws IllegalMoveException {
+        if(getFigure(startPosition) instanceof Amazon)
+        {
+            Amazon amazon= (Amazon) getFigure(startPosition);
+            if( amazon.canMoveTo(dstPosition,this))
+            {      setFigure(dstPosition,amazon);
+                setFigure(startPosition,EmptyFigure.EMPTY_FIGURE);
+            }
+            else
+            {
+                throw new IllegalMoveException("Impossible de se deplacer");
+            }
+        }
+        else
+        {
+            throw new IllegalMoveException(" move impossible");
+        }
 
     }
 
