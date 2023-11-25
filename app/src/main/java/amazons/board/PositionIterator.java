@@ -44,7 +44,7 @@ public class PositionIterator implements Iterator<Position> {
             throw new NoSuchElementException("No more positions in the grid");
         }
 
-        Position position = new Position(currentRow, currentColumn);
+        Position position = new Position(currentColumn, currentRow);
 
         // Move to the next position
         currentColumn++;

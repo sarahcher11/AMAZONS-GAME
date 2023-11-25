@@ -194,9 +194,9 @@ class MatrixBoardTest {
                 +----+----+----+----+
                   0    1    2    3\040\040"""
         );
-    }
+    }*/
 
-   /* @Test
+   @Test
     void testPositionIterator() {
         int rowIndex = 0;
         int columnIndex = 0;
@@ -216,7 +216,7 @@ class MatrixBoardTest {
                 rowIndex++;
             }
         }
-    }*/
+    }
 
     @Test
     void testIterator() {
