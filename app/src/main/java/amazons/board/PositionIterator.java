@@ -29,7 +29,7 @@ public class PositionIterator implements Iterator<Position> {
      */
     @Override
     public boolean hasNext() {
-         return currentRow < numberOfRows && currentColumn < numberOfColumns;;
+         return currentRow < numberOfRows && currentColumn < numberOfColumns;
     }
 
     /**

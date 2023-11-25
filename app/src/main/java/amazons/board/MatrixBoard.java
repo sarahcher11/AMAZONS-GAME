@@ -141,6 +141,11 @@ public class MatrixBoard implements Board{
         }
     }
 
+    @Override
+    public Iterator<Position> positionIterator() {
+        return new PositionIterator(numberOfColumns,numberOfRows);
+    }
+
 
     public int getNumberOfRows() {
         return numberOfRows;
