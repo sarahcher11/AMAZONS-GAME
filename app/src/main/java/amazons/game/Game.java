@@ -30,8 +30,8 @@ public class Game {
     private boolean isThisIsTheEnd = false;
 
 
-    // TODO
     public Game() {
+
     }
 
     // TODO
