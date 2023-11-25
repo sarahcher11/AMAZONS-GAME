@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="modification de shootArrow dans MatrixBoard">
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Compléter la méthode nestFigure">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -490,7 +491,35 @@
       <option name="project" value="LOCAL" />
       <updated>1700919954815</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Test des méthodes et finalisation de T8">
+      <created>1700920318446</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1700920318446</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Ajout de la signature fill dans Board">
+      <created>1700920483146</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1700920483147</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Ajout de la classe EmptyFigureGenerator">
+      <created>1700920578704</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1700920578704</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Compléter la méthode nestFigure">
+      <created>1700920637469</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1700920637469</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,10 +537,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finaliser deplacer de MatrixBoard" />
-    <MESSAGE value="Compléter setPosition de ArrowFigure" />
-    <MESSAGE value="completer setPosition() de EmptyFigure" />
-    <MESSAGE value="Ajout de la classe Amazon" />
     <MESSAGE value="Completer canMoveTo de Amazon" />
     <MESSAGE value="Ajout de la classe IllegalMoveException" />
     <MESSAGE value="Completer getAccessiblePositions de Amazon" />
@@ -533,6 +558,10 @@
     <MESSAGE value="Implémentation de moveFigure" />
     <MESSAGE value="Implémentation de shootArrow dans MatrixBoard" />
     <MESSAGE value="modification de shootArrow dans MatrixBoard" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification de shootArrow dans MatrixBoard" />
+    <MESSAGE value="Test des méthodes et finalisation de T8" />
+    <MESSAGE value="Ajout de la signature fill dans Board" />
+    <MESSAGE value="Ajout de la classe EmptyFigureGenerator" />
+    <MESSAGE value="Compléter la méthode nestFigure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compléter la méthode nestFigure" />
   </component>
 </project>

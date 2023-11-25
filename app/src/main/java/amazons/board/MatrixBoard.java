@@ -14,12 +14,7 @@ public class MatrixBoard implements Board{
          plateau=new Figure[numberOfColumns][numberOfRows];
          this.numberOfColumns=numberOfColumns;
          this.numberOfRows=numberOfRows;
-         for(int i=0;i<numberOfColumns;i++){
-             for(int j=0;j<numberOfRows;j++){
-                 plateau[i][j]=EmptyFigure.EMPTY_FIGURE;
-
-             }
-         }
+        fill(new EmptyFigureGenerator());
     }
 
 
@@ -128,6 +123,17 @@ public class MatrixBoard implements Board{
         else
         {
             throw new IllegalMoveException(" move impossible");
+        }
+    }
+
+    @Override
+    public void fill(FigureGenerator generator) {
+        int i,j;
+        Position position;
+        for (i=0,j=0;i<numberOfColumns || j<numberOfRows;i++,j++)
+        {
+             position=new Position(i,j);
+                 setFigure(position,generator.nextFigure(position));
         }
     }
 
