@@ -1,6 +1,7 @@
 package amazons.board;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class MatrixIterator <T> implements Iterator<T>{
 
@@ -37,6 +38,19 @@ public class MatrixIterator <T> implements Iterator<T>{
      */
     @Override
     public T next() {
-        return null;
+        if (!hasNext()) {
+            throw new NoSuchElementException("No more elements in the matrix.");
+        }
+
+        T element = matrix[currentRow][currentColumn];
+
+        // Move to the next position
+        currentColumn++;
+        if (currentColumn == numberOfColumns) {
+            currentColumn = 0;
+            currentRow++;
+        }
+
+        return element;
     }
 }
