@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Constructeur game">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Surdéfinition du constructeur Amazon">
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,13 +242,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00031" summary="Finalisation de la tache 5">
-      <created>1700914761446</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1700914761446</updated>
     </task>
     <task id="LOCAL-00032" summary="Finalisation de la tache 6">
       <created>1700914856643</created>
@@ -586,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700949990869</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Surdéfinition du constructeur Amazon">
+      <created>1700950593966</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1700950593966</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -642,7 +642,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="implementation de positionIterator dans MapBoard" />
     <MESSAGE value="Test et finalisation de la tache 12" />
     <MESSAGE value="Ajout de la classe PresetFigureGenerator" />
     <MESSAGE value="Ajout du constructeur PresetFigureGenerator" />
@@ -667,7 +666,8 @@
     <MESSAGE value="Finaliser la tache 17" />
     <MESSAGE value="Completer initialize de la tache 17" />
     <MESSAGE value="Constructeur game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Constructeur game" />
+    <MESSAGE value="Surdéfinition du constructeur Amazon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Surdéfinition du constructeur Amazon" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

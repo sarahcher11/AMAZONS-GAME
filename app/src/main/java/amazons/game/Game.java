@@ -63,8 +63,24 @@ public class Game {
 
 
 
-    // TODO
+
     public void updateGame(Move move){
+        Position amazonStartPosition = move.getAmazonStartPosition();
+        Position amazonDstPosition = move.getAmazonDstPosition();
+        Position arrowDstPosition = move.getArrowDestPosition();
+
+        // Mettre à jour le plateau avec le mouvement de l'amazone
+        updateGameAmazonMove(amazonStartPosition, amazonDstPosition);
+        // Mettre à jour le plateau avec le tir de flèche
+        updateGameArrowShot(amazonDstPosition, arrowDstPosition);
+        // Vérifier si le joueur actuel a perdu
+        if (hasLost(players[turn].getPlayerID())) {
+            winner = players[1 - turn].getPlayerID(); // L'autre joueur est le gagnant
+            isThisIsTheEnd = true;
+        } else {
+            // Passer au tour suivant
+            incrementTurn();
+        }
 
     }
 
