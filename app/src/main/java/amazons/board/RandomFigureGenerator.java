@@ -28,7 +28,7 @@ public class RandomFigureGenerator implements FigureGenerator {
         if (positionIterator.hasNext()) {
             MovableFigure figure = getRandomFigure();
             figure.setPosition(positionIterator.next());
-            return figure;
+            return (Figure)figure;
         } else {
             return EmptyFigure.EMPTY_FIGURE;
         }
