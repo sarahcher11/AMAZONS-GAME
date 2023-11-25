@@ -1,5 +1,6 @@
 package amazons.board;
 
+import amazons.figures.EmptyFigure;
 import amazons.figures.Figure;
 import amazons.figures.MovableFigure;
 
@@ -14,6 +15,13 @@ public class PresetFigureGenerator implements FigureGenerator{
     }
     @Override
     public Figure nextFigure(Position position) {
-        return null;
+        for(MovableFigure figure: figures)
+        {
+            if(figure.getPosition().equals(position))
+            {
+                return (Figure) figure;
+            }
+        }
+        return EmptyFigure.EMPTY_FIGURE;
     }
 }
