@@ -3,7 +3,26 @@ package amazons.board;
 import amazons.figures.Figure;
 import amazons.figures.IllegalMoveException;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MapBoard implements Board{
+
+
+    private int numberOfRows;
+    private int numberOfColumns;
+    Map<Position,Figure> plateau;
+
+
+    public MapBoard(int numberOfColumns,int numberOfRows)
+    {
+        plateau=new HashMap<>();
+        this.numberOfColumns=numberOfColumns;
+        this.numberOfRows=numberOfRows;
+        fill(new EmptyFigureGenerator());
+    }
+
+
     /**
      * Place the given figure {@code figure} at the position {@code position}. Nothing happens if {@code position}
      * is outside this board.
@@ -78,6 +97,14 @@ public class MapBoard implements Board{
 
     @Override
     public void fill(FigureGenerator generator) {
+        Position position;
+        for(int i=0;i<numberOfColumns;i++){
+            for(int j=0;j<numberOfRows;j++){
+                position=new Position(i,j);
+                plateau.put(position,generator.nextFigure(position));
+
+                }
+            }
 
     }
 
