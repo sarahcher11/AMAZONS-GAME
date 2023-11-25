@@ -142,8 +142,13 @@ class MatrixBoardTest {
         testBoard.setFigure(position12,amazon12Player1);
        assertThatThrownBy(() -> testBoard.shootArrow(position12,position00)).isInstanceOf(IllegalMoveException.class);
         testBoard.setFigure(position21,EMPTY_FIGURE);
-        assertThatThrownBy(() -> testBoard.shootArrow(position12,position01)).isNotInstanceOf(IllegalMoveException.class);
-
+        testBoard.setFigure(position12,amazon12Player1);
+        testBoard.afficherBord();
+        try {
+            testBoard.shootArrow(position12, position21);
+        } catch(IllegalMoveException e) {
+            assertThat(false).withFailMessage("move("+position12+","+position21+") should not throw exception").isTrue();
+        }
 
     }
 
