@@ -31,5 +31,9 @@ public abstract  class MovableFigure {
         return deltaY==deltaX;
     }
 
+    public void setPosition(Position position) {
+        this.position = position;
+    }
+
 
 }
