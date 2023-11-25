@@ -6,6 +6,10 @@ import java.util.Objects;
 
 public class Move {
 
+     private Position amazonStartPosition;
+     private Position amazonDstPosition;
+     private Position arrowDstPosition;
+
     public static final Move DUMMY_MOVE = new Move();
 
 
