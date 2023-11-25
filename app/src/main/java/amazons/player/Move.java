@@ -55,7 +55,7 @@ public class Move {
     @Override
     public String toString()
     {
-        return "("+amazonStartPosition.getX()+","+amazonStartPosition.getY()+") : "+
+        return "("+amazonStartPosition.getX()+","+amazonStartPosition.getY()+"):"+
                 "("+amazonDstPosition.getX()+","+amazonDstPosition.getY()+")->("+
                 arrowDstPosition.getX()+","+arrowDstPosition.getY()+")";
     }
