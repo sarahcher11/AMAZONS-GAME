@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Compléter play" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Finaliser la tache 17">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/CLPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/CLPlayer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,13 +242,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00028" summary="Ajout du test isHorizental">
-      <created>1700914427319</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1700914427319</updated>
     </task>
     <task id="LOCAL-00029" summary="Ajout du test de isVertical">
       <created>1700914520595</created>
@@ -584,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700948923664</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Finaliser la tache 17">
+      <created>1700949343283</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1700949343283</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -640,7 +642,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout du hasNext dans PositionIterator" />
     <MESSAGE value="Ajout du next dans PositionIterator" />
     <MESSAGE value="implementation de positionIterator dans MatrixBoard" />
     <MESSAGE value="implementation de positionIterator dans MapBoard" />
@@ -665,7 +666,8 @@
     <MESSAGE value="Ajout de la méthode testToString" />
     <MESSAGE value="test et finalisation de la tache 16" />
     <MESSAGE value="Compléter play" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compléter play" />
+    <MESSAGE value="Finaliser la tache 17" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finaliser la tache 17" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

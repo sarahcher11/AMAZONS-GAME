@@ -6,7 +6,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CLPlayer implements Player {
+
+    private int boardWidth;
+    private int boardHeight;
     private PlayerID playerID;
+    private List<Position>[] initialPositions;
+
     private final static Scanner inputScanner = new Scanner(System.in);
 
     @Override
@@ -14,7 +19,6 @@ public class CLPlayer implements Player {
         return false;
     }
 
-    // TODO complete the code of method play
     @Override
     public Move play(Move opponentMove) {
         System.out.println(playerID + " select amazon? (enter X Y coordinate)");
@@ -39,6 +43,9 @@ public class CLPlayer implements Player {
 
     @Override
     public void initialize(int boardWidth, int boardHeight,  PlayerID playerID, List<Position>[] initialPositions) {
+        this.boardWidth=boardWidth;
+        this.boardHeight=boardHeight;
+        this.initialPositions=initialPositions;
         this.playerID = playerID;
     }
 
