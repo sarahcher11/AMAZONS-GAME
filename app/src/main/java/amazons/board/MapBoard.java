@@ -33,6 +33,8 @@ public class MapBoard implements Board{
     @Override
     public void setFigure(Position position, Figure figure) {
 
+        plateau.put(position,figure);
+
     }
 
     /**
