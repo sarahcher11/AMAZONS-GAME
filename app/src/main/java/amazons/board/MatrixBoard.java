@@ -2,6 +2,7 @@ package amazons.board;
 
 import amazons.figures.*;
 import amazons.figures.IllegalMoveException;
+import amazons.player.PlayerID;
 
 import java.util.Iterator;
 
@@ -157,6 +158,64 @@ public class MatrixBoard implements Board{
     public Iterator<Figure> iterator(){
         return new MatrixIterator<>(numberOfColumns,numberOfRows,plateau);
     }
+
+    @Override
+    public String toString() {
+        String result = "";
+        int numJ=-1;
+
+        // Upper border
+        result += "+";
+        for (int col = 0; col < numberOfColumns; col++) {
+            result += "----+";
+        }
+        result += "\n";
+
+        // Board content
+        for (int row = 0; row < numberOfRows; row++) {
+            result += "| ";
+            for (int col = 0; col < numberOfColumns; col++) {
+                Figure figure = getFigure(new Position(col,row));
+                if (figure instanceof Amazon) {
+                    Amazon amazon = (Amazon) figure;
+                    if (amazon.getPlayerID()== PlayerID.PLAYER_ZERO)
+                    {
+                       numJ=0;
+                    }
+                    if (amazon.getPlayerID()==PlayerID.PLAYER_ONE)
+                    {
+                        numJ=1;
+                    }
+                    result += "A" + String.valueOf(numJ) + " | ";
+                } else if (figure instanceof ArrowFigure) {
+                    result += "XX | ";
+                } else {
+                    result += "   | ";
+                }
+            }
+            result += row + "\n";
+
+            // Inner borders
+            result += "+";
+            for (int col = 0; col < numberOfColumns; col++) {
+                result += "----+";
+            }
+            result += "\n";
+        }
+
+        // Column numbers
+        result += "  ";
+        for (int col = 0; col < numberOfColumns; col++) {
+            result += col + "    ";
+        }
+        result += "     ";
+        result = result.trim(); // Supprimer les espaces à la fin de la chaîne
+        result +="  ";
+        return result;
+
+    }
+
+
 
 
 }

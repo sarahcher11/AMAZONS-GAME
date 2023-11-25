@@ -179,7 +179,7 @@ class MatrixBoardTest {
         assertThat(testBoard.getFigure(position11)).isSameAs(amazon12Player1);
     }
 
-  /*  @Test
+    @Test
     void testToString() {
         assertThat(testBoard.toString()).isEqualTo(
                 """
@@ -206,7 +206,7 @@ class MatrixBoardTest {
                 +----+----+----+----+
                   0    1    2    3\040\040"""
         );
-    }*/
+    }
 
    @Test
     void testPositionIterator() {

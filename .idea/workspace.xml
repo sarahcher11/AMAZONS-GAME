@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de nextFigure et correction d'erreurs">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Test et finalisation de la tache 13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/PositionIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/PositionIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/RandomFigureGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/RandomFigureGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/MovableFigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/MovableFigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/board/MatrixBoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,21 +87,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ctravers/AMU/Prog2/amazons-template&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/ctravers/AMU/Prog2/amazons-template",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "tasks.servers"
   }
-}</component>
+}]]></component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="main" />
@@ -232,6 +230,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\DELL\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="" />
@@ -242,13 +243,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00018" summary="Completer canMoveTo de Amazon">
-      <created>1700774995900</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1700774995900</updated>
     </task>
     <task id="LOCAL-00019" summary="Ajout de la classe IllegalMoveException">
       <created>1700775466018</created>
@@ -586,8 +580,17 @@
       <option name="project" value="LOCAL" />
       <updated>1700928945532</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
-    <servers />
+    <task id="LOCAL-00067" summary="Test et finalisation de la tache 13">
+      <created>1700940505246</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1700940505246</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
+    <servers>
+      <Gitlab url="https://etulab.univ-amu.fr/m23024284" />
+    </servers>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -604,7 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter getFigure de MapBoard" />
     <MESSAGE value="Compléter isOutOfBoard de MapBoard" />
     <MESSAGE value="Compléter moveFigure de MapBoard" />
     <MESSAGE value="Compléter shootArrow de MapBoard" />
@@ -629,6 +631,11 @@
     <MESSAGE value="Ajout du constructeur RandomFigureGenerator" />
     <MESSAGE value="Ajout de getRandomFigure" />
     <MESSAGE value="Ajout de nextFigure et correction d'erreurs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de nextFigure et correction d'erreurs" />
+    <MESSAGE value="Test et finalisation de la tache 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test et finalisation de la tache 13" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
