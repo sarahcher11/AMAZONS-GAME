@@ -112,7 +112,12 @@ class AmazonTest {
         assertThat(amazon11.pathIsBlocked(allPositions[0][0],board)).isFalse();
     }
 
-
+    @Test
+    void isHorizental()
+    {
+        assertThat(amazon11.isHorizental(allPositions[1][3])).isTrue();
+        assertThat(amazon11.isHorizental(allPositions[2][3])).isTrue();
+    }
 
 
 }
