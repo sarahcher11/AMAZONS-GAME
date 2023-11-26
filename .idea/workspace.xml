@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Compléter updateGame">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/CLGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/CLGameController.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Compléter getNumberOfRows de Game">
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -262,41 +256,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00033" summary="Ajout des méthodes shootArrow et moveFigure">
-      <created>1700915143803</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1700915143803</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Implémentation de moveFigure">
-      <created>1700918315027</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1700918315027</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Implémentation de shootArrow dans MatrixBoard">
-      <created>1700918692211</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1700918692211</updated>
-    </task>
-    <task id="LOCAL-00036" summary="modification de shootArrow dans MatrixBoard">
-      <created>1700919954815</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1700919954815</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Test des méthodes et finalisation de T8">
-      <created>1700920318446</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1700920318446</updated>
     </task>
     <task id="LOCAL-00038" summary="Ajout de la signature fill dans Board">
       <created>1700920483146</created>
@@ -606,7 +565,42 @@
       <option name="project" value="LOCAL" />
       <updated>1700950772564</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Compléter getWinner de Game">
+      <created>1700999535732</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1700999535732</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Compléter getBoard de Game">
+      <created>1700999566671</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1700999566672</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Compléter hasLost de Game">
+      <created>1700999598269</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1700999598269</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Compléter getNumberOfColumns de Game">
+      <created>1700999736359</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1700999736359</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Compléter getNumberOfRows de Game">
+      <created>1700999768505</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1700999768505</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -662,11 +656,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout de la classe PresetFigureGenerator" />
-    <MESSAGE value="Ajout du constructeur PresetFigureGenerator" />
-    <MESSAGE value="Ajout de nextFigure dans PresetFigureGenerator" />
-    <MESSAGE value="Ajout de la classe RandomFigureGenerator" />
-    <MESSAGE value="Ajout du constructeur RandomFigureGenerator" />
     <MESSAGE value="Ajout de getRandomFigure" />
     <MESSAGE value="Ajout de nextFigure et correction d'erreurs" />
     <MESSAGE value="Test et finalisation de la tache 13" />
@@ -687,7 +676,12 @@
     <MESSAGE value="Constructeur game" />
     <MESSAGE value="Surdéfinition du constructeur Amazon" />
     <MESSAGE value="Compléter updateGame" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compléter updateGame" />
+    <MESSAGE value="Compléter getWinner de Game" />
+    <MESSAGE value="Compléter getBoard de Game" />
+    <MESSAGE value="Compléter hasLost de Game" />
+    <MESSAGE value="Compléter getNumberOfColumns de Game" />
+    <MESSAGE value="Compléter getNumberOfRows de Game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compléter getNumberOfRows de Game" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

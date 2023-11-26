@@ -41,8 +41,9 @@ public class Game {
 
 
     public Game() {
-
+        bord = new MatrixBoard(DEFAULT_NUMBER_OF_COLUMNS, DEFAULT_NUMBER_OF_ROWS);
     }
+
 
     public void initializeGame(Player player0, Player player1){
         List<MovableFigure> figuresMovables=new ArrayList<>();
@@ -156,7 +157,6 @@ public class Game {
         return bord.getNumberOfColumns();
     }
 
-    // TODO
     public int getNumberOfRows(){
         return bord.getNumberOfRows();
     }
