@@ -148,7 +148,7 @@ public class Game {
 
     // TODO
     public boolean hasEnded() {
-        return true;
+        return isThisIsTheEnd;
     }
 
     public void incrementTurn(){
