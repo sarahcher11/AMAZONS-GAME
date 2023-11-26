@@ -18,14 +18,14 @@ public class BoardView extends GridPane{
 
     public BoardView(GameController controller) {
         Board board = controller.getBoard();
-        // TODO Uncomment
-        /* for (Iterator<Position> it = board.positionIterator(); it.hasNext(); ) {
+
+        for (Iterator<Position> it = board.positionIterator(); it.hasNext(); ) {
             Position position = it.next();
             FieldView field = new FieldView(position,controller);
             add(field, position.getX(), position.getY());
             fieldMap.put(position,field);
         }
-        */
+
     }
 
     public void updateFields() {
