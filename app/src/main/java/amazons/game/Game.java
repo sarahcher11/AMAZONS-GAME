@@ -158,6 +158,6 @@ public class Game {
 
     // TODO
     public int getNumberOfRows(){
-        return 0;
+        return bord.getNumberOfRows();
     }
 }
