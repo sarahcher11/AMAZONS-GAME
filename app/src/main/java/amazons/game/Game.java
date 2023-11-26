@@ -8,6 +8,7 @@ import amazons.figures.MovableFigure;
 import amazons.player.Move;
 import amazons.player.Player;
 import amazons.player.PlayerID;
+import javafx.geometry.Pos;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -46,14 +47,18 @@ public class Game {
 
 
     public void initializeGame(Player player0, Player player1){
-        List<MovableFigure> figuresMovables=new ArrayList<>();
-        bord=new MatrixBoard(DEFAULT_NUMBER_OF_COLUMNS,DEFAULT_NUMBER_OF_ROWS);
-        Iterator<Position> positionIterator= bord.positionIterator();
-        players[0]=player0;
-        players[1]=player1;
-        figuresMovables=createPlayersFiguresWithDefaultPosition();
+        bord.fill(new EmptyFigureGenerator()); // Assurez-vous que le plateau est rempli avec des figures vides.
+        Iterator<Position>  positionIterator= bord.positionIterator();
+        PresetFigureGenerator figures=new PresetFigureGenerator(createPlayersFiguresWithDefaultPosition());
+        while (positionIterator.hasNext())
+        {
+            Position position=positionIterator.next();
+            Figure figure=figures.nextFigure(position);
+            bord.setFigure(position,figure);
 
-
+        }
+        players[0] = player0;
+        players[1] = player1;
     }
 
 
