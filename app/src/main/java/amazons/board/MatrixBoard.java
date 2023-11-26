@@ -212,12 +212,6 @@ public class MatrixBoard implements Board{
         result = result.trim(); // Supprimer les espaces à la fin de la chaîne
         result +="  ";
         return result;
-
-
-
-
-
-
     }
 
 

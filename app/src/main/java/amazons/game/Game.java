@@ -2,12 +2,15 @@ package amazons.game;
 
 import amazons.board.*;
 import amazons.figures.Amazon;
+import amazons.figures.Figure;
+import amazons.figures.IllegalMoveException;
 import amazons.figures.MovableFigure;
 import amazons.player.Move;
 import amazons.player.Player;
 import amazons.player.PlayerID;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 
@@ -17,6 +20,9 @@ public class Game {
     private static final int DEFAULT_NUMBER_OF_COLUMNS = 10;
     private static  final int DEFAULT_NUMBER_OF_ROWS = 10;
 
+    private Board bord;
+
+    private PresetFigureGenerator presetFigureGenerator;
 
 
     private static final List<Position> DEFAULT_PLAYER0_POSITIONS =
@@ -38,10 +44,14 @@ public class Game {
 
     }
 
-    // TODO
     public void initializeGame(Player player0, Player player1){
+        List<MovableFigure> figuresMovables=new ArrayList<>();
+        bord=new MatrixBoard(DEFAULT_NUMBER_OF_COLUMNS,DEFAULT_NUMBER_OF_ROWS);
+        Iterator<Position> positionIterator= bord.positionIterator();
         players[0]=player0;
         players[1]=player1;
+        figuresMovables=createPlayersFiguresWithDefaultPosition();
+
 
     }
 
@@ -84,8 +94,19 @@ public class Game {
 
     }
 
-    //TODO
     public void updateGameAmazonMove(Position amazonStartPosition, Position amazonDstPosition){
+        // Récupérer la figure de l'amazone à déplacer
+        Figure amazonFigure = getBoard().getFigure(amazonStartPosition);
+
+        // Déplacer l'amazone vers la nouvelle position
+        try {
+            getBoard().moveFigure(amazonStartPosition, amazonDstPosition);
+            ((MovableFigure) amazonFigure).setPosition(amazonDstPosition);
+        } catch (IllegalMoveException e) {
+            throw new RuntimeException(e);
+        }
+
+
 
     }
     // TODO
@@ -106,7 +127,9 @@ public class Game {
 
     // TODO
     public PlayerID getWinner(){
-        return PlayerID.NONE;
+        if(winner==null)
+            return PlayerID.NONE;
+        return winner;
     }
 
     // TODO

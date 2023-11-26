@@ -26,7 +26,8 @@ public class CLGameController {
 
     public void run() {
         while (!game.hasEnded()) {
-            System.out.println(game.getBoard());
+            System.out.println(game.getBoard().toString());
+            game.getBoard().toString();
             lastMove = game.getPlayer().play(lastMove);
             game.updateGame(lastMove);
             game.incrementTurn();
