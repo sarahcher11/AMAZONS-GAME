@@ -120,12 +120,12 @@ public class Game {
 
     }
 
-    // TODO
+
     public Board getBoard(){
-         return null;
+         return bord;
     }
 
-    // TODO
+
     public PlayerID getWinner(){
         if(winner==null)
             return PlayerID.NONE;
