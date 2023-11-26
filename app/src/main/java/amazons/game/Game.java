@@ -114,9 +114,9 @@ public class Game {
 
     }
 
-    // TODO
+
     private boolean hasLost(PlayerID playerID) {
-        return true;
+        return playerID==winner;
 
     }
 
