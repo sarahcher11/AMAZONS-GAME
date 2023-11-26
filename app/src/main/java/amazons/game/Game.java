@@ -151,9 +151,9 @@ public class Game {
 
     public int getTurn() {return turn; }
 
-    // TODO
+
     public int getNumberOfColumns(){
-        return 0;
+        return bord.getNumberOfColumns();
     }
 
     // TODO

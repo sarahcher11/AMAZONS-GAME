@@ -62,5 +62,7 @@ public interface Board extends Iterable<Figure> {
     Iterator<Position> positionIterator();
       public void afficherBord();
 
+      public int getNumberOfColumns();
+      public int getNumberOfRows();
 
 }
