@@ -143,8 +143,10 @@ public class Game {
         return players[turn % NUMBER_OF_PLAYERS].getPlayerID();
     }
 
-    // TODO
-    public Player getPlayer() {return null; }
+
+    public Player getPlayer() {
+        return players[turn % NUMBER_OF_PLAYERS];
+    }
 
     // TODO
     public boolean hasEnded() {
