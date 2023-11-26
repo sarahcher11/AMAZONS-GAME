@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Compléter hasEnded de Game" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Compléter updateGameArrowShot de GAME">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +115,7 @@
       <command value="gradle app:build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.amazons-mederbel-cherchem-g-03 [test]">
+  <component name="RunManager" selected="Gradle.amazons-template [run]">
     <configuration name="AppGUI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="amazons.AppGUI" />
       <module name="amazons-template.app.main" />
@@ -232,8 +236,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [test]" />
         <item itemvalue="Gradle.amazons-template [run]" />
+        <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [test]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [build]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [app:build]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [clean]" />
@@ -254,27 +258,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00041" summary="Modification du constructeur de MatrixBoard">
-      <created>1700921293423</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1700921293423</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Correction et finalisation de la tache 9">
-      <created>1700921541723</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1700921541723</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Ajout de la classe MapBoard">
-      <created>1700921855330</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1700921855330</updated>
     </task>
     <task id="LOCAL-00044" summary="Ajout de la méthode fill dans MapBoard">
       <created>1700922173747</created>
@@ -598,7 +581,28 @@
       <option name="project" value="LOCAL" />
       <updated>1701001116318</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Compléter  getPlayerID de GAME">
+      <created>1701001741408</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1701001741409</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Compléter  getPlayer de GAME">
+      <created>1701001781783</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1701001781783</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Compléter updateGameArrowShot de GAME">
+      <created>1701002012440</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1701002012440</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -654,9 +658,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="methode string et test tache 14" />
-    <MESSAGE value="Realisation de la tache 15" />
-    <MESSAGE value="Ajout des attributs de la classe Move" />
     <MESSAGE value="Compléter la méthode getAmazonStartPosition" />
     <MESSAGE value="Compléter la méthode getAmazonDstPosition" />
     <MESSAGE value="Compléter la méthode getArrowDestPosition" />
@@ -679,7 +680,10 @@
     <MESSAGE value="Modification du constructeur Game" />
     <MESSAGE value="Modification de initialize Game" />
     <MESSAGE value="Compléter hasEnded de Game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compléter hasEnded de Game" />
+    <MESSAGE value="Compléter  getPlayerID de GAME" />
+    <MESSAGE value="Compléter  getPlayer de GAME" />
+    <MESSAGE value="Compléter updateGameArrowShot de GAME" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compléter updateGameArrowShot de GAME" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

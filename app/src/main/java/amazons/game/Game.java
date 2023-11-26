@@ -103,7 +103,6 @@ public class Game {
     public void updateGameAmazonMove(Position amazonStartPosition, Position amazonDstPosition){
         // Récupérer la figure de l'amazone à déplacer
         Figure amazonFigure = getBoard().getFigure(amazonStartPosition);
-
         // Déplacer l'amazone vers la nouvelle position
         try {
             getBoard().moveFigure(amazonStartPosition, amazonDstPosition);
