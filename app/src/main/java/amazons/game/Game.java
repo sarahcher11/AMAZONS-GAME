@@ -138,9 +138,9 @@ public class Game {
         return winner;
     }
 
-    // TODO
+
     public PlayerID getPlayerID(){
-        return PlayerID.PLAYER_ONE;
+        return players[turn % NUMBER_OF_PLAYERS].getPlayerID();
     }
 
     // TODO

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Modification de initialize Game">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Compléter hasEnded de Game" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +111,7 @@
       <command value="gradle app:build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.amazons-template [run]">
+  <component name="RunManager" selected="Gradle.amazons-mederbel-cherchem-g-03 [test]">
     <configuration name="AppGUI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="amazons.AppGUI" />
       <module name="amazons-template.app.main" />
@@ -235,8 +232,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.amazons-template [run]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [test]" />
+        <item itemvalue="Gradle.amazons-template [run]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [build]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [app:build]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [clean]" />
@@ -257,13 +254,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00040" summary="Compléter la méthode nestFigure">
-      <created>1700920637469</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1700920637469</updated>
     </task>
     <task id="LOCAL-00041" summary="Modification du constructeur de MatrixBoard">
       <created>1700921293423</created>
@@ -601,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701000708568</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Compléter hasEnded de Game">
+      <created>1701001116318</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1701001116318</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -657,7 +654,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test et finalisation de la tache 13" />
     <MESSAGE value="methode string et test tache 14" />
     <MESSAGE value="Realisation de la tache 15" />
     <MESSAGE value="Ajout des attributs de la classe Move" />
@@ -682,7 +678,8 @@
     <MESSAGE value="Compléter getNumberOfRows de Game" />
     <MESSAGE value="Modification du constructeur Game" />
     <MESSAGE value="Modification de initialize Game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification de initialize Game" />
+    <MESSAGE value="Compléter hasEnded de Game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compléter hasEnded de Game" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
