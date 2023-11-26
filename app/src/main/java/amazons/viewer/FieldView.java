@@ -18,6 +18,8 @@ import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
 
+import static amazons.figures.EmptyFigure.EMPTY_FIGURE;
+
 // TODO Uncomment
 // import static amazons.figures.ArrowFigure.ARROW_FIGURE;
 // import static amazons.figures.EmptyFigure.EMPTY_FIGURE;
@@ -98,8 +100,8 @@ public class FieldView extends Label {
     }
 
     private ImageView getImageView() {
-        // TODO Uncomment
-        // if(board.getFigure(position) == EMPTY_FIGURE) return null;
+
+         if(board.getFigure(position) == EMPTY_FIGURE) return null;
         return new ImageView(getImage());
     }
 
