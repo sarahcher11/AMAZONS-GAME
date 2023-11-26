@@ -115,8 +115,13 @@ public class Game {
 
 
     }
-    // TODO
+
     public void updateGameArrowShot(Position amazonDstPosition, Position arrowDstPosition) {
+        try {
+            getBoard().shootArrow(amazonDstPosition,arrowDstPosition);
+        } catch (IllegalMoveException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -148,7 +153,6 @@ public class Game {
         return players[turn % NUMBER_OF_PLAYERS];
     }
 
-    // TODO
     public boolean hasEnded() {
         return isThisIsTheEnd;
     }
