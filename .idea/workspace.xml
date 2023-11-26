@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Compléter updateGameArrowShot de GAME">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Uncomment getImageView de FieldView">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/BoardView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,27 +258,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00044" summary="Ajout de la méthode fill dans MapBoard">
-      <created>1700922173747</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1700922173747</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Compléter setFigure de MapBoard">
-      <created>1700922271487</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1700922271487</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Compléter isOutOfBoard de MapBoard">
-      <created>1700922395497</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1700922395497</updated>
     </task>
     <task id="LOCAL-00047" summary="Compléter moveFigure de MapBoard">
       <created>1700922528546</created>
@@ -602,7 +581,28 @@
       <option name="project" value="LOCAL" />
       <updated>1701002012440</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Tâche 18 : Compléter le code de la classe Game et tache 19">
+      <created>1701002862731</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1701002862731</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Uncomment BoardView">
+      <created>1701002953938</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1701002953938</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Uncomment getImageView de FieldView">
+      <created>1701003012013</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1701003012013</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -658,9 +658,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter la méthode getAmazonStartPosition" />
-    <MESSAGE value="Compléter la méthode getAmazonDstPosition" />
-    <MESSAGE value="Compléter la méthode getArrowDestPosition" />
     <MESSAGE value="Compléter le constructeur Move" />
     <MESSAGE value="Redéfinition de hashCode et equals" />
     <MESSAGE value="Redéfinition de toString" />
@@ -683,7 +680,10 @@
     <MESSAGE value="Compléter  getPlayerID de GAME" />
     <MESSAGE value="Compléter  getPlayer de GAME" />
     <MESSAGE value="Compléter updateGameArrowShot de GAME" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compléter updateGameArrowShot de GAME" />
+    <MESSAGE value="Tâche 18 : Compléter le code de la classe Game et tache 19" />
+    <MESSAGE value="Uncomment BoardView" />
+    <MESSAGE value="Uncomment getImageView de FieldView" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uncomment getImageView de FieldView" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

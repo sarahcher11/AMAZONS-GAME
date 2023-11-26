@@ -152,7 +152,7 @@ public class GameController {
     }
 
     public void setPlayerBasic(PlayerID playerID){
-        // TODO
+        setPlayer(new CLPlayer(),playerID);
     }
 
     public void setPlayerRandom(PlayerID playerID){

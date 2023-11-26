@@ -14,7 +14,6 @@ import java.util.Map;
 public class BoardView extends GridPane{
     private final Map<Position, FieldView> fieldMap = new HashMap<>();
 
-    // TODO Uncomment commented code before using
 
     public BoardView(GameController controller) {
         Board board = controller.getBoard();
