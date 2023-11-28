@@ -142,7 +142,7 @@ public class Game {
 
 
     private boolean hasLost(PlayerID playerID) {
-        return playerID==winner;
+        return !(playerID.equals(winner));
 
     }
 

@@ -180,7 +180,7 @@ public class FieldView extends Label {
     private void onDragDone(DragEvent e) {
         if(e.getTransferMode() == TransferMode.MOVE) {
             setFigureIcon();
-            isAmazonDst = false;
+            isAmazonDst = true;
             controller.nextPhase();
         }
         e.consume();
@@ -195,12 +195,13 @@ public class FieldView extends Label {
                     case AMAZON_PHASE -> {
                         controller.moveFigure(startPosition, position);
                         setFigureIcon();
-                        isAmazonDst = true;
+                        isAmazonDst = false;
                         success = true;
                     }
                     case ARROW_PHASE -> {
                         controller.shootArrow(startPosition, position);
                         setFigureIcon();
+                        isAmazonDst=true;
                         success = true;
                     }
                     default -> {
