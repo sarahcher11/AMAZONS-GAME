@@ -23,7 +23,7 @@ public class Game {
 
     private Board bord;
 
-    private PresetFigureGenerator presetFigureGenerator;
+
 
 
     private static final List<Position> DEFAULT_PLAYER0_POSITIONS =
@@ -76,6 +76,26 @@ public class Game {
     }
 
 
+    public List<MovableFigure> createPlayersFiguresWithDefaultPositionP1()
+    {
+        List<MovableFigure> allPlayersFigures = new ArrayList<>();
+        for(Position position: DEFAULT_PLAYER0_POSITIONS){
+            allPlayersFigures.add(new Amazon(position, PlayerID.PLAYER_ZERO));
+        }
+
+        return allPlayersFigures;
+    }
+
+    public List<MovableFigure> createPlayersFiguresWithDefaultPositionP2()
+    {
+        List<MovableFigure> allPlayersFigures = new ArrayList<>();
+        for(Position position: DEFAULT_PLAYER1_POSITIONS){
+            allPlayersFigures.add(new Amazon(position, PlayerID.PLAYER_ONE));
+        }
+        return allPlayersFigures;
+    }
+
+
 
 
 
@@ -84,14 +104,10 @@ public class Game {
         Position amazonStartPosition = move.getAmazonStartPosition();
         Position amazonDstPosition = move.getAmazonDstPosition();
         Position arrowDstPosition = move.getArrowDestPosition();
-
-        // Mettre à jour le plateau avec le mouvement de l'amazone
         updateGameAmazonMove(amazonStartPosition, amazonDstPosition);
-        // Mettre à jour le plateau avec le tir de flèche
         updateGameArrowShot(amazonDstPosition, arrowDstPosition);
-        // Vérifier si le joueur actuel a perdu
-        if (hasLost(players[turn].getPlayerID())) {
-            winner = players[1 - turn].getPlayerID(); // L'autre joueur est le gagnant
+        if (hasLost(players[turn%NUMBER_OF_PLAYERS].getPlayerID())) {
+            winner = players[(turn+1)%NUMBER_OF_PLAYERS].getPlayerID(); // L'autre joueur est le gagnant
             isThisIsTheEnd = true;
         } else {
             // Passer au tour suivant
@@ -170,4 +186,6 @@ public class Game {
     public int getNumberOfRows(){
         return bord.getNumberOfRows();
     }
+
+
 }

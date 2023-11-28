@@ -151,7 +151,7 @@ public class FieldView extends Label {
     }
 
     private void onDragDetected(MouseEvent e) {
-        if(!isDraggable()) return;
+        if(isDraggable()) return;
         Dragboard dragBoard = startDragAndDrop(TransferMode.MOVE);
         if(controller.getPhase() == TurnPhase.AMAZON_PHASE)
             dragBoard.setDragView(getImage());

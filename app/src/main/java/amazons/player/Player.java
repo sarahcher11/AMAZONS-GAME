@@ -37,4 +37,5 @@ public interface Player {
      * @return the ID of this player
      */
     PlayerID getPlayerID();
+    public void setPlayerID(PlayerID playerID);
 }

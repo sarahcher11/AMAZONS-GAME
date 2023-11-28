@@ -26,4 +26,9 @@ public class GUIPLayer implements Player {
     public PlayerID getPlayerID() {
         return this.playerID;
     }
+
+    @Override
+    public void setPlayerID(PlayerID playerID) {
+        this.playerID = playerID;
+    }
 }

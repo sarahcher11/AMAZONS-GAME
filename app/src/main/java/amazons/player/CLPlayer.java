@@ -53,4 +53,8 @@ public class CLPlayer implements Player {
     public PlayerID getPlayerID() {
         return playerID;
     }
+
+    public void setPlayerID(PlayerID playerID) {
+        this.playerID = playerID;
+    }
 }

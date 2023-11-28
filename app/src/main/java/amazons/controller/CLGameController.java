@@ -14,8 +14,15 @@ public class CLGameController {
 
     public CLGameController(){
         this.game = new Game();
-        setPlayer(new CLPlayer(),0);
-        setPlayer(new CLPlayer(),1);
+
+        CLPlayer clPlayer1=new CLPlayer();
+        CLPlayer clPlayer2=new CLPlayer();
+        setPlayer(clPlayer1,0);
+        setPlayer(clPlayer2,1);
+       clPlayer1.setPlayerID(players[0].getPlayerID());
+        clPlayer2.setPlayerID(players[1].getPlayerID());
+        clPlayer2.setPlayerID(PlayerID.PLAYER_ONE);
+        clPlayer1.setPlayerID(PlayerID.PLAYER_ZERO);
         game.initializeGame(players[0], players[1]);
         lastMove = Move.DUMMY_MOVE;
     }
