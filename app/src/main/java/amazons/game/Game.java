@@ -10,6 +10,7 @@ import amazons.player.Player;
 import amazons.player.PlayerID;
 import javafx.geometry.Pos;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -140,10 +141,23 @@ public class Game {
 
     }
 
-   /* public List<Position> positionsDipo()
+    public List<Position> positionsAccessible(PlayerID playerID)
     {
+        Iterator<Position> positionIterator=new PositionIterator(getNumberOfColumns(),getNumberOfRows());
+        List<Position> list=new ArrayList<>();
+        List<Position> list2=new ArrayList<>();
+        while (positionIterator.hasNext())
+        {
+            Figure figure=bord.getFigure(positionIterator.next());
+            if(figure.getPlayerID().equals(playerID))
+            {
 
-    }*/
+                list2=((MovableFigure)figure).getAccessiblePositions(bord);
+                list.addAll(list2);
+            }
+        }
+        return list;
+    }
 
 
     private boolean hasLost(PlayerID playerID) {
