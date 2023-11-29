@@ -140,6 +140,11 @@ public class Game {
 
     }
 
+   /* public List<Position> positionsDipo()
+    {
+
+    }*/
+
 
     private boolean hasLost(PlayerID playerID) {
         return playerID==winner;
