@@ -45,7 +45,7 @@ public class Basic implements Player{
      */
     @Override
     public boolean isGUIControlled() {
-        return false;
+        return true;
     }
 
     /**
