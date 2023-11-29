@@ -35,6 +35,8 @@ public class Basic implements Player{
     @Override
     public void initialize(int boardHeight, int boardWidth, PlayerID playerID, List<Position>[] initialPositions) {
 
+        this.playerID=playerID;
+
     }
 
     /**
@@ -60,6 +62,6 @@ public class Basic implements Player{
 
     @Override
     public void setPlayerID(PlayerID playerID) {
-
+       this.playerID=playerID;
     }
 }
