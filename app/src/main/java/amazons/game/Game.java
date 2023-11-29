@@ -107,7 +107,8 @@ public class Game {
         Position arrowDstPosition = move.getArrowDestPosition();
         updateGameAmazonMove(amazonStartPosition, amazonDstPosition);
         updateGameArrowShot(amazonDstPosition, arrowDstPosition);
-        if (hasLost(players[turn%NUMBER_OF_PLAYERS].getPlayerID())) {
+        List<Position> list=positionsAccessible(players[turn%NUMBER_OF_PLAYERS].getPlayerID());
+        if (list.size()==0) {
             winner = players[(turn+1)%NUMBER_OF_PLAYERS].getPlayerID(); // L'autre joueur est le gagnant
             isThisIsTheEnd = true;
         } else {
@@ -141,6 +142,12 @@ public class Game {
 
     }
 
+
+    /**
+     * Méthode qui permet d'avoir toute les positions accessible pour toutes les amazone du joueur
+     * @param playerID l'ID du joueur pour qu'on lui cherche ses positions
+     * @return une liste de toutes les positions
+     */
     public List<Position> positionsAccessible(PlayerID playerID)
     {
         Iterator<Position> positionIterator=new PositionIterator(getNumberOfColumns(),getNumberOfRows());
