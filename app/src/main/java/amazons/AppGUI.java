@@ -40,7 +40,7 @@ public class AppGUI extends Application {
             table.add(newRowLabel(rowIndex + 1), 0, rowIndex + 1, 1, 1);
             table.add(newRowLabel(rowIndex + 1), 9, rowIndex + 1, 1, 1);
             table.add(newColLabel(rowIndex), rowIndex + 1, 0, 1, 1);
-            table.add(newColLabel(rowIndex), rowIndex + 1, 9, 1, 1);
+            table.add(newColLabel(rowIndex), rowIndex + 1, 10, 1, 1);
         }
         BoardView boardView;
         table.add(boardView = new BoardView(controller), 1, 1, numberOfColumns, numberOfRows);

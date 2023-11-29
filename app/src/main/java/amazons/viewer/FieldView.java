@@ -48,10 +48,8 @@ public class FieldView extends Label {
         setAlignment(Pos.CENTER);
         setBackGroundColor();
         setFigureIcon();
-
         setOnMouseEntered(e -> onMouseEntered());
         setOnMouseExited(e -> onMouseExited());
-
         setOnDragDetected(this::onDragDetected);
         setOnDragOver(this::onDragOver);
         setOnDragExited(this::onDragExited);
@@ -201,7 +199,7 @@ public class FieldView extends Label {
                     case ARROW_PHASE -> {
                         controller.shootArrow(startPosition, position);
                         setFigureIcon();
-                        isAmazonDst=false;
+                        isAmazonDst=true;
                         success = true;
                     }
                     default -> {
@@ -215,7 +213,7 @@ public class FieldView extends Label {
 
     private boolean isDraggable(){
         return (controller.getPhase() == TurnPhase.ARROW_PHASE && isAmazonDst)
-                || (controller.getPhase() == TurnPhase.AMAZON_PHASE && board.getFigure(position).getPlayerID() == controller.getCurrentPlayerID());
+                || (controller.getPhase() == TurnPhase.AMAZON_PHASE && board.getFigure(position).getPlayerID() == controller.getCurrentPlayerID() );
     }
 
 }

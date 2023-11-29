@@ -36,7 +36,6 @@ public class GameController {
         this.game = game;
         setPlayer(player0, PlayerID.PLAYER_ZERO);
         setPlayer(player1, PlayerID.PLAYER_ONE);
-
         players[0]=player0;
         players[1]=player1;
         initialize();
