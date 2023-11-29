@@ -21,9 +21,9 @@ import java.util.Map;
 import static amazons.figures.ArrowFigure.ARROW_FIGURE;
 import static amazons.figures.EmptyFigure.EMPTY_FIGURE;
 
-// TODO Uncomment
-// import static amazons.figures.ArrowFigure.ARROW_FIGURE;
-// import static amazons.figures.EmptyFigure.EMPTY_FIGURE;
+
+import static amazons.figures.ArrowFigure.ARROW_FIGURE;
+import static amazons.figures.EmptyFigure.EMPTY_FIGURE;
 
 public class FieldView extends Label {
     private static final String defaultStyleBlack = "-fx-background-color: gray;";
@@ -195,12 +195,13 @@ public class FieldView extends Label {
                     case AMAZON_PHASE -> {
                         controller.moveFigure(startPosition, position);
                         setFigureIcon();
-                        isAmazonDst = true;
+                        isAmazonDst = false;
                         success = true;
                     }
                     case ARROW_PHASE -> {
                         controller.shootArrow(startPosition, position);
                         setFigureIcon();
+                        isAmazonDst=false;
                         success = true;
                     }
                     default -> {
