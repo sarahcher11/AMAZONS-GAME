@@ -36,6 +36,8 @@ public class GameController {
         this.game = game;
         setPlayer(player0, PlayerID.PLAYER_ZERO);
         setPlayer(player1, PlayerID.PLAYER_ONE);
+        players[0]=player0;
+        players[1]=player1;
         initialize();
     }
 
@@ -118,7 +120,7 @@ public class GameController {
         this.phase.setValue(turnPhase);
     }
 
-    public TurnPhase  getPhase(){
+    public TurnPhase getPhase(){
         return phase.getValue();
     }
 
@@ -135,7 +137,8 @@ public class GameController {
     }
 
     // call by the view
-    public void moveFigure(Position amazonStartPosition, Position amazonDstPosition){
+    public void moveFigure(Position amazonStartPosition, Position amazonDstPosition)
+    {
         game.updateGameAmazonMove(amazonStartPosition, amazonDstPosition);
         lastAmazonStartPosition = amazonStartPosition;
         lastAmazonDstPosition = amazonDstPosition;

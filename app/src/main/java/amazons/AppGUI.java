@@ -38,7 +38,7 @@ public class AppGUI extends Application {
         GridPane table = new GridPane();
         for (int rowIndex = 0; rowIndex < numberOfRows; rowIndex++) {
             table.add(newRowLabel(rowIndex + 1), 0, rowIndex + 1, 1, 1);
-            table.add(newRowLabel(rowIndex + 1), 11, rowIndex + 1, 1, 1);
+            table.add(newRowLabel(rowIndex + 1), 9, rowIndex + 1, 1, 1);
             table.add(newColLabel(rowIndex), rowIndex + 1, 0, 1, 1);
             table.add(newColLabel(rowIndex), rowIndex + 1, 10, 1, 1);
         }

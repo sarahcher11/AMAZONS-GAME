@@ -6,7 +6,12 @@ import java.util.List;
 
 public class Basic implements Player{
 
-   private  PlayerID playerID;
+
+
+
+
+
+    private PlayerID playerID;
     /**
      * Play one turn of the game. Receives as input the move of the other player.
      * Return the move of  this player
@@ -30,6 +35,8 @@ public class Basic implements Player{
     @Override
     public void initialize(int boardHeight, int boardWidth, PlayerID playerID, List<Position>[] initialPositions) {
 
+        this.playerID=playerID;
+
     }
 
     /**
@@ -40,7 +47,7 @@ public class Basic implements Player{
      */
     @Override
     public boolean isGUIControlled() {
-        return false;
+        return true;
     }
 
     /**
@@ -50,11 +57,11 @@ public class Basic implements Player{
      */
     @Override
     public PlayerID getPlayerID() {
-        return null;
+        return playerID;
     }
 
     @Override
     public void setPlayerID(PlayerID playerID) {
-
+       this.playerID=playerID;
     }
 }

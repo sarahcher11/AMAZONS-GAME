@@ -10,6 +10,7 @@ import amazons.player.Player;
 import amazons.player.PlayerID;
 import javafx.geometry.Pos;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -106,7 +107,8 @@ public class Game {
         Position arrowDstPosition = move.getArrowDestPosition();
         updateGameAmazonMove(amazonStartPosition, amazonDstPosition);
         updateGameArrowShot(amazonDstPosition, arrowDstPosition);
-        if (hasLost(players[turn%NUMBER_OF_PLAYERS].getPlayerID())) {
+        List<Position> list=positionsAccessible(players[turn%NUMBER_OF_PLAYERS].getPlayerID());
+        if (list.size()==0) {
             winner = players[(turn+1)%NUMBER_OF_PLAYERS].getPlayerID(); // L'autre joueur est le gagnant
             isThisIsTheEnd = true;
         } else {
@@ -138,6 +140,30 @@ public class Game {
             e.printStackTrace();
         }
 
+    }
+
+
+    /**
+     * Méthode qui permet d'avoir toute les positions accessible pour toutes les amazone du joueur
+     * @param playerID l'ID du joueur pour qu'on lui cherche ses positions
+     * @return une liste de toutes les positions
+     */
+    public List<Position> positionsAccessible(PlayerID playerID)
+    {
+        Iterator<Position> positionIterator=new PositionIterator(getNumberOfColumns(),getNumberOfRows());
+        List<Position> list=new ArrayList<>();
+        List<Position> list2=new ArrayList<>();
+        while (positionIterator.hasNext())
+        {
+            Figure figure=bord.getFigure(positionIterator.next());
+            if(figure.getPlayerID().equals(playerID))
+            {
+
+                list2=((MovableFigure)figure).getAccessiblePositions(bord);
+                list.addAll(list2);
+            }
+        }
+        return list;
     }
 
 

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de la classe Basic">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +48,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="amazons-template" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="amazons-template" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -63,6 +60,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -147,6 +145,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="amazons-mederbel-cherchem-g-03 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -168,6 +167,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="amazons-mederbel-cherchem-g-03 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -189,6 +189,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="amazons-mederbel-cherchem-g-03 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -210,6 +211,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="amazons-template [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -231,6 +233,7 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -257,13 +260,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00051" summary="implémentation de hasNext">
-      <created>1700924041265</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1700924041265</updated>
     </task>
     <task id="LOCAL-00052" summary="Ajout de next">
       <created>1700924123651</created>
@@ -580,28 +576,35 @@
       <option name="project" value="LOCAL" />
       <updated>1701003753693</updated>
     </task>
-    <task id="LOCAL-00097" summary="Resolution du probleme de l'interface">
-      <created>1701211808696</created>
+    <task id="LOCAL-00097" summary="modifier la classe FieldView">
+      <created>1701258321479</created>
       <option name="number" value="00097" />
       <option name="presentableId" value="LOCAL-00097" />
       <option name="project" value="LOCAL" />
-      <updated>1701211808696</updated>
+      <updated>1701258321479</updated>
     </task>
-    <task id="LOCAL-00098" summary="Resolution du probleme de onDragDone">
-      <created>1701212921339</created>
+    <task id="LOCAL-00098" summary="Modifier getAccessiblePositions de AMazon">
+      <created>1701259200259</created>
       <option name="number" value="00098" />
       <option name="presentableId" value="LOCAL-00098" />
       <option name="project" value="LOCAL" />
-      <updated>1701212921339</updated>
+      <updated>1701259200259</updated>
     </task>
-    <task id="LOCAL-00099" summary="Ajout de la classe Basic">
-      <created>1701380564812</created>
+    <task id="LOCAL-00099" summary="AJout de la méthode positionsAccessible">
+      <created>1701259676015</created>
       <option name="number" value="00099" />
       <option name="presentableId" value="LOCAL-00099" />
       <option name="project" value="LOCAL" />
-      <updated>1701380564812</updated>
+      <updated>1701259676015</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Ajout de la classe IntelligenceArt">
+      <created>1701260279067</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1701260279067</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -657,7 +660,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter play" />
     <MESSAGE value="Finaliser la tache 17" />
     <MESSAGE value="Completer initialize de la tache 17" />
     <MESSAGE value="Constructeur game" />
@@ -679,10 +681,11 @@
     <MESSAGE value="Uncomment getImageView de FieldView" />
     <MESSAGE value="Compléter setPlayerBasic" />
     <MESSAGE value="Modifier les fonctions initialize" />
-    <MESSAGE value="Resolution du probleme de l'interface" />
-    <MESSAGE value="Resolution du probleme de onDragDone" />
-    <MESSAGE value="Ajout de la classe Basic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe Basic" />
+    <MESSAGE value="modifier la classe FieldView" />
+    <MESSAGE value="Modifier getAccessiblePositions de AMazon" />
+    <MESSAGE value="AJout de la méthode positionsAccessible" />
+    <MESSAGE value="Ajout de la classe IntelligenceArt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe IntelligenceArt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

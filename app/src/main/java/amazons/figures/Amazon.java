@@ -109,9 +109,16 @@ public class Amazon extends MovableFigure implements Figure{
             newX=this.position.getX()+ card.deltaRow;
             newY=this.position.getY()+ card.deltaColumn;
 
+
            if(canMoveTo(new Position(newX,newY),board))
             {
-                positions.add(new Position(newX,newY));
+                Position position1=new Position(newX,newY);
+                positions.add(position1);
+                while (canMoveTo(position1.next(card),board))
+                {
+                    positions.add(position1.next(card));
+                    position1=position1.next(card);
+                }
             }
         }
 
