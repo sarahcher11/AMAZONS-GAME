@@ -145,6 +145,14 @@ public class GameController {
         lastAmazonDstPosition = amazonDstPosition;
     }
 
+
+    public void checkGameEnd() {
+        if (game.hasEnded()) {
+            String winnerID = game.getWinner().toString();
+            showGameEndDialog(winnerID);
+        }
+    }
+
     // call by the view
     public void shootArrow(Position startPosition, Position arrowDstPosition){
         game.updateGameArrowShot(startPosition, arrowDstPosition);
