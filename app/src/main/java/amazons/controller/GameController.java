@@ -9,6 +9,7 @@ import amazons.viewer.BoardView;
 import amazons.viewer.MenuView;
 import javafx.animation.PauseTransition;
 import javafx.beans.property.SimpleObjectProperty;
+import javafx.scene.control.Alert;
 import javafx.util.Duration;
 
 import java.util.Random;
@@ -151,12 +152,21 @@ public class GameController {
         lastMove = new Move(lastAmazonStartPosition, lastAmazonDstPosition, lastArrowDstPosition);
     }
 
+    private void showGameEndDialog(String winnerID) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Fin du jeu");
+        alert.setHeaderText("Le joueur " + winnerID + " a remporté la partie!");
+        alert.setContentText("Merci d'avoir joué.");
+
+        alert.showAndWait();
+    }
+
     public void setPlayerGUI(PlayerID playerID){
         setPlayer(new GUIPLayer(), playerID);
     }
 
     public void setPlayerBasic(PlayerID playerID){
-        setPlayer(new CLPlayer(),playerID);
+        setPlayer(new Basic(),playerID);
     }
 
     public void setPlayerRandom(PlayerID playerID){

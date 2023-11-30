@@ -9,6 +9,7 @@ import amazons.player.Move;
 import amazons.player.Player;
 import amazons.player.PlayerID;
 import javafx.geometry.Pos;
+import javafx.scene.control.Alert;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -165,6 +166,8 @@ public class Game {
         }
         return list;
     }
+
+
 
 
     private boolean hasLost(PlayerID playerID) {
