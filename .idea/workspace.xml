@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Resolution du probleme de l'interface">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Resolution du probleme de onDragDone">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,13 +258,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00049" summary="Test de la classe MapBoard et finalisation de la tache 10">
-      <created>1700922857601</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1700922857601</updated>
     </task>
     <task id="LOCAL-00050" summary="Ajout du constructeur MatrixIterator">
       <created>1700923822779</created>
@@ -604,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701211808696</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Resolution du probleme de onDragDone">
+      <created>1701212921339</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1701212921339</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -660,7 +658,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout de la méthode testToString" />
     <MESSAGE value="test et finalisation de la tache 16" />
     <MESSAGE value="Compléter play" />
     <MESSAGE value="Finaliser la tache 17" />
@@ -685,7 +682,8 @@
     <MESSAGE value="Compléter setPlayerBasic" />
     <MESSAGE value="Modifier les fonctions initialize" />
     <MESSAGE value="Resolution du probleme de l'interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolution du probleme de l'interface" />
+    <MESSAGE value="Resolution du probleme de onDragDone" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolution du probleme de onDragDone" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
