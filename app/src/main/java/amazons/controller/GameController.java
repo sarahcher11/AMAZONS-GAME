@@ -91,13 +91,28 @@ public class GameController {
     public void setMenu(MenuView menu){
         this.menu = menu;
     }
-    public void playComputerTurn(){
+    /*public void playComputerTurn(){
         Player currentPlayer = getCurrentPlayer();
         lastMove = currentPlayer.play(lastMove);
         game.updateGame(lastMove);
         view.showMove(lastMove);
         pause.play();
+    }*/
+    public void playComputerTurn() {
+        Player currentPlayer = getCurrentPlayer();
+        Move move = currentPlayer.play(lastMove);
+
+        if (move != null && !game.hasEnded()) {
+            game.updateGame(move);
+            view.showMove(move);
+            pause.play();
+        } else {
+            // Handle null move (if needed)
+            // For example, you might want to skip the computer's turn in this case.
+            endTurn();
+        }
     }
+
 
     public void startGame(){
         if(!getCurrentPlayer().isGUIControlled()) playComputerTurn();

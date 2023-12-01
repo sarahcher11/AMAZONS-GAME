@@ -188,9 +188,19 @@ public class Game {
 
 
     private boolean hasLost(PlayerID playerID) {
-        return !(playerID.equals(winner));
+        List<Position> amazonPositions = positionsAmazone(playerID);
 
+        for (Position amazonPosition : amazonPositions) {
+            Amazon amazon = (Amazon) bord.getFigure(amazonPosition);
+            List<Position> accessiblePositions = amazon.getAccessiblePositions(bord);
+            if (!accessiblePositions.isEmpty()) {
+                return false; // Player has at least one Amazon with accessible positions
+            }
+        }
+
+        return true; // Player has no Amazons with accessible positions
     }
+
 
 
     public Board getBoard(){

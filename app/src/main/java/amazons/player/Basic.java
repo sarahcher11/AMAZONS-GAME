@@ -32,46 +32,37 @@ public class Basic implements Player{
      */
     @Override
     public Move play(Move opponentMove) {
-
-
-        List<Position> positions=game.positionsAmazone(playerID);
-        Position positionAmazon=null;
-        Position amazoneDst=null;
+        List<Position> positions = game.positionsAmazone(playerID);
+        Position positionAmazon = null;
+        Position amazoneDst = null;
         Position arrowPos = null;
         Amazon figure;
-        Boolean stop=false;
-        int i=0;
-        while (!stop && i<positions.size())
-        {
-            figure=(Amazon) game.getBoard().getFigure(positions.get(i));
+        Boolean stop = false;
+        int i = 0;
+        while (i < positions.size()) {
+            figure = (Amazon) game.getBoard().getFigure(positions.get(i));
 
-            if(figure.getAccessiblePositions(game.getBoard()).size()!=0)
-            {
-                positionAmazon=positions.get(i);
-                amazoneDst=figure.getAccessiblePositions(game.getBoard()).get(0);
-                game.updateGameAmazonMove(positionAmazon,amazoneDst);
-                figure=(Amazon) game.getBoard().getFigure(amazoneDst);
+            if (figure.getAccessiblePositions(game.getBoard()).size() != 0) {
+                positionAmazon = positions.get(i);
+                amazoneDst = figure.getAccessiblePositions(game.getBoard()).get(0);
+                game.updateGameAmazonMove(positionAmazon, amazoneDst);
+                figure = (Amazon) game.getBoard().getFigure(amazoneDst);
 
-                if(figure.getAccessiblePositions(game.getBoard()).size()!=0)
-                {
-                    arrowPos=figure.getAccessiblePositions(game.getBoard()).get(0);
-                    game.updateGameArrowShot(amazoneDst,arrowPos);
-                    stop=true;
-                    return new Move(positionAmazon,amazoneDst,arrowPos);
+                if (figure.getAccessiblePositions(game.getBoard()).size() != 0) {
+                    arrowPos = figure.getAccessiblePositions(game.getBoard()).get(0);
+                    game.updateGameArrowShot(amazoneDst, arrowPos);
+                    return new Move(positionAmazon, amazoneDst, arrowPos);
                 }
-            }
-            else {
+            } else {
                 i++;
             }
         }
-        if(game.positionsAccessible(playerID).size()==0)
-        {
+        if (game.positionsAccessible(playerID).size() == 0) {
             game.setThisIsTheEnd(true);
         }
         return null;
-
-
     }
+
 
     /**
      * Give the player the initial state of the game
