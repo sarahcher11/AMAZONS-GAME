@@ -51,19 +51,26 @@ public class Basic implements Player{
                 amazoneDst=figure.getAccessiblePositions(game.getBoard()).get(0);
                 game.updateGameAmazonMove(positionAmazon,amazoneDst);
                 figure=(Amazon) game.getBoard().getFigure(amazoneDst);
-                stop=true;
+
                 if(figure.getAccessiblePositions(game.getBoard()).size()!=0)
                 {
                     arrowPos=figure.getAccessiblePositions(game.getBoard()).get(0);
                     game.updateGameArrowShot(amazoneDst,arrowPos);
+                    stop=true;
+                    return new Move(positionAmazon,amazoneDst,arrowPos);
                 }
             }
             else {
                 i++;
             }
         }
+        if(game.positionsAccessible(playerID).size()==0)
+        {
+            game.setThisIsTheEnd(true);
+        }
+        return null;
 
-        return new Move(positionAmazon,amazoneDst,arrowPos);
+
     }
 
     /**
@@ -91,7 +98,7 @@ public class Basic implements Player{
      */
     @Override
     public boolean isGUIControlled() {
-        return true;
+        return false;
     }
 
     /**
