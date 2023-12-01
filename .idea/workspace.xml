@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de getAllPossibleMoves dans MatrixBoard" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de la classe Random">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/Random.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Random.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,13 +261,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00052" summary="Ajout de next">
-      <created>1700924123651</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1700924123651</updated>
     </task>
     <task id="LOCAL-00053" summary="Test et finalisation de la tache 11">
       <created>1700924419400</created>
@@ -601,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701260279067</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Ajout de la classe Random">
+      <created>1701470108882</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1701470108882</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -657,7 +661,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finaliser la tache 17" />
     <MESSAGE value="Completer initialize de la tache 17" />
     <MESSAGE value="Constructeur game" />
     <MESSAGE value="Surdéfinition du constructeur Amazon" />
@@ -682,7 +685,8 @@
     <MESSAGE value="Modifier getAccessiblePositions de AMazon" />
     <MESSAGE value="AJout de la méthode positionsAccessible" />
     <MESSAGE value="Ajout de la classe IntelligenceArt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe IntelligenceArt" />
+    <MESSAGE value="Ajout de la classe Random" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe Random" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

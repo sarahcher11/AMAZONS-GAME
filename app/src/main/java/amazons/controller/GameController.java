@@ -178,7 +178,9 @@ public class GameController {
     }
 
     public void setPlayerRandom(PlayerID playerID){
-        // TODO
+        amazons.player.Random random1=new amazons.player.Random(random,game);
+        random1.setPlayerID(playerID);
+        setPlayer(random1,playerID);
     }
     public void setPlayerGreedy(PlayerID playerID){
         // TODO

@@ -1,13 +1,26 @@
 package amazons.player;
-
 import amazons.board.Position;
+import amazons.game.Game;
+import amazons.util.RandomUtil;
 
 import java.util.List;
 
-public class Random implements Player{
+public class Random implements Player {
+
+
+
 
     private PlayerID playerID;
 
+
+    private java.util.Random randomUtil;
+    private Game game;
+
+    public Random(java.util.Random randomUtil, Game game)
+    {
+        this.game=game;
+        this.randomUtil=randomUtil;
+    }
 
 
     /**
@@ -19,6 +32,14 @@ public class Random implements Player{
      */
     @Override
     public Move play(Move opponentMove) {
+
+        List<Move> possibleMoves = game.getBoard().getAllPossibleMoves(playerID);
+
+        if (!possibleMoves.isEmpty()) {
+            return amazons.util.RandomUtil.getRandomElement(randomUtil, possibleMoves);
+        }
+
+
         return null;
     }
 
@@ -32,7 +53,7 @@ public class Random implements Player{
      */
     @Override
     public void initialize(int boardHeight, int boardWidth, PlayerID playerID, List<Position>[] initialPositions) {
-
+        this.playerID=playerID;
     }
 
     /**
@@ -53,11 +74,12 @@ public class Random implements Player{
      */
     @Override
     public PlayerID getPlayerID() {
-        return null;
+        return playerID;
     }
 
     @Override
     public void setPlayerID(PlayerID playerID) {
+        this.playerID=playerID;
 
     }
 }
