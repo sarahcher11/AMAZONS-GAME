@@ -108,8 +108,8 @@ public class Game {
         Position arrowDstPosition = move.getArrowDestPosition();
         updateGameAmazonMove(amazonStartPosition, amazonDstPosition);
         updateGameArrowShot(amazonDstPosition, arrowDstPosition);
-        List<Position> list=positionsAccessible(players[turn%NUMBER_OF_PLAYERS].getPlayerID());
-        if (list.size()==0) {
+       // List<Position> list=positionsAccessible(players[turn%NUMBER_OF_PLAYERS].getPlayerID());
+        if (hasLost(getPlayerID())) {
             winner = players[(turn+1)%NUMBER_OF_PLAYERS].getPlayerID(); // L'autre joueur est le gagnant
             isThisIsTheEnd = true;
         } else {
@@ -171,7 +171,11 @@ public class Game {
 
 
     private boolean hasLost(PlayerID playerID) {
-        return !(playerID.equals(winner));
+
+
+        if(bord.getAllPossibleMoves(playerID).size()==0)
+            return true;
+        return false;
 
     }
 
