@@ -156,7 +156,7 @@ public class GameController {
     }
 
     public void setPlayerBasic(PlayerID playerID){
-        setPlayer(new CLPlayer(),playerID);
+        setPlayer(new Basic(game),playerID);
     }
 
     public void setPlayerRandom(PlayerID playerID){
