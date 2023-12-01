@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,23 +32,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="amazons-template" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="amazons-template" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="amazons-template" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="amazons-template" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -98,7 +81,8 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="Push.Settings">
@@ -260,34 +244,9 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00052" summary="Ajout de next">
-      <created>1700924123651</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1700924123651</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Test et finalisation de la tache 11">
-      <created>1700924419400</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1700924419400</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Ajout de positionIterator dans Board">
-      <created>1700924494399</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1700924494399</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Ajout du constructeur PositionIterator">
-      <created>1700924924098</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1700924924098</updated>
+      <workItem from="1701267408247" duration="128000" />
+      <workItem from="1701267846198" duration="609000" />
+      <workItem from="1701430646615" duration="5144000" />
     </task>
     <task id="LOCAL-00056" summary="Ajout du next dans PositionIterator">
       <created>1700924992939</created>
@@ -604,7 +563,35 @@
       <option name="project" value="LOCAL" />
       <updated>1701260279067</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Ajout de la classe Basic">
+      <created>1701261901753</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1701261901753</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Modifier getPlayerID">
+      <created>1701262037150</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1701262037151</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Modifier isGUIControlled() de Basic">
+      <created>1701262064204</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1701262064204</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Compléter les méthodes de Basic">
+      <created>1701262124516</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1701262124516</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -660,10 +647,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finaliser la tache 17" />
-    <MESSAGE value="Completer initialize de la tache 17" />
-    <MESSAGE value="Constructeur game" />
-    <MESSAGE value="Surdéfinition du constructeur Amazon" />
     <MESSAGE value="Compléter updateGame" />
     <MESSAGE value="Compléter getWinner de Game" />
     <MESSAGE value="Compléter getBoard de Game" />
@@ -685,7 +668,11 @@
     <MESSAGE value="Modifier getAccessiblePositions de AMazon" />
     <MESSAGE value="AJout de la méthode positionsAccessible" />
     <MESSAGE value="Ajout de la classe IntelligenceArt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe IntelligenceArt" />
+    <MESSAGE value="Ajout de la classe Basic" />
+    <MESSAGE value="Modifier getPlayerID" />
+    <MESSAGE value="Modifier isGUIControlled() de Basic" />
+    <MESSAGE value="Compléter les méthodes de Basic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compléter les méthodes de Basic" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

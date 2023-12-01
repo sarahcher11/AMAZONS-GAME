@@ -56,7 +56,6 @@ public class Game {
             Position position=positionIterator.next();
             Figure figure=figures.nextFigure(position);
             bord.setFigure(position,figure);
-
         }
         players[0] = player0;
         players[1] = player1;
@@ -162,6 +161,27 @@ public class Game {
                 list2=((MovableFigure)figure).getAccessiblePositions(bord);
                 list.addAll(list2);
             }
+        }
+        return list;
+    }
+
+    public List<Position> positionsAmazone(PlayerID playerID)
+    {
+        Iterator<Position> positionIterator=new PositionIterator(getNumberOfColumns(),getNumberOfRows());
+        List<Position> list=new ArrayList<>();
+        while (positionIterator.hasNext())
+        {
+            Position position=positionIterator.next();
+
+            if(bord.getFigure(position) instanceof Amazon)
+            {
+                Amazon amazon=(Amazon) bord.getFigure(position);
+                if(amazon.getPlayerID().equals(playerID) )
+                {
+                    list.add(position);
+                }
+            }
+
         }
         return list;
     }
