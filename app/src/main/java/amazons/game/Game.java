@@ -233,5 +233,7 @@ public class Game {
         return bord.getNumberOfRows();
     }
 
-
+    public void setThisIsTheEnd(boolean thisIsTheEnd) {
+        isThisIsTheEnd = thisIsTheEnd;
+    }
 }

@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,21 +244,7 @@
       <workItem from="1699622689482" duration="14966000" />
       <workItem from="1701267408247" duration="128000" />
       <workItem from="1701267846198" duration="609000" />
-      <workItem from="1701430646615" duration="5144000" />
-    </task>
-    <task id="LOCAL-00056" summary="Ajout du next dans PositionIterator">
-      <created>1700924992939</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1700924992939</updated>
-    </task>
-    <task id="LOCAL-00057" summary="implementation de positionIterator dans MatrixBoard">
-      <created>1700925099367</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1700925099367</updated>
+      <workItem from="1701430646615" duration="5571000" />
     </task>
     <task id="LOCAL-00058" summary="implementation de positionIterator dans MapBoard">
       <created>1700925196325</created>
@@ -591,7 +575,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701262124516</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Compléter la méthode play de Basic">
+      <created>1701435871753</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1701435871753</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Modification de setPlayerBasic de Game">
+      <created>1701435912488</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1701435912488</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -647,8 +645,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter updateGame" />
-    <MESSAGE value="Compléter getWinner de Game" />
     <MESSAGE value="Compléter getBoard de Game" />
     <MESSAGE value="Compléter hasLost de Game" />
     <MESSAGE value="Compléter getNumberOfColumns de Game" />
@@ -672,7 +668,9 @@
     <MESSAGE value="Modifier getPlayerID" />
     <MESSAGE value="Modifier isGUIControlled() de Basic" />
     <MESSAGE value="Compléter les méthodes de Basic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compléter les méthodes de Basic" />
+    <MESSAGE value="Compléter la méthode play de Basic" />
+    <MESSAGE value="Modification de setPlayerBasic de Game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification de setPlayerBasic de Game" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

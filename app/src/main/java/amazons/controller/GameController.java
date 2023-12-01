@@ -156,7 +156,11 @@ public class GameController {
     }
 
     public void setPlayerBasic(PlayerID playerID){
-        setPlayer(new Basic(game),playerID);
+
+
+        Basic basic=new Basic(game);
+        basic.setPlayerID(playerID);
+        setPlayer(basic,playerID);
     }
 
     public void setPlayerRandom(PlayerID playerID){
