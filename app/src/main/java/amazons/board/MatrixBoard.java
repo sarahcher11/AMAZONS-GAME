@@ -2,9 +2,12 @@ package amazons.board;
 
 import amazons.figures.*;
 import amazons.figures.IllegalMoveException;
+import amazons.player.Move;
 import amazons.player.PlayerID;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class MatrixBoard implements Board{
 
@@ -213,6 +216,35 @@ public class MatrixBoard implements Board{
         result +="  ";
         return result;
     }
+    /**
+     * Obtient tous les mouvements possibles pour un joueur donné.
+     *
+     * @param playerID : l'ID du joueur pour lequel générer les mouvements
+     * @return une liste de tous les mouvements possibles pour le joueur
+     */
+    public List<Move> getAllPossibleMoves(PlayerID playerID) {
+        List<Move> possibleMoves = new ArrayList<>();
+
+        for (int row = 0; row < getNumberOfRows(); row++) {
+            for (int col = 0; col < getNumberOfColumns(); col++) {
+                Position amazonPosition = new Position(col, row);
+                Figure figure = getFigure(amazonPosition);
+
+                if (figure instanceof Amazon && figure.getPlayerID().equals(playerID)) {
+                    // Pour chaque amazone du joueur, ajoutez tous les mouvements possibles à la liste
+                    List<Position> accessiblePositions = ((Amazon) figure).getAccessiblePositions(this);
+
+                    for (Position destination : accessiblePositions) {
+                        // Pour chaque position accessible, ajoutez un mouvement à la liste
+                        possibleMoves.add(new Move(amazonPosition, destination, null));
+                    }
+                }
+            }
+        }
+
+        return possibleMoves;
+    }
+
 
 
 
