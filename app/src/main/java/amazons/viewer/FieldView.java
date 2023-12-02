@@ -149,7 +149,7 @@ public class FieldView extends Label {
     }
 
     private void onDragDetected(MouseEvent e) {
-        if(isDraggable()) return;
+        if(!isDraggable()) return;
         Dragboard dragBoard = startDragAndDrop(TransferMode.MOVE);
         if(controller.getPhase() == TurnPhase.AMAZON_PHASE)
             dragBoard.setDragView(getImage());
@@ -193,13 +193,13 @@ public class FieldView extends Label {
                     case AMAZON_PHASE -> {
                         controller.moveFigure(startPosition, position);
                         setFigureIcon();
-                        isAmazonDst = false;
+                        isAmazonDst = true;
                         success = true;
                     }
                     case ARROW_PHASE -> {
                         controller.shootArrow(startPosition, position);
                         setFigureIcon();
-                        isAmazonDst=true;
+                        //isAmazonDst=false;
                         success = true;
                     }
                     default -> {

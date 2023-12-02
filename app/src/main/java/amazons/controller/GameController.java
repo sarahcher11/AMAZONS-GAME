@@ -25,10 +25,10 @@ public class GameController {
     private Move lastMove = Move.DUMMY_MOVE;
 
     private final SimpleObjectProperty<TurnPhase> phase = new SimpleObjectProperty<>(TurnPhase.AMAZON_PHASE);
-    private static final int PAUSE_MILLISECONDS = 1000;
+    private static final int PAUSE_MILLISECONDS = 1500;
     private final PauseTransition pause = new PauseTransition(Duration.millis(PAUSE_MILLISECONDS));
 
-    private final Player[] players = new Player[Game.NUMBER_OF_PLAYERS];
+    private static Player[] players = new Player[Game.NUMBER_OF_PLAYERS];
     private  BoardView view;
     private MenuView menu;
 
@@ -83,7 +83,7 @@ public class GameController {
     public void setPlayer(Player player, PlayerID playerID){
         player.setPlayerID(playerID);
         players[playerID.index] = player;
-        System.out.println("plaaaaaaaaaaaaaaayer"+player.getClass());
+        System.out.println("plaaaaaaaaaaaaaaayer"+players[playerID.index]);
     }
 
 
@@ -96,20 +96,14 @@ public class GameController {
     }
     public void playComputerTurn(){
         Player currentPlayer = getCurrentPlayer();
-        System.out.println("current "+ currentPlayer.getPlayerID());
         lastMove = currentPlayer.play(lastMove);
-        if(lastMove==null)
-        {
-            checkGameEnd();
-        }
-        else
-        {
-            game.updateGame(lastMove);
-            view.showMove(lastMove);
-            pause.play();
-        }
-
+        System.out.println("l'amazoooooone  "+lastMove.getAmazonDstPosition().toString());
+        game.updateGame(lastMove);
+        view.showMove(lastMove);
+        pause.play();
     }
+
+
 
     public void startGame(){
         if(!getCurrentPlayer().isGUIControlled()) playComputerTurn();
@@ -194,11 +188,13 @@ public class GameController {
         amazons.player.Random random1 = new amazons.player.Random(random, game);
         random1.setPlayerID(playerID);
         setPlayer(random1, playerID);
-        System.out.println("aaaaa" + getCurrentPlayer().getClass());
+        System.out.println("aaaaa" + players[playerID.index].getClass());
     }
 
     public void setPlayerGreedy(PlayerID playerID){
         // TODO
     }
+
+
 
 }

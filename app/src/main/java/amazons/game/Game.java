@@ -1,10 +1,7 @@
 package amazons.game;
 
 import amazons.board.*;
-import amazons.figures.Amazon;
-import amazons.figures.Figure;
-import amazons.figures.IllegalMoveException;
-import amazons.figures.MovableFigure;
+import amazons.figures.*;
 import amazons.player.Move;
 import amazons.player.Player;
 import amazons.player.PlayerID;
@@ -117,15 +114,10 @@ public class Game {
 
 
     public void updateGame(Move move){
-        Position amazonStartPosition = move.getAmazonStartPosition();
-        Position amazonDstPosition = move.getAmazonDstPosition();
-        Position arrowDstPosition = move.getArrowDestPosition();
-        updateGameAmazonMove(amazonStartPosition, amazonDstPosition);
-        updateGameArrowShot(amazonDstPosition, arrowDstPosition);
-       // List<Position> list=positionsAccessible(players[turn%NUMBER_OF_PLAYERS].getPlayerID());
-        if (hasLost(getPlayerID())) {
+        if (move==null) {
             winner = players[(turn+1)%NUMBER_OF_PLAYERS].getPlayerID(); // L'autre joueur est le gagnant
             isThisIsTheEnd = true;
+
         } else {
             // Passer au tour suivant
             incrementTurn();
@@ -140,6 +132,7 @@ public class Game {
         try {
             getBoard().moveFigure(amazonStartPosition, amazonDstPosition);
             ((MovableFigure) amazonFigure).setPosition(amazonDstPosition);
+            getBoard().setFigure(amazonStartPosition,EmptyFigure.EMPTY_FIGURE);
         } catch (IllegalMoveException e) {
             throw new RuntimeException(e);
         }
@@ -209,4 +202,6 @@ public class Game {
     public Player[] getPlayers() {
         return players;
     }
+
+
 }

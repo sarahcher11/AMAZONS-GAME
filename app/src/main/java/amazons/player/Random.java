@@ -1,5 +1,6 @@
 package amazons.player;
 import amazons.board.Position;
+import amazons.figures.Amazon;
 import amazons.game.Game;
 import amazons.util.RandomUtil;
 
@@ -32,18 +33,35 @@ public class Random implements Player {
      */
     @Override
     public Move play(Move opponentMove) {
-         // je choisis une amazone que je veux bouger aléatoirement
-        List<Position> positionsAmazones=Game.positionsAmazons[playerID.index];
-        Position positionChoisie=amazons.util.RandomUtil.getRandomElement(randomUtil,positionsAmazones);
-        Position postionDstAmazone=amazons.util.RandomUtil.getRandomElement(randomUtil,game.getBoard().);
+        // je choisis une amazone que je veux bouger aléatoirement
+        List<Amazon> positionsAmazones = Game.positionsAmazons[playerID.index];
+        System.out.println("posiiiiiiiiiiition " + positionsAmazones);
 
-        if (!possibleMoves.isEmpty()) {
-            return amazons.util.RandomUtil.getRandomElement(randomUtil, possibleMoves);
+        Amazon amazoneChoisie = amazons.util.RandomUtil.getRandomElement(randomUtil, positionsAmazones);
+        System.out.println("amazone choisie " + amazoneChoisie);
+
+        Position postionDstAmazone = getRandomAccessiblePosition(amazoneChoisie);
+        System.out.println("position de destination choisie " + postionDstAmazone);
+
+        if (postionDstAmazone != null) {
+            game.updateGameAmazonMove(amazoneChoisie.getPosition(), postionDstAmazone);
+
+            Position arrowPosition = amazons.util.RandomUtil.getRandomElement(randomUtil, amazoneChoisie.getAccessiblePositions(game.getBoard()));
+            if (arrowPosition != null) {
+                game.updateGameArrowShot(postionDstAmazone, arrowPosition);
+                return new Move(amazoneChoisie.getPosition(), postionDstAmazone, arrowPosition);
+            }
         }
 
-
-        return null;
+        // If no valid move was found, choose another action or return a dummy move
+        return Move.DUMMY_MOVE;
     }
+
+    private Position getRandomAccessiblePosition(Amazon amazon) {
+        List<Position> accessiblePositions = amazon.getAccessiblePositions(game.getBoard());
+        return amazons.util.RandomUtil.getRandomElement(randomUtil, accessiblePositions);
+    }
+
 
     /**
      * Give the player the initial state of the game
