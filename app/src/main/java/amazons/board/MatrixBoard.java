@@ -216,40 +216,8 @@ public class MatrixBoard implements Board{
         result +="  ";
         return result;
     }
-    /**
-     * Obtient tous les mouvements possibles pour un joueur donné.
-     *
-     * @param playerID : l'ID du joueur pour lequel générer les mouvements
-     * @return une liste de tous les mouvements possibles pour le joueur
-     */
-    public List<Move> getAllPossibleMoves(PlayerID playerID) {
-        List<Move> possibleMoves = new ArrayList<>();
 
-        for (int row = 0; row < getNumberOfRows(); row++) {
-            for (int col = 0; col < getNumberOfColumns(); col++) {
-                Position amazonPosition = new Position(col, row);
-                Figure figure = getFigure(amazonPosition);
 
-                if (figure instanceof Amazon && figure.getPlayerID().equals(playerID)) {
-                    // Pour chaque amazone du joueur, ajoutez des mouvements valides à la liste
-                    addValidMoves(amazonPosition, possibleMoves);
-                }
-            }
-        }
-
-        return possibleMoves;
-    }
-
-    private void addValidMoves(Position amazonPosition, List<Move> possibleMoves) {
-        Amazon amazon = (Amazon) getFigure(amazonPosition);
-
-        for (Position destination : amazon.getAccessiblePositions(this)) {
-            // Vérifiez si le mouvement est valide
-            Move move = new Move(amazonPosition, destination, null);
-
-                possibleMoves.add(move);
-        }
-    }
 
 
 

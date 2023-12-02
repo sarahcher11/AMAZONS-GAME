@@ -27,7 +27,7 @@ public class Game {
 
 
 
-    public static List<Position>[] positionsAmazons=new List[NUMBER_OF_PLAYERS];
+    public static List<Amazon>[] positionsAmazons=new List[NUMBER_OF_PLAYERS];
 
     private static final List<Position> DEFAULT_PLAYER0_POSITIONS =
             List.of(new Position(0,6), new Position(9,6), new Position(3,9), new Position(6,9));
@@ -51,8 +51,8 @@ public class Game {
 
     public void initializeGame(Player player0, Player player1){
         bord.fill(new EmptyFigureGenerator()); // Assurez-vous que le plateau est rempli avec des figures vides.
-        List<Position> positionZero=new ArrayList<>();
-        List<Position> positionsOne=new ArrayList<>();
+        List<Amazon> positionZero=new ArrayList<>();
+        List<Amazon> positionsOne=new ArrayList<>();
 
         Iterator<Position>  positionIterator= bord.positionIterator();
         PresetFigureGenerator figures=new PresetFigureGenerator(createPlayersFiguresWithDefaultPosition());
@@ -64,9 +64,9 @@ public class Game {
             if(figure instanceof Amazon)
             {
                 if(figure.getPlayerID().index==0)
-                    positionZero.add(((Amazon) figure).getPosition());
+                    positionZero.add(((Amazon) figure));
                  else
-                    positionsOne.add(((Amazon) figure).getPosition());
+                    positionsOne.add(((Amazon) figure));
 
             }
 
@@ -158,14 +158,10 @@ public class Game {
     }
 
 
-   
-
 
     private boolean hasLost(PlayerID playerID) {
 
-        if(bord.getAllPossibleMoves(playerID).size()==0)
-            return true;
-        return false;
+       return !(playerID==winner);
 
     }
 

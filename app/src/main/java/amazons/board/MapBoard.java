@@ -161,10 +161,7 @@ public class MapBoard implements Board{
         return numberOfRows;
     }
 
-    @Override
-    public List<Move> getAllPossibleMoves(PlayerID playerID) {
-        return null;
-    }
+
 
     public Iterator<Figure> iterator()
     {

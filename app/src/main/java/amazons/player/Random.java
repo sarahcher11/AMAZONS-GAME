@@ -32,8 +32,10 @@ public class Random implements Player {
      */
     @Override
     public Move play(Move opponentMove) {
-
-        List<Move> possibleMoves = game.getBoard().getAllPossibleMoves(playerID);
+         // je choisis une amazone que je veux bouger aléatoirement
+        List<Position> positionsAmazones=Game.positionsAmazons[playerID.index];
+        Position positionChoisie=amazons.util.RandomUtil.getRandomElement(randomUtil,positionsAmazones);
+        Position postionDstAmazone=amazons.util.RandomUtil.getRandomElement(randomUtil,game.getBoard().);
 
         if (!possibleMoves.isEmpty()) {
             return amazons.util.RandomUtil.getRandomElement(randomUtil, possibleMoves);

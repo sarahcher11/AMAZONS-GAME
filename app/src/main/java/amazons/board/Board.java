@@ -67,6 +67,6 @@ public interface Board extends Iterable<Figure> {
 
       public int getNumberOfColumns();
       public int getNumberOfRows();
-    public List<Move> getAllPossibleMoves(PlayerID playerID);
+
 
 }
