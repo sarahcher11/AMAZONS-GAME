@@ -231,19 +231,28 @@ public class MatrixBoard implements Board{
                 Figure figure = getFigure(amazonPosition);
 
                 if (figure instanceof Amazon && figure.getPlayerID().equals(playerID)) {
-                    // Pour chaque amazone du joueur, ajoutez tous les mouvements possibles à la liste
-                    List<Position> accessiblePositions = ((Amazon) figure).getAccessiblePositions(this);
-
-                    for (Position destination : accessiblePositions) {
-                        // Pour chaque position accessible, ajoutez un mouvement à la liste
-                        possibleMoves.add(new Move(amazonPosition, destination, null));
-                    }
+                    // Pour chaque amazone du joueur, ajoutez des mouvements valides à la liste
+                    addValidMoves(amazonPosition, possibleMoves);
                 }
             }
         }
 
         return possibleMoves;
     }
+
+    private void addValidMoves(Position amazonPosition, List<Move> possibleMoves) {
+        Amazon amazon = (Amazon) getFigure(amazonPosition);
+
+        for (Position destination : amazon.getAccessiblePositions(this)) {
+            // Vérifiez si le mouvement est valide
+            Move move = new Move(amazonPosition, destination, null);
+
+                possibleMoves.add(move);
+        }
+    }
+
+
+
 
 
 

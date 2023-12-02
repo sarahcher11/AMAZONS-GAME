@@ -26,7 +26,7 @@ public class PlayerMenuButton extends OptionButton {
         menu.getItems().add(new PlayerMenuItem(resourceIcon, "greedy", e -> controller.setPlayerGreedy(playerID)));
         setContextMenu(menu);
         setOnMouseClicked(e -> menu.show(this, e.getScreenX(), e.getScreenY()));
-        setOnMouseExited(e -> menu.hide());
+      //  setOnMouseExited(e -> menu.hide());
     }
 
 

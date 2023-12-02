@@ -1,9 +1,12 @@
 package amazons.board;
 
 import amazons.figures.*;
+import amazons.player.Move;
+import amazons.player.PlayerID;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 public class MapBoard implements Board{
@@ -157,6 +160,12 @@ public class MapBoard implements Board{
     public int getNumberOfRows() {
         return numberOfRows;
     }
+
+    @Override
+    public List<Move> getAllPossibleMoves(PlayerID playerID) {
+        return null;
+    }
+
     public Iterator<Figure> iterator()
     {
       return null;

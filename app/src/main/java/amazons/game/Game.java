@@ -27,6 +27,7 @@ public class Game {
 
 
 
+    public static List<Position>[] positionsAmazons=new List[NUMBER_OF_PLAYERS];
 
     private static final List<Position> DEFAULT_PLAYER0_POSITIONS =
             List.of(new Position(0,6), new Position(9,6), new Position(3,9), new Position(6,9));
@@ -50,6 +51,9 @@ public class Game {
 
     public void initializeGame(Player player0, Player player1){
         bord.fill(new EmptyFigureGenerator()); // Assurez-vous que le plateau est rempli avec des figures vides.
+        List<Position> positionZero=new ArrayList<>();
+        List<Position> positionsOne=new ArrayList<>();
+
         Iterator<Position>  positionIterator= bord.positionIterator();
         PresetFigureGenerator figures=new PresetFigureGenerator(createPlayersFiguresWithDefaultPosition());
         while (positionIterator.hasNext())
@@ -57,8 +61,18 @@ public class Game {
             Position position=positionIterator.next();
             Figure figure=figures.nextFigure(position);
             bord.setFigure(position,figure);
+            if(figure instanceof Amazon)
+            {
+                if(figure.getPlayerID().index==0)
+                    positionZero.add(((Amazon) figure).getPosition());
+                 else
+                    positionsOne.add(((Amazon) figure).getPosition());
+
+            }
 
         }
+        positionsAmazons[0]=positionZero;
+        positionsAmazons[1]=positionsOne;
         players[0] = player0;
         players[1] = player1;
     }
@@ -144,34 +158,10 @@ public class Game {
     }
 
 
-    /**
-     * Méthode qui permet d'avoir toute les positions accessible pour toutes les amazone du joueur
-     * @param playerID l'ID du joueur pour qu'on lui cherche ses positions
-     * @return une liste de toutes les positions
-     */
-    public List<Position> positionsAccessible(PlayerID playerID)
-    {
-        Iterator<Position> positionIterator=new PositionIterator(getNumberOfColumns(),getNumberOfRows());
-        List<Position> list=new ArrayList<>();
-        List<Position> list2=new ArrayList<>();
-        while (positionIterator.hasNext())
-        {
-            Figure figure=bord.getFigure(positionIterator.next());
-            if(figure.getPlayerID().equals(playerID))
-            {
-
-                list2=((MovableFigure)figure).getAccessiblePositions(bord);
-                list.addAll(list2);
-            }
-        }
-        return list;
-    }
-
-
+   
 
 
     private boolean hasLost(PlayerID playerID) {
-
 
         if(bord.getAllPossibleMoves(playerID).size()==0)
             return true;
@@ -220,5 +210,7 @@ public class Game {
         return bord.getNumberOfRows();
     }
 
-
+    public Player[] getPlayers() {
+        return players;
+    }
 }

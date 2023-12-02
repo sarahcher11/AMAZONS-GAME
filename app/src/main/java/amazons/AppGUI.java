@@ -2,8 +2,10 @@ package amazons;
 
 
 import amazons.controller.GameController;
+import amazons.figures.Amazon;
 import amazons.game.Game;
 import amazons.player.GUIPLayer;
+import amazons.player.Random;
 import amazons.util.ImageUtil;
 import amazons.viewer.BoardView;
 import amazons.viewer.MenuView;
@@ -22,7 +24,7 @@ public class AppGUI extends Application {
     @Override
     public void start(Stage primaryStage) {
         Game game = new Game();
-        GameController controller = new GameController(game, new GUIPLayer(), new GUIPLayer());
+        GameController controller = new GameController(game,  new Random(new java.util.Random(),game),new Random(new java.util.Random(),game));
         int numberOfColumns =  game.getNumberOfColumns();
         int numberOfRows =  game.getNumberOfRows();
 

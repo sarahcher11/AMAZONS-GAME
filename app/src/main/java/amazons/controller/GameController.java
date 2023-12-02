@@ -49,6 +49,7 @@ public class GameController {
         resetPhase();
         addEndPhaseListener();
         setPauseAnimation();
+        startGame();
     }
     public void resetGame(){
        initialize();
@@ -82,6 +83,7 @@ public class GameController {
     public void setPlayer(Player player, PlayerID playerID){
         player.setPlayerID(playerID);
         players[playerID.index] = player;
+        System.out.println("plaaaaaaaaaaaaaaayer"+player.getClass());
     }
 
 
@@ -94,10 +96,19 @@ public class GameController {
     }
     public void playComputerTurn(){
         Player currentPlayer = getCurrentPlayer();
+        System.out.println("current "+ currentPlayer.getPlayerID());
         lastMove = currentPlayer.play(lastMove);
-        game.updateGame(lastMove);
-        view.showMove(lastMove);
-        pause.play();
+        if(lastMove==null)
+        {
+            checkGameEnd();
+        }
+        else
+        {
+            game.updateGame(lastMove);
+            view.showMove(lastMove);
+            pause.play();
+        }
+
     }
 
     public void startGame(){
@@ -140,6 +151,7 @@ public class GameController {
     // call by the view
     public void moveFigure(Position amazonStartPosition, Position amazonDstPosition)
     {
+        System.out.println("le joueur "+ getCurrentPlayer().getClass());
         game.updateGameAmazonMove(amazonStartPosition, amazonDstPosition);
         lastAmazonStartPosition = amazonStartPosition;
         lastAmazonDstPosition = amazonDstPosition;
@@ -178,10 +190,13 @@ public class GameController {
     }
 
     public void setPlayerRandom(PlayerID playerID){
-        amazons.player.Random random1=new amazons.player.Random(random,game);
+        System.out.println("LE JOUEUR " + playerID);
+        amazons.player.Random random1 = new amazons.player.Random(random, game);
         random1.setPlayerID(playerID);
-        setPlayer(random1,playerID);
+        setPlayer(random1, playerID);
+        System.out.println("aaaaa" + getCurrentPlayer().getClass());
     }
+
     public void setPlayerGreedy(PlayerID playerID){
         // TODO
     }
