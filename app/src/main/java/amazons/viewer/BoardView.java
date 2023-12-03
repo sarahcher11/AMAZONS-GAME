@@ -38,11 +38,15 @@ public class BoardView extends GridPane{
     board has already been updated
      */
     public void showMove(Move move) {
-        fieldMap.get(move.getAmazonStartPosition()).setFigureIcon();
-        highlightAmazonMove(move.getAmazonStartPosition(),move.getAmazonDstPosition());
-        fieldMap.get(move.getAmazonDstPosition()).setFigureIcon();
-        highlightArrowShoot(move.getAmazonDstPosition(), move.getArrowDestPosition());
-        fieldMap.get(move.getArrowDestPosition()).setFigureIcon();
+        if(move!=Move.DUMMY_MOVE)
+        {
+            fieldMap.get(move.getAmazonStartPosition()).setFigureIcon();
+            highlightAmazonMove(move.getAmazonStartPosition(),move.getAmazonDstPosition());
+            fieldMap.get(move.getAmazonDstPosition()).setFigureIcon();
+            highlightArrowShoot(move.getAmazonDstPosition(), move.getArrowDestPosition());
+            fieldMap.get(move.getArrowDestPosition()).setFigureIcon();
+        }
+
     }
 
     private void highlightAmazonMove(Position startPosition, Position destPosition){

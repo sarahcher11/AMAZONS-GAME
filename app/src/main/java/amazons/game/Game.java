@@ -114,7 +114,7 @@ public class Game {
 
 
     public void updateGame(Move move){
-        if (move==null) {
+        if (move==Move.DUMMY_MOVE) {
             winner = players[(turn+1)%NUMBER_OF_PLAYERS].getPlayerID(); // L'autre joueur est le gagnant
             isThisIsTheEnd = true;
 
@@ -203,5 +203,12 @@ public class Game {
         return players;
     }
 
-
+     public void afficherPos(PlayerID playerID)
+     {
+         List<Amazon> positions=positionsAmazons[playerID.index];
+         for (Amazon position:positions)
+         {
+             System.out.println("la posiition de sara "+ position.getPosition().toString());
+         }
+     }
 }

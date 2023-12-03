@@ -33,6 +33,10 @@ public class Random implements Player {
      */
     @Override
     public Move play(Move opponentMove) {
+
+
+        System.out.println("***********************************");
+        game.afficherPos(playerID);
         // je choisis une amazone que je veux bouger aléatoirement
         List<Amazon> positionsAmazones = Game.positionsAmazons[playerID.index];
         System.out.println("posiiiiiiiiiiition " + positionsAmazones);
@@ -46,11 +50,14 @@ public class Random implements Player {
         if (postionDstAmazone != null) {
             game.updateGameAmazonMove(amazoneChoisie.getPosition(), postionDstAmazone);
 
-            Position arrowPosition = amazons.util.RandomUtil.getRandomElement(randomUtil, amazoneChoisie.getAccessiblePositions(game.getBoard()));
-            if (arrowPosition != null) {
+            List<Position> accessiblePositions = amazoneChoisie.getAccessiblePositions(game.getBoard());
+            if (!accessiblePositions.isEmpty()) {
+                Position arrowPosition = amazons.util.RandomUtil.getRandomElement(randomUtil, accessiblePositions);
+                System.out.println("arroooooooooow position " + arrowPosition.toString());
                 game.updateGameArrowShot(postionDstAmazone, arrowPosition);
                 return new Move(amazoneChoisie.getPosition(), postionDstAmazone, arrowPosition);
             }
+
         }
 
         // If no valid move was found, choose another action or return a dummy move

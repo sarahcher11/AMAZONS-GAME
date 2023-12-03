@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Modification de initializeGame de Game">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="test Random">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/Random.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Random.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/MenuView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/PlayerMenuButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/PlayerMenuButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/BoardView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,13 +263,6 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-    </task>
-    <task id="LOCAL-00057" summary="implementation de positionIterator dans MatrixBoard">
-      <created>1700925099367</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1700925099367</updated>
     </task>
     <task id="LOCAL-00058" summary="implementation de positionIterator dans MapBoard">
       <created>1700925196325</created>
@@ -611,7 +600,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701528748282</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="test Random">
+      <created>1701554437359</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1701554437360</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -667,7 +663,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter getWinner de Game" />
     <MESSAGE value="Compléter getBoard de Game" />
     <MESSAGE value="Compléter hasLost de Game" />
     <MESSAGE value="Compléter getNumberOfColumns de Game" />
@@ -692,7 +687,8 @@
     <MESSAGE value="modification de hasLost de Game" />
     <MESSAGE value="Suppression de positionsAccessible de Game" />
     <MESSAGE value="Modification de initializeGame de Game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification de initializeGame de Game" />
+    <MESSAGE value="test Random" />
+    <option name="LAST_COMMIT_MESSAGE" value="test Random" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

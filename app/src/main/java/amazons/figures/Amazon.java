@@ -41,7 +41,7 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public boolean canMoveTo(Position position, Board board) {
-        if( !board.isOutOfBoard(position)
+       /* if( !board.isOutOfBoard(position)
                 && board.isEmpty(position)
                 && !pathIsBlocked(position, board)
                 && ( isHorizental(position) || isVertical(position) || isOnTheSameDiagonal(position)))
@@ -49,7 +49,8 @@ public class Amazon extends MovableFigure implements Figure{
 
            return true;
        }
-          return false;
+          return false;*/
+        return getAccessiblePositions(board).contains(position);
     }
 
     /**
