@@ -1,5 +1,6 @@
 package amazons.player;
 import amazons.board.Position;
+import amazons.controller.GameController;
 import amazons.figures.Amazon;
 import amazons.game.Game;
 import amazons.util.RandomUtil;
@@ -16,6 +17,8 @@ public class Random implements Player {
 
     private java.util.Random randomUtil;
     private Game game;
+
+    public static GameController controller;
 
     public Random(java.util.Random randomUtil, Game game)
     {

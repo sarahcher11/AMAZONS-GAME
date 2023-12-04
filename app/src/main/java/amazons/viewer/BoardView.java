@@ -50,6 +50,7 @@ public class BoardView extends GridPane{
     }
 
     private void highlightAmazonMove(Position startPosition, Position destPosition){
+        System.out.println("destination de la position dans highlight "+ destPosition.toString());
         CardinalDirection direction = startPosition.getDirection(destPosition);
         for(Position position = startPosition; !position.equals(destPosition); position = position.next(direction)) {
             fieldMap.get(position).setHighlightBackGroundColorTemp();
@@ -59,6 +60,7 @@ public class BoardView extends GridPane{
 
     private void highlightArrowShoot(Position amazonPosition, Position arrowDestPosition){
         CardinalDirection direction  = amazonPosition.getDirection(arrowDestPosition);
+        System.out.println(" position destination de arrow dans highlight "+arrowDestPosition.toString());
         for(Position position = amazonPosition.next(direction); !position.equals(arrowDestPosition); position =  position.next(direction)){
             fieldMap.get(position).setHighlightShootBackGroundColorTemp();
         }

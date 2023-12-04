@@ -163,7 +163,7 @@ public class GameController {
     public void shootArrow(Position startPosition, Position arrowDstPosition){
         game.updateGameArrowShot(startPosition, arrowDstPosition);
         lastArrowDstPosition = arrowDstPosition;
-        lastMove = new Move(lastAmazonStartPosition, lastAmazonDstPosition, lastArrowDstPosition);
+       // lastMove = new Move(lastAmazonStartPosition, lastAmazonDstPosition, lastArrowDstPosition);
     }
 
     private void showGameEndDialog(String winnerID) {
@@ -180,7 +180,7 @@ public class GameController {
     }
 
     public void setPlayerBasic(PlayerID playerID){
-        setPlayer(new Basic(),playerID);
+        setPlayer(new Basic(game),playerID);
     }
 
     public void setPlayerRandom(PlayerID playerID){
