@@ -27,7 +27,9 @@ public enum CardinalDirection {
         int deltaY = getCoordinateDirection(sourceY, destY);
         return Arrays.stream(values())
                 .filter(d -> d.deltaColumn == deltaX && d.deltaRow == deltaY)
-                .findFirst().orElseThrow();
+                .findFirst()
+                .orElseThrow(() -> new IllegalArgumentException("Invalid direction: " + destX + ", " + destY));
+
     }
 
     private static int getCoordinateDirection(int source, int dest){

@@ -3,6 +3,7 @@ import amazons.board.Position;
 import amazons.controller.GameController;
 import amazons.figures.Amazon;
 import amazons.game.Game;
+import amazons.game.TurnPhase;
 import amazons.util.RandomUtil;
 
 import java.util.List;
@@ -52,7 +53,6 @@ public class Random implements Player {
 
         if (postionDstAmazone != null) {
             game.updateGameAmazonMove(amazoneChoisie.getPosition(), postionDstAmazone);
-
             List<Position> accessiblePositions = amazoneChoisie.getAccessiblePositions(game.getBoard());
             if (!accessiblePositions.isEmpty()) {
                 Position arrowPosition = amazons.util.RandomUtil.getRandomElement(randomUtil, accessiblePositions);

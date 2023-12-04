@@ -99,6 +99,9 @@ public class GameController {
         lastMove = currentPlayer.play(lastMove);
         System.out.println("l'amazoooooone  "+lastMove.getAmazonDstPosition().toString());
         game.updateGame(lastMove);
+        System.out.println("LAST MOVE START POS "+lastMove.getAmazonStartPosition());
+        System.out.println("LAST MOVE dst pos "+lastMove.getAmazonDstPosition());
+        System.out.println("LAST MOVE arrow pos "+lastMove.getArrowDestPosition());
         view.showMove(lastMove);
         pause.play();
     }

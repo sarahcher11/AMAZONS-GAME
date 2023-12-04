@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="test Random">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/Random.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Random.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/BoardView.java" afterDir="false" />
     </list>
@@ -94,24 +92,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/ctravers/AMU/Prog2/amazons-template",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ctravers/AMU/Prog2/amazons-template&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="main" />
@@ -271,14 +269,8 @@
       <workItem from="1699618029568" duration="29000" />
       <workItem from="1699618245081" duration="4361000" />
       <workItem from="1699622689482" duration="14966000" />
-      <workItem from="1701685043512" duration="1361000" />
-    </task>
-    <task id="LOCAL-00058" summary="implementation de positionIterator dans MapBoard">
-      <created>1700925196325</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1700925196326</updated>
+      <workItem from="1701685043512" duration="1706000" />
+      <workItem from="1701689728084" duration="2956000" />
     </task>
     <task id="LOCAL-00059" summary="Test et finalisation de la tache 12">
       <created>1700925402162</created>
@@ -616,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701554437360</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Modification de la méthode start pour tester Random">
+      <created>1701686429966</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1701686429966</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -672,7 +671,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter getBoard de Game" />
     <MESSAGE value="Compléter hasLost de Game" />
     <MESSAGE value="Compléter getNumberOfColumns de Game" />
     <MESSAGE value="Compléter getNumberOfRows de Game" />
@@ -697,7 +695,8 @@
     <MESSAGE value="Suppression de positionsAccessible de Game" />
     <MESSAGE value="Modification de initializeGame de Game" />
     <MESSAGE value="test Random" />
-    <option name="LAST_COMMIT_MESSAGE" value="test Random" />
+    <MESSAGE value="Modification de la méthode start pour tester Random" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification de la méthode start pour tester Random" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

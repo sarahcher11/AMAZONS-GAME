@@ -11,13 +11,18 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import static amazons.player.Random.controller;
+
 public class BoardView extends GridPane{
     private final Map<Position, FieldView> fieldMap = new HashMap<>();
 
 
     public BoardView(GameController controller) {
         Board board = controller.getBoard();
-
+        System.out.println("LA POSITION 3, 0"+board.getFigure(new Position(3,0)));
+        System.out.println("LA POSITION 6, 0"+board.getFigure(new Position(6,0)));
+        System.out.println("LA POSITION 0, 3"+board.getFigure(new Position(0,3)));
+        System.out.println("LA POSITION 9, 3"+board.getFigure(new Position(9,3)));
         for (Iterator<Position> it = board.positionIterator(); it.hasNext(); ) {
             Position position = it.next();
             FieldView field = new FieldView(position,controller);
@@ -38,14 +43,21 @@ public class BoardView extends GridPane{
     board has already been updated
      */
     public void showMove(Move move) {
-        if(move!=Move.DUMMY_MOVE)
-        {
+
+
             fieldMap.get(move.getAmazonStartPosition()).setFigureIcon();
+        System.out.println("ineeeeeeeeeees");
             highlightAmazonMove(move.getAmazonStartPosition(),move.getAmazonDstPosition());
             fieldMap.get(move.getAmazonDstPosition()).setFigureIcon();
+
             highlightArrowShoot(move.getAmazonDstPosition(), move.getArrowDestPosition());
             fieldMap.get(move.getArrowDestPosition()).setFigureIcon();
-        }
+        Board board = controller.getBoard();
+        System.out.println("LA POSITION 3, 0"+board.getFigure(new Position(3,0)));
+        System.out.println("LA POSITION 6, 0"+board.getFigure(new Position(6,0)));
+        System.out.println("LA POSITION 0, 3"+board.getFigure(new Position(0,3)));
+        System.out.println("LA POSITION 9, 3"+board.getFigure(new Position(9,3)));
+
 
     }
 
