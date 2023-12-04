@@ -20,7 +20,7 @@ public class MenuView extends BorderPane {
                         e -> controller.resetGame(),"reset"),
                 2, 0 ,1 ,1);
         options.add(new PlayerMenuButton("images/" + PlayerID.PLAYER_ONE.color + "_queen.png",
-                "select player " + PlayerID.PLAYER_ONE.index, PlayerID.PLAYER_ONE, controller),
+                        "select player " + PlayerID.PLAYER_ONE.index, PlayerID.PLAYER_ONE, controller),
                 1, 0 ,1 ,1);
 
         options.add(new PlayerMenuButton("images/" + PlayerID.PLAYER_ZERO.color + "_queen.png",

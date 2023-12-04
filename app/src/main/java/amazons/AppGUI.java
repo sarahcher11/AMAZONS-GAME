@@ -2,9 +2,10 @@ package amazons;
 
 
 import amazons.controller.GameController;
+import amazons.figures.Amazon;
 import amazons.game.Game;
-import amazons.player.Basic;
 import amazons.player.GUIPLayer;
+import amazons.player.Random;
 import amazons.util.ImageUtil;
 import amazons.viewer.BoardView;
 import amazons.viewer.MenuView;
@@ -23,7 +24,10 @@ public class AppGUI extends Application {
     @Override
     public void start(Stage primaryStage) {
         Game game = new Game();
-        GameController controller = new GameController(game, new Basic(game), new Basic(game));
+
+        amazons.player.Random random1=new Random(new java.util.Random(),game);
+        Random random2=new Random(new java.util.Random(),game);
+        GameController controller = new GameController(game,  new GUIPLayer(),random2);
         int numberOfColumns =  game.getNumberOfColumns();
         int numberOfRows =  game.getNumberOfRows();
 
@@ -43,11 +47,12 @@ public class AppGUI extends Application {
             table.add(newColLabel(rowIndex), rowIndex + 1, 0, 1, 1);
             table.add(newColLabel(rowIndex), rowIndex + 1, 10, 1, 1);
         }
-        BoardView boardView;
-        table.add(boardView = new BoardView(controller), 1, 1, numberOfColumns, numberOfRows);
+        BoardView boardView=new BoardView(controller);
+        table.add(boardView , 1, 1, numberOfColumns, numberOfRows);
         table.setAlignment(Pos.CENTER);
         pane.setCenter(table);
         controller.setView(boardView);
+        System.out.println("controoooooooler "+ controller.getBoard());
 
         //menu on the bottom with status text and option buttons
         MenuView menuView;

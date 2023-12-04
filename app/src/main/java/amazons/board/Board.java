@@ -3,8 +3,11 @@ package amazons.board;
 
 import amazons.figures.Figure;
 import amazons.figures.IllegalMoveException;
+import amazons.player.Move;
+import amazons.player.PlayerID;
 
 import java.util.Iterator;
+import java.util.List;
 
 public interface Board extends Iterable<Figure> {
     /**
@@ -64,5 +67,6 @@ public interface Board extends Iterable<Figure> {
 
       public int getNumberOfColumns();
       public int getNumberOfRows();
+
 
 }

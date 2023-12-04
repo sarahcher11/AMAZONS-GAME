@@ -2,9 +2,12 @@ package amazons.board;
 
 import amazons.figures.*;
 import amazons.figures.IllegalMoveException;
+import amazons.player.Move;
 import amazons.player.PlayerID;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class MatrixBoard implements Board{
 
@@ -213,6 +216,12 @@ public class MatrixBoard implements Board{
         result +="  ";
         return result;
     }
+
+
+
+
+
+
 
 
 

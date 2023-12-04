@@ -1,14 +1,12 @@
 package amazons.game;
 
 import amazons.board.*;
-import amazons.figures.Amazon;
-import amazons.figures.Figure;
-import amazons.figures.IllegalMoveException;
-import amazons.figures.MovableFigure;
+import amazons.figures.*;
 import amazons.player.Move;
 import amazons.player.Player;
 import amazons.player.PlayerID;
 import javafx.geometry.Pos;
+import javafx.scene.control.Alert;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -26,6 +24,7 @@ public class Game {
 
 
 
+    public static List<Amazon>[] positionsAmazons=new List[NUMBER_OF_PLAYERS];
 
     private static final List<Position> DEFAULT_PLAYER0_POSITIONS =
             List.of(new Position(0,6), new Position(9,6), new Position(3,9), new Position(6,9));
@@ -49,6 +48,9 @@ public class Game {
 
     public void initializeGame(Player player0, Player player1){
         bord.fill(new EmptyFigureGenerator()); // Assurez-vous que le plateau est rempli avec des figures vides.
+        List<Amazon> positionZero=new ArrayList<>();
+        List<Amazon> positionsOne=new ArrayList<>();
+
         Iterator<Position>  positionIterator= bord.positionIterator();
         PresetFigureGenerator figures=new PresetFigureGenerator(createPlayersFiguresWithDefaultPosition());
         while (positionIterator.hasNext())
@@ -56,7 +58,18 @@ public class Game {
             Position position=positionIterator.next();
             Figure figure=figures.nextFigure(position);
             bord.setFigure(position,figure);
+            if(figure instanceof Amazon)
+            {
+                if(figure.getPlayerID().index==0)
+                    positionZero.add(((Amazon) figure));
+                 else
+                    positionsOne.add(((Amazon) figure));
+
+            }
+
         }
+        positionsAmazons[0]=positionZero;
+        positionsAmazons[1]=positionsOne;
         players[0] = player0;
         players[1] = player1;
     }
@@ -101,15 +114,10 @@ public class Game {
 
 
     public void updateGame(Move move){
-        Position amazonStartPosition = move.getAmazonStartPosition();
-        Position amazonDstPosition = move.getAmazonDstPosition();
-        Position arrowDstPosition = move.getArrowDestPosition();
-        updateGameAmazonMove(amazonStartPosition, amazonDstPosition);
-        updateGameArrowShot(amazonDstPosition, arrowDstPosition);
-        List<Position> list=positionsAccessible(players[turn%NUMBER_OF_PLAYERS].getPlayerID());
-        if (list.size()==0) {
+        if (move==Move.DUMMY_MOVE) {
             winner = players[(turn+1)%NUMBER_OF_PLAYERS].getPlayerID(); // L'autre joueur est le gagnant
             isThisIsTheEnd = true;
+
         } else {
             // Passer au tour suivant
             incrementTurn();
@@ -124,6 +132,7 @@ public class Game {
         try {
             getBoard().moveFigure(amazonStartPosition, amazonDstPosition);
             ((MovableFigure) amazonFigure).setPosition(amazonDstPosition);
+            getBoard().setFigure(amazonStartPosition,EmptyFigure.EMPTY_FIGURE);
         } catch (IllegalMoveException e) {
             throw new RuntimeException(e);
         }
@@ -142,65 +151,12 @@ public class Game {
     }
 
 
-    /**
-     * Méthode qui permet d'avoir toute les positions accessible pour toutes les amazone du joueur
-     * @param playerID l'ID du joueur pour qu'on lui cherche ses positions
-     * @return une liste de toutes les positions
-     */
-    public List<Position> positionsAccessible(PlayerID playerID)
-    {
-        Iterator<Position> positionIterator=new PositionIterator(getNumberOfColumns(),getNumberOfRows());
-        List<Position> list=new ArrayList<>();
-        List<Position> list2=new ArrayList<>();
-        while (positionIterator.hasNext())
-        {
-            Figure figure=bord.getFigure(positionIterator.next());
-            if(figure.getPlayerID().equals(playerID))
-            {
-
-                list2=((MovableFigure)figure).getAccessiblePositions(bord);
-                list.addAll(list2);
-            }
-        }
-        return list;
-    }
-
-    public List<Position> positionsAmazone(PlayerID playerID)
-    {
-        Iterator<Position> positionIterator=new PositionIterator(getNumberOfColumns(),getNumberOfRows());
-        List<Position> list=new ArrayList<>();
-        while (positionIterator.hasNext())
-        {
-            Position position=positionIterator.next();
-
-            if(bord.getFigure(position) instanceof Amazon)
-            {
-                Amazon amazon=(Amazon) bord.getFigure(position);
-                if(amazon.getPlayerID().equals(playerID) )
-                {
-                    list.add(position);
-                }
-            }
-
-        }
-        return list;
-    }
-
 
     private boolean hasLost(PlayerID playerID) {
-        List<Position> amazonPositions = positionsAmazone(playerID);
 
-        for (Position amazonPosition : amazonPositions) {
-            Amazon amazon = (Amazon) bord.getFigure(amazonPosition);
-            List<Position> accessiblePositions = amazon.getAccessiblePositions(bord);
-            if (!accessiblePositions.isEmpty()) {
-                return false; // Player has at least one Amazon with accessible positions
-            }
-        }
+       return !(playerID==winner);
 
-        return true; // Player has no Amazons with accessible positions
     }
-
 
 
     public Board getBoard(){
@@ -243,7 +199,16 @@ public class Game {
         return bord.getNumberOfRows();
     }
 
-    public void setThisIsTheEnd(boolean thisIsTheEnd) {
-        isThisIsTheEnd = thisIsTheEnd;
+    public Player[] getPlayers() {
+        return players;
     }
+
+     public void afficherPos(PlayerID playerID)
+     {
+         List<Amazon> positions=positionsAmazons[playerID.index];
+         for (Amazon position:positions)
+         {
+             System.out.println("la posiition de sara "+ position.getPosition().toString());
+         }
+     }
 }

@@ -41,7 +41,7 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public boolean canMoveTo(Position position, Board board) {
-        if( !board.isOutOfBoard(position)
+       /* if( !board.isOutOfBoard(position)
                 && board.isEmpty(position)
                 && !pathIsBlocked(position, board)
                 && ( isHorizental(position) || isVertical(position) || isOnTheSameDiagonal(position)))
@@ -49,7 +49,8 @@ public class Amazon extends MovableFigure implements Figure{
 
            return true;
        }
-          return false;
+          return false;*/
+        return getAccessiblePositions(board).contains(position);
     }
 
     /**
@@ -100,25 +101,16 @@ public class Amazon extends MovableFigure implements Figure{
 
     @Override
     public List<Position> getAccessiblePositions(Board board) {
+        List<Position> positions = new ArrayList<>();
 
-         List<Position> positions=new ArrayList<>();
-         int i=0,j=0;
-        int newX,newY;
-        for(CardinalDirection card : CardinalDirection.values())
-        {
-            newX=this.position.getX()+ card.deltaRow;
-            newY=this.position.getY()+ card.deltaColumn;
+        for (CardinalDirection card : CardinalDirection.values()) {
+            int x = this.position.getX() + card.deltaColumn;
+            int y = this.position.getY() + card.deltaRow;
 
-
-           if(canMoveTo(new Position(newX,newY),board))
-            {
-                Position position1=new Position(newX,newY);
-                positions.add(position1);
-                while (canMoveTo(position1.next(card),board))
-                {
-                    positions.add(position1.next(card));
-                    position1=position1.next(card);
-                }
+            while (!board.isOutOfBoard(new Position(x,y)) && board.isEmpty(new Position(x,y))) {
+                positions.add(new Position(x, y));
+                x += card.deltaColumn;
+                y += card.deltaRow;
             }
         }
 
