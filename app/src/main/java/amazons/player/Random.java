@@ -3,8 +3,6 @@ import amazons.board.Position;
 import amazons.controller.GameController;
 import amazons.figures.Amazon;
 import amazons.game.Game;
-import amazons.game.TurnPhase;
-import amazons.util.RandomUtil;
 
 import java.util.List;
 
@@ -37,34 +35,24 @@ public class Random implements Player {
      */
     @Override
     public Move play(Move opponentMove) {
-
-
-        System.out.println("***********************************");
-        game.afficherPos(playerID);
         // je choisis une amazone que je veux bouger aléatoirement
-        List<Amazon> positionsAmazones = Game.positionsAmazons[playerID.index];
-        System.out.println("posiiiiiiiiiiition " + positionsAmazones);
-
-        Amazon amazoneChoisie = amazons.util.RandomUtil.getRandomElement(randomUtil, positionsAmazones);
-        System.out.println("amazone choisie " + amazoneChoisie);
-        Position positionSave=amazoneChoisie.getPosition();
-
-        Position postionDstAmazone = getRandomAccessiblePosition(amazoneChoisie);
-        System.out.println("position de destination choisie " + postionDstAmazone);
-
-        if (postionDstAmazone != null) {
-            game.updateGameAmazonMove(amazoneChoisie.getPosition(), postionDstAmazone);
-            List<Position> accessiblePositions = amazoneChoisie.getAccessiblePositions(game.getBoard());
-            if (!accessiblePositions.isEmpty()) {
-                Position arrowPosition = amazons.util.RandomUtil.getRandomElement(randomUtil, accessiblePositions);
-                System.out.println("arroooooooooow position " + arrowPosition.toString());
-                game.updateGameArrowShot(postionDstAmazone, arrowPosition);
-                return new Move(positionSave, postionDstAmazone, arrowPosition);
+        List<Amazon> positionsAmazones = game.amazonMovable(playerID);
+        if(!positionsAmazones.isEmpty())
+        {
+            Amazon amazoneChoisie = amazons.util.RandomUtil.getRandomElement(randomUtil, positionsAmazones);
+            Position positionSave=amazoneChoisie.getPosition();
+            Position postionDstAmazone = getRandomAccessiblePosition(amazoneChoisie);
+            if (postionDstAmazone != null) {
+                game.updateGameAmazonMove(amazoneChoisie.getPosition(), postionDstAmazone);
+                List<Position> accessiblePositions = amazoneChoisie.getAccessiblePositions(game.getBoard());
+                if (!accessiblePositions.isEmpty()) {
+                    Position arrowPosition = amazons.util.RandomUtil.getRandomElement(randomUtil, accessiblePositions);System.out.println("arroooooooooow position " + arrowPosition.toString());
+                    game.updateGameArrowShot(postionDstAmazone, arrowPosition);
+                    return new Move(positionSave, postionDstAmazone, arrowPosition);
+                }
             }
-
         }
 
-        // If no valid move was found, choose another action or return a dummy move
         return Move.DUMMY_MOVE;
     }
 

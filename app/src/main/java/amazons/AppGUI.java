@@ -29,7 +29,8 @@ public class AppGUI extends Application {
         amazons.player.Random random1=new Random(new java.util.Random(),game);
         Random random2=new Random(new java.util.Random(),game);
         Basic basic=new Basic(game);
-        GameController controller = new GameController(game,  new GUIPLayer(),basic);
+        Basic basic2=new Basic(game);
+        GameController controller = new GameController(game,  new GUIPLayer(),random2);
         Random.controller=controller;
         int numberOfColumns =  game.getNumberOfColumns();
         int numberOfRows =  game.getNumberOfRows();

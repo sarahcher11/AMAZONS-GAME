@@ -28,7 +28,7 @@ public class GameController {
     private static final int PAUSE_MILLISECONDS = 1500;
     private final PauseTransition pause = new PauseTransition(Duration.millis(PAUSE_MILLISECONDS));
 
-    private static Player[] players = new Player[Game.NUMBER_OF_PLAYERS];
+    private final static Player[] players = new Player[Game.NUMBER_OF_PLAYERS];
     private  BoardView view;
     private MenuView menu;
 
@@ -83,7 +83,6 @@ public class GameController {
     public void setPlayer(Player player, PlayerID playerID){
         player.setPlayerID(playerID);
         players[playerID.index] = player;
-        System.out.println("plaaaaaaaaaaaaaaayer"+players[playerID.index]);
     }
 
 
@@ -97,12 +96,9 @@ public class GameController {
     public void playComputerTurn(){
         Player currentPlayer = getCurrentPlayer();
         lastMove = currentPlayer.play(lastMove);
-        System.out.println("l'amazoooooone  "+lastMove.getAmazonDstPosition().toString());
         game.updateGame(lastMove);
-        System.out.println("LAST MOVE START POS "+lastMove.getAmazonStartPosition());
-        System.out.println("LAST MOVE dst pos "+lastMove.getAmazonDstPosition());
-        System.out.println("LAST MOVE arrow pos "+lastMove.getArrowDestPosition());
         view.showMove(lastMove);
+        game.incrementTurn();
         pause.play();
     }
 
@@ -148,7 +144,6 @@ public class GameController {
     // call by the view
     public void moveFigure(Position amazonStartPosition, Position amazonDstPosition)
     {
-        System.out.println("le joueur "+ getCurrentPlayer().getClass());
         game.updateGameAmazonMove(amazonStartPosition, amazonDstPosition);
         lastAmazonStartPosition = amazonStartPosition;
         lastAmazonDstPosition = amazonDstPosition;
@@ -191,7 +186,7 @@ public class GameController {
         amazons.player.Random random1 = new amazons.player.Random(random, game);
         random1.setPlayerID(playerID);
         setPlayer(random1, playerID);
-        System.out.println("aaaaa" + players[playerID.index].getClass());
+        System.out.println("aaaoooooooooooaa" + players[playerID.index].getClass());
     }
 
     public void setPlayerGreedy(PlayerID playerID){

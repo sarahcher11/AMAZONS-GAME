@@ -217,7 +217,7 @@ public class Game {
      * @param playerID l'identifiant du joueur
      * @return elle retourne une liste des amazones
      */
-     public List<Amazon> AmazonMovable(PlayerID playerID)
+     public List<Amazon> amazonMovable(PlayerID playerID)
      {
          List<Amazon> liste=new ArrayList<>();
          for (Amazon amazon: positionsAmazons[playerID.index])
