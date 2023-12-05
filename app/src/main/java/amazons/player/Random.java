@@ -47,6 +47,7 @@ public class Random implements Player {
 
         Amazon amazoneChoisie = amazons.util.RandomUtil.getRandomElement(randomUtil, positionsAmazones);
         System.out.println("amazone choisie " + amazoneChoisie);
+        Position positionSave=amazoneChoisie.getPosition();
 
         Position postionDstAmazone = getRandomAccessiblePosition(amazoneChoisie);
         System.out.println("position de destination choisie " + postionDstAmazone);
@@ -58,7 +59,7 @@ public class Random implements Player {
                 Position arrowPosition = amazons.util.RandomUtil.getRandomElement(randomUtil, accessiblePositions);
                 System.out.println("arroooooooooow position " + arrowPosition.toString());
                 game.updateGameArrowShot(postionDstAmazone, arrowPosition);
-                return new Move(amazoneChoisie.getPosition(), postionDstAmazone, arrowPosition);
+                return new Move(positionSave, postionDstAmazone, arrowPosition);
             }
 
         }

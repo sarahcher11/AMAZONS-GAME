@@ -132,7 +132,7 @@ public class Game {
         try {
             getBoard().moveFigure(amazonStartPosition, amazonDstPosition);
             ((MovableFigure) amazonFigure).setPosition(amazonDstPosition);
-            getBoard().setFigure(amazonStartPosition,EmptyFigure.EMPTY_FIGURE);
+           // getBoard().setFigure(amazonStartPosition,EmptyFigure.EMPTY_FIGURE);
         } catch (IllegalMoveException e) {
             throw new RuntimeException(e);
         }

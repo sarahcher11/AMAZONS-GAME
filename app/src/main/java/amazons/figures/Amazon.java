@@ -117,6 +117,23 @@ public class Amazon extends MovableFigure implements Figure{
         return positions;
     }
 
+    @Override
+    public List<Position> getPositionAdjacente(Board board) {
+        List<Position> positions = new ArrayList<>();
+        Position newPos;
+
+        for (CardinalDirection card : CardinalDirection.values()) {
+
+
+            newPos=this.position.next(card);
+            positions.add(newPos);
+
+        }
+
+        return positions;
+    }
+
+
     /**
      * Retourner vrai si la position ou se dirige l'amazon n'est pas bloqué
      * c'est à dire une Amazone ne peut pas sauter une case occupée

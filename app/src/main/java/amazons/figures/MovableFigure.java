@@ -13,6 +13,9 @@ public abstract  class MovableFigure {
     protected PlayerID playerID;
     abstract  public List<Position> getAccessiblePositions(Board board);
 
+
+    abstract public List<Position> getPositionAdjacente(Board board);
+
     public Position getPosition() {
         return position;
     }
@@ -42,5 +45,9 @@ public abstract  class MovableFigure {
         if (!(o instanceof MovableFigure that)) return false;
         return Objects.equals(position, that.position) && playerID == that.playerID;
     }
+
+
+
+
 
 }
