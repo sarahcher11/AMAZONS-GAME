@@ -8,12 +8,7 @@ import java.util.List;
 
 public class Random implements Player {
 
-
-
-
     private PlayerID playerID;
-
-
     private java.util.Random randomUtil;
     private Game game;
 
@@ -52,7 +47,6 @@ public class Random implements Player {
                 }
             }
         }
-
         return Move.DUMMY_MOVE;
     }
 

@@ -11,7 +11,6 @@ import javafx.animation.PauseTransition;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.scene.control.Alert;
 import javafx.util.Duration;
-
 import java.util.Random;
 
 
@@ -28,7 +27,7 @@ public class GameController {
     private static final int PAUSE_MILLISECONDS = 1500;
     private final PauseTransition pause = new PauseTransition(Duration.millis(PAUSE_MILLISECONDS));
 
-    private final static Player[] players = new Player[Game.NUMBER_OF_PLAYERS];
+    private  static Player[] players = new Player[Game.NUMBER_OF_PLAYERS];
     private  BoardView view;
     private MenuView menu;
 
@@ -97,9 +96,13 @@ public class GameController {
         Player currentPlayer = getCurrentPlayer();
         lastMove = currentPlayer.play(lastMove);
         game.updateGame(lastMove);
-        view.showMove(lastMove);
-        game.incrementTurn();
-        pause.play();
+        if (lastMove!=Move.DUMMY_MOVE)
+        {
+            view.showMove(lastMove);
+            game.incrementTurn();
+            pause.play();
+        }
+
     }
 
 
@@ -151,7 +154,9 @@ public class GameController {
 
 
     public void checkGameEnd() {
+
         if (game.hasEnded()) {
+            setPauseAnimation();
             String winnerID = game.getWinner().toString();
             showGameEndDialog(winnerID);
         }
@@ -182,11 +187,8 @@ public class GameController {
     }
 
     public void setPlayerRandom(PlayerID playerID){
-        System.out.println("LE JOUEUR " + playerID);
         amazons.player.Random random1 = new amazons.player.Random(random, game);
-        random1.setPlayerID(playerID);
         setPlayer(random1, playerID);
-        System.out.println("aaaoooooooooooaa" + players[playerID.index].getClass());
     }
 
     public void setPlayerGreedy(PlayerID playerID){

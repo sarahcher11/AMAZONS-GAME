@@ -3,10 +3,8 @@ package amazons.figures;
 
 import amazons.board.Board;
 import amazons.board.CardinalDirection;
-import amazons.board.MatrixBoard;
 import amazons.board.Position;
 import amazons.player.PlayerID;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -120,11 +118,7 @@ public class Amazon extends MovableFigure implements Figure{
     public List<Position> getPositionAdjacente(Board board) {
         List<Position> positions = new ArrayList<>();
         Position newPos;
-
         for (CardinalDirection card : CardinalDirection.values()) {
-
-
-
             int x = this.position.getX() + card.deltaColumn;
             int y = this.position.getY() + card.deltaRow;
             newPos=new Position(x,y);
@@ -132,9 +126,7 @@ public class Amazon extends MovableFigure implements Figure{
             {
                 positions.add(newPos);
             }
-
         }
-
         return positions;
     }
 

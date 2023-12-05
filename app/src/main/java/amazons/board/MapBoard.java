@@ -1,12 +1,8 @@
 package amazons.board;
 
 import amazons.figures.*;
-import amazons.player.Move;
-import amazons.player.PlayerID;
-
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 
 public class MapBoard implements Board{
@@ -14,7 +10,7 @@ public class MapBoard implements Board{
 
     private int numberOfRows;
     private int numberOfColumns;
-    Map<Position,Figure> plateau;
+    private  Map<Position,Figure> plateau;
 
 
     public MapBoard(int numberOfColumns,int numberOfRows)

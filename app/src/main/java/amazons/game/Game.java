@@ -24,7 +24,7 @@ public class Game {
 
 
 
-    public static List<Amazon>[] positionsAmazons=new List[NUMBER_OF_PLAYERS];
+    private List<Amazon>[] positionsAmazons=new List[NUMBER_OF_PLAYERS];
 
     private static final List<Position> DEFAULT_PLAYER0_POSITIONS =
             List.of(new Position(0,6), new Position(9,6), new Position(3,9), new Position(6,9));
@@ -114,9 +114,10 @@ public class Game {
 
 
     public void updateGame(Move move){
-        if (move==Move.DUMMY_MOVE) {
+        if (hasLost(getPlayerID())) {
             winner = players[(turn+1)%NUMBER_OF_PLAYERS].getPlayerID(); // L'autre joueur est le gagnant
             isThisIsTheEnd = true;
+
 
         } else {
             // Passer au tour suivant
@@ -154,7 +155,7 @@ public class Game {
 
     private boolean hasLost(PlayerID playerID) {
 
-       return !(playerID==winner);
+       return amazonMovable(playerID).isEmpty();
 
     }
 
