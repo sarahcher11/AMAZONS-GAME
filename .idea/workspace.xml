@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Modification de play de random">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Modification de getDirection et next">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/BoardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/BoardView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +119,7 @@
       <command value="gradle app:build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.amazons-mederbel-cherchem-g-03 [test]">
+  <component name="RunManager" selected="Gradle.amazons-template [run]">
     <configuration name="AppGUI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="amazons.AppGUI" />
       <module name="amazons-template.app.main" />
@@ -243,8 +240,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [test]" />
         <item itemvalue="Gradle.amazons-template [run]" />
+        <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [test]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [build]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [app:build]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [clean]" />
@@ -268,13 +265,6 @@
       <workItem from="1701685043512" duration="1706000" />
       <workItem from="1701689728084" duration="5127000" />
       <workItem from="1701775869124" duration="397000" />
-    </task>
-    <task id="LOCAL-00060" summary="Ajout de la classe PresetFigureGenerator">
-      <created>1700925516262</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1700925516262</updated>
     </task>
     <task id="LOCAL-00061" summary="Ajout du constructeur PresetFigureGenerator">
       <created>1700925710011</created>
@@ -612,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701692934360</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Modification de getDirection et next">
+      <created>1701804206750</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1701804206751</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -668,7 +665,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter getNumberOfColumns de Game" />
     <MESSAGE value="Compléter getNumberOfRows de Game" />
     <MESSAGE value="Modification du constructeur Game" />
     <MESSAGE value="Modification de initialize Game" />
@@ -693,7 +689,8 @@
     <MESSAGE value="test Random" />
     <MESSAGE value="Modification de la méthode start pour tester Random" />
     <MESSAGE value="Ajout de l'exception dans getDirection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de l'exception dans getDirection" />
+    <MESSAGE value="Modification de getDirection et next" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification de getDirection et next" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
