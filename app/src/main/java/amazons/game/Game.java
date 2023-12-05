@@ -211,4 +211,22 @@ public class Game {
              System.out.println("la posiition de sara "+ position.getPosition().toString());
          }
      }
+
+    /**
+     * Une méthode qui retourne que les amazones d'un joueurs qui sont movables
+     * @param playerID l'identifiant du joueur
+     * @return elle retourne une liste des amazones
+     */
+     public List<Amazon> AmazonMovable(PlayerID playerID)
+     {
+         List<Amazon> liste=new ArrayList<>();
+         for (Amazon amazon: positionsAmazons[playerID.index])
+         {
+             if(!amazon.getAccessiblePositions(bord).isEmpty())
+                 liste.add(amazon);
+         }
+
+               return liste;
+
+     }
 }

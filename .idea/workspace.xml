@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Modification de getDirection et next">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Modification de getRandomPositionAdj de Basic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Basic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -265,13 +267,6 @@
       <workItem from="1701685043512" duration="1706000" />
       <workItem from="1701689728084" duration="5127000" />
       <workItem from="1701775869124" duration="397000" />
-    </task>
-    <task id="LOCAL-00061" summary="Ajout du constructeur PresetFigureGenerator">
-      <created>1700925710011</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1700925710011</updated>
     </task>
     <task id="LOCAL-00062" summary="Ajout de nextFigure dans PresetFigureGenerator">
       <created>1700925928520</created>
@@ -609,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701804206751</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Modification de getRandomPositionAdj de Basic">
+      <created>1701804730621</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1701804730621</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -665,7 +667,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter getNumberOfRows de Game" />
     <MESSAGE value="Modification du constructeur Game" />
     <MESSAGE value="Modification de initialize Game" />
     <MESSAGE value="Compléter hasEnded de Game" />
@@ -690,7 +691,8 @@
     <MESSAGE value="Modification de la méthode start pour tester Random" />
     <MESSAGE value="Ajout de l'exception dans getDirection" />
     <MESSAGE value="Modification de getDirection et next" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification de getDirection et next" />
+    <MESSAGE value="Modification de getRandomPositionAdj de Basic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification de getRandomPositionAdj de Basic" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

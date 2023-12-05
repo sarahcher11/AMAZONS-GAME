@@ -67,8 +67,8 @@ public class Basic implements Player{
     private Position getRandomPositionAdj(Amazon amazon) {
         java.util.Random random=new java.util.Random();
         List<Position> accessiblePositions = amazon.getPositionAdjacente(game.getBoard());
-        if(accessiblePositions.isEmpty())
-         return amazons.util.RandomUtil.getRandomElement(random, accessiblePositions);
+        if(!accessiblePositions.isEmpty())
+          return amazons.util.RandomUtil.getRandomElement(random, accessiblePositions);
         return null;
     }
 
