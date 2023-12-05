@@ -67,6 +67,7 @@ public class BoardView extends GridPane{
         CardinalDirection direction = startPosition.getDirection(destPosition);
         System.out.println("inessssssssssssssssss 3 dircetion "+direction);
         for(Position position = startPosition; !position.equals(destPosition); position = position.next(direction)) {
+            System.out.println("position traversé "+ position);
             fieldMap.get(position).setHighlightBackGroundColorTemp();
         }
         fieldMap.get(destPosition).setHighlightBackGroundColorTemp();

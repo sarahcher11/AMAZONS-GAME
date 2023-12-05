@@ -53,13 +53,13 @@ public class Position implements Serializable {
      * @return un objet de type position
      */
     public Position next(CardinalDirection direction) {
-        return new Position(this.y+ direction.deltaColumn,this.x+direction.deltaRow);
+        return new Position(this.x+ direction.deltaColumn,this.y+direction.deltaRow);
     }
 
 
 
     public CardinalDirection getDirection(Position destPosition){
-        return CardinalDirection.getDirection(y,x, destPosition.y, destPosition.x);
+        return CardinalDirection.getDirection(x,y, destPosition.x, destPosition.y);
     }
 
 

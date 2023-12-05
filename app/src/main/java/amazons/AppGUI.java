@@ -4,6 +4,7 @@ package amazons;
 import amazons.controller.GameController;
 import amazons.figures.Amazon;
 import amazons.game.Game;
+import amazons.player.Basic;
 import amazons.player.GUIPLayer;
 import amazons.player.Random;
 import amazons.util.ImageUtil;
@@ -27,7 +28,8 @@ public class AppGUI extends Application {
 
         amazons.player.Random random1=new Random(new java.util.Random(),game);
         Random random2=new Random(new java.util.Random(),game);
-        GameController controller = new GameController(game,  new GUIPLayer(),random2);
+        Basic basic=new Basic(game);
+        GameController controller = new GameController(game,  new GUIPLayer(),basic);
         Random.controller=controller;
         int numberOfColumns =  game.getNumberOfColumns();
         int numberOfRows =  game.getNumberOfRows();
@@ -43,8 +45,8 @@ public class AppGUI extends Application {
         //board with column and row markings
         GridPane table = new GridPane();
         for (int rowIndex = 0; rowIndex < numberOfRows; rowIndex++) {
-            table.add(newRowLabel(rowIndex + 1), 0, rowIndex + 1, 1, 1);
-            table.add(newRowLabel(rowIndex + 1), 9, rowIndex + 1, 1, 1);
+            table.add(newRowLabel(rowIndex ), 0, rowIndex + 1, 1, 1);
+            table.add(newRowLabel(rowIndex ), 9, rowIndex + 1, 1, 1);
             table.add(newColLabel(rowIndex), rowIndex + 1, 0, 1, 1);
             table.add(newColLabel(rowIndex), rowIndex + 1, 10, 1, 1);
         }

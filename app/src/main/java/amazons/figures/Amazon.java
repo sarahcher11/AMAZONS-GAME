@@ -24,7 +24,6 @@ public class Amazon extends MovableFigure implements Figure{
         this.position=position;
         this.playerID=PlayerID.getPlayerIDFromIndex(num);
 
-
     }
     public Amazon(Position position,PlayerID player)
     {
@@ -41,7 +40,7 @@ public class Amazon extends MovableFigure implements Figure{
      */
     @Override
     public boolean canMoveTo(Position position, Board board) {
-       /* if( !board.isOutOfBoard(position)
+        if( !board.isOutOfBoard(position)
                 && board.isEmpty(position)
                 && !pathIsBlocked(position, board)
                 && ( isHorizental(position) || isVertical(position) || isOnTheSameDiagonal(position)))
@@ -49,8 +48,8 @@ public class Amazon extends MovableFigure implements Figure{
 
            return true;
        }
-          return false;*/
-        return getAccessiblePositions(board).contains(position);
+          return false;
+      //  return getAccessiblePositions(board).contains(position);
     }
 
     /**
@@ -125,8 +124,14 @@ public class Amazon extends MovableFigure implements Figure{
         for (CardinalDirection card : CardinalDirection.values()) {
 
 
-            newPos=this.position.next(card);
-            positions.add(newPos);
+
+            int x = this.position.getX() + card.deltaColumn;
+            int y = this.position.getY() + card.deltaRow;
+            newPos=new Position(x,y);
+            if(canMoveTo(newPos,board))
+            {
+                positions.add(newPos);
+            }
 
         }
 
