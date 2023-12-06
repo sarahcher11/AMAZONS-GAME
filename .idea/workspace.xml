@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Modification des couleurs du plateau">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/FieldView.java" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout d'une image de undo">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/MenuView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,13 +264,6 @@
       <workItem from="1701685043512" duration="1706000" />
       <workItem from="1701689728084" duration="5127000" />
       <workItem from="1701775869124" duration="397000" />
-    </task>
-    <task id="LOCAL-00069" summary="Realisation de la tache 15">
-      <created>1700946018001</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1700946018002</updated>
     </task>
     <task id="LOCAL-00070" summary="Ajout des attributs de la classe Move">
       <created>1700946658634</created>
@@ -612,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701888650202</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="Ajout d'une image de undo">
+      <created>1701897661849</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1701897661849</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -668,7 +664,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Uncomment getImageView de FieldView" />
     <MESSAGE value="Compléter setPlayerBasic" />
     <MESSAGE value="Modifier les fonctions initialize" />
     <MESSAGE value="modifier la classe FieldView" />
@@ -693,7 +688,8 @@
     <MESSAGE value="Tache 22" />
     <MESSAGE value="Modification de updateGame" />
     <MESSAGE value="Modification des couleurs du plateau" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification des couleurs du plateau" />
+    <MESSAGE value="Ajout d'une image de undo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'une image de undo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
