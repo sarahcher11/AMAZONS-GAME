@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout d'une image de undo">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de la méthode undo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/MenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/viewer/MenuView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -264,20 +267,6 @@
       <workItem from="1701685043512" duration="1706000" />
       <workItem from="1701689728084" duration="5127000" />
       <workItem from="1701775869124" duration="397000" />
-    </task>
-    <task id="LOCAL-00070" summary="Ajout des attributs de la classe Move">
-      <created>1700946658634</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1700946658634</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Compléter la méthode getAmazonDstPosition">
-      <created>1700947005696</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1700947005697</updated>
     </task>
     <task id="LOCAL-00072" summary="Redéfinition de hashCode et equals">
       <created>1700947202110</created>
@@ -608,7 +597,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701897661849</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Ajout du bouton undo">
+      <created>1701897870287</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1701897870287</updated>
+    </task>
+    <task id="LOCAL-00120" summary="Ajout de la méthode undo">
+      <created>1701898166418</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1701898166418</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -664,8 +667,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter setPlayerBasic" />
-    <MESSAGE value="Modifier les fonctions initialize" />
     <MESSAGE value="modifier la classe FieldView" />
     <MESSAGE value="Modifier getAccessiblePositions de AMazon" />
     <MESSAGE value="AJout de la méthode positionsAccessible" />
@@ -689,7 +690,9 @@
     <MESSAGE value="Modification de updateGame" />
     <MESSAGE value="Modification des couleurs du plateau" />
     <MESSAGE value="Ajout d'une image de undo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'une image de undo" />
+    <MESSAGE value="Ajout du bouton undo" />
+    <MESSAGE value="Ajout de la méthode undo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la méthode undo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

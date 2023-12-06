@@ -11,6 +11,7 @@ import javafx.scene.layout.GridPane;
 public class MenuView extends BorderPane {
 
     private final Label status;
+
     public MenuView(GameController controller){
         setPadding(new Insets(10, 10, 10, 0));
         GridPane options =  new GridPane();
@@ -27,7 +28,7 @@ public class MenuView extends BorderPane {
                         "select player " + PlayerID.PLAYER_ZERO.index, PlayerID.PLAYER_ZERO, controller),
                 0, 0 ,1 ,1);
         options.add(new OptionButton("images/undo.png",
-                        e -> controller.resetGame(),"undo"),
+                        e -> controller.undo(),"undo"),
                 3, 0 ,1 ,1);
         setRight(options);
 

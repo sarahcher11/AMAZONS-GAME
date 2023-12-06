@@ -64,14 +64,17 @@ public class GameController {
 
     public void undo()
     {
-        if (lastMove!=Move.DUMMY_MOVE)
-        {
-            getBoard().setFigure(lastAmazonStartPosition,
-                    getBoard().getFigure(lastAmazonDstPosition));
-            getBoard().setFigure(lastArrowDstPosition,EmptyFigure.EMPTY_FIGURE);
-            getBoard().setFigure(lastArrowDstPosition,EmptyFigure.EMPTY_FIGURE);
-            lastMove=Move.DUMMY_MOVE;
-        }
+          if(lastMove!=Move.DUMMY_MOVE)
+          {
+              getBoard().setFigure(lastMove.getAmazonStartPosition(),
+                      getBoard().getFigure(lastAmazonDstPosition));
+              getBoard().setFigure(lastMove.getAmazonDstPosition(),EmptyFigure.EMPTY_FIGURE);
+              getBoard().setFigure(lastMove.getArrowDestPosition(),EmptyFigure.EMPTY_FIGURE);
+              lastMove=Move.DUMMY_MOVE;
+              view.updateFields();
+          }
+
+
 
     }
     private void setPauseAnimation(){
@@ -175,7 +178,7 @@ public class GameController {
     public void shootArrow(Position startPosition, Position arrowDstPosition){
         game.updateGameArrowShot(startPosition, arrowDstPosition);
         lastArrowDstPosition = arrowDstPosition;
-       // lastMove = new Move(lastAmazonStartPosition, lastAmazonDstPosition, lastArrowDstPosition);
+        lastMove = new Move(lastAmazonStartPosition, lastAmazonDstPosition, lastArrowDstPosition);
     }
 
 
