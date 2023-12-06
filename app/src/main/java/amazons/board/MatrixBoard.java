@@ -4,13 +4,31 @@ import amazons.figures.IllegalMoveException;
 import amazons.player.PlayerID;
 import java.util.Iterator;
 
+
+
 public class MatrixBoard implements Board{
 
 
+    /**
+     * Nombre de lignes
+     */
     private int numberOfRows;
+    /**
+     * Nombre de colonnes
+     */
     private int numberOfColumns;
+
+    /**
+     * Les figures présentes sur le plateau
+     */
     private Figure[][] plateau;
 
+
+    /**
+     * Contructeur
+     * @param numberOfColumns le nombre de colonnes
+     * @param numberOfRows le nombre de lignes
+     */
     public MatrixBoard(int numberOfColumns,int numberOfRows){
          plateau=new Figure[numberOfColumns][numberOfRows];
          this.numberOfColumns=numberOfColumns;
@@ -20,6 +38,9 @@ public class MatrixBoard implements Board{
     }
 
 
+    /**
+     * Afficher en console les types de figures
+     */
     public void afficherBord()
     {
         for(int i=0;i<numberOfColumns;i++){
@@ -81,6 +102,14 @@ public class MatrixBoard implements Board{
         return false;
     }
 
+
+    /**
+     * Déplacer une amazone de sa case de départ à sa case de destination
+     * si celà est permi
+     * @param source: the position of the figure to move
+     * @param destination: the destination position of the figure
+     * @throws IllegalMoveException
+     */
     public void moveFigure(Position source,Position destination) throws IllegalMoveException {
         if(getFigure(source) instanceof Amazon)
         {
@@ -128,6 +157,11 @@ public class MatrixBoard implements Board{
         }
     }
 
+
+    /**
+     * Remplir le plateau avec des figures
+     * @param generator
+     */
     @Override
     public void fill(FigureGenerator generator) {
         Position position;
@@ -140,23 +174,46 @@ public class MatrixBoard implements Board{
         }
     }
 
+
+    /**
+     * Creer un itérateur de position
+     * @return
+     */
     @Override
     public Iterator<Position> positionIterator() {
         return new PositionIterator(numberOfColumns,numberOfRows);
     }
 
 
+    /**
+     * Getter
+     * @return le nombre de lignes du plateau
+     */
     public int getNumberOfRows() {
         return numberOfRows;
     }
 
+    /**
+     * Getter
+     * @return le nombre de colonnes du plateau
+     */
     public int getNumberOfColumns() {
         return numberOfColumns;
     }
+
+    /**
+     * donne un iterator de figures
+     * @return
+     */
     public Iterator<Figure> iterator(){
         return new MatrixIterator<>(numberOfColumns,numberOfRows,plateau);
     }
 
+
+    /**
+     * Representation en chaine de caractères du plateau
+     * @return une chaine de caractère
+     */
     @Override
     public String toString() {
         String result = "";

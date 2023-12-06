@@ -10,14 +10,28 @@ import java.util.Objects;
 public class Position implements Serializable {
     public static final DataFormat POSITION_FORMAT = new DataFormat("amazons.position");
 
+    /**
+     * La coordonnée x
+     */
    int x;
+    /**
+     * La coordonnée y
+     */
    int y;
+
+    /**
+     * Constructeur de la classe Position
+     * @param x la coordonnée x
+     * @param y la coordonnée y
+     */
 
     public Position(int x,int y)
     {
         this.x=x;
         this.y=y;
     }
+
+
 
 
     public int getX() {return x;}
@@ -57,6 +71,11 @@ public class Position implements Serializable {
     }
 
 
+    /**
+     * Avoir de direction prise par l'amazone en fonction de la destination
+     * @param destPosition  la position de destination
+     * @return retourne une direction de type CardinalDirection
+     */
 
     public CardinalDirection getDirection(Position destPosition){
         return CardinalDirection.getDirection(x,y, destPosition.x, destPosition.y);

@@ -15,6 +15,7 @@ import java.util.Random;
 
 
 public class GameController {
+
     private final Game game;
     private static final Random random = new Random();
 
@@ -178,14 +179,28 @@ public class GameController {
         alert.showAndWait();
     }
 
+    /**
+     * jouer en GUI
+     * @param playerID
+     */
     public void setPlayerGUI(PlayerID playerID){
+
         setPlayer(new GUIPLayer(), playerID);
     }
 
+    /**
+     * Faire un tour de jeu en principe de Basic
+     * @param playerID l'identifiant du joueur
+     */
     public void setPlayerBasic(PlayerID playerID){
         setPlayer(new Basic(game),playerID);
     }
 
+
+    /**
+     * Jouer un tour aléatoirement
+     * @param playerID l'identifiant du joueur
+     */
     public void setPlayerRandom(PlayerID playerID){
         amazons.player.Random random1 = new amazons.player.Random(random, game);
         setPlayer(random1, playerID);

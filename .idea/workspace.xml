@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de la classe Greedy">
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Test de InitializePreset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/MatrixBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/board/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/figures/Amazon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/amazons/figures/AmazonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,7 @@
       <command value="gradle app:build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.amazons-mederbel-cherchem-g-03 [test]">
+  <component name="RunManager" selected="Gradle.amazons-template [run]">
     <configuration name="AppGUI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="amazons.AppGUI" />
       <module name="amazons-template.app.main" />
@@ -242,8 +243,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [test]" />
         <item itemvalue="Gradle.amazons-template [run]" />
+        <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [test]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [build]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [app:build]" />
         <item itemvalue="Gradle.amazons-mederbel-cherchem-g-03 [clean]" />
@@ -267,20 +268,6 @@
       <workItem from="1701685043512" duration="1706000" />
       <workItem from="1701689728084" duration="5127000" />
       <workItem from="1701775869124" duration="397000" />
-    </task>
-    <task id="LOCAL-00065" summary="Ajout de getRandomFigure">
-      <created>1700928901741</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1700928901741</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Ajout de nextFigure et correction d'erreurs">
-      <created>1700928945532</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1700928945532</updated>
     </task>
     <task id="LOCAL-00067" summary="Test et finalisation de la tache 13">
       <created>1700940505246</created>
@@ -611,7 +598,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701814832168</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Quelques tests de la classe Amazon">
+      <created>1701886231136</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1701886231137</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Test de InitializePreset">
+      <created>1701886495704</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1701886495704</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -667,8 +668,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compléter  getPlayerID de GAME" />
-    <MESSAGE value="Compléter  getPlayer de GAME" />
     <MESSAGE value="Compléter updateGameArrowShot de GAME" />
     <MESSAGE value="Tâche 18 : Compléter le code de la classe Game et tache 19" />
     <MESSAGE value="Uncomment BoardView" />
@@ -692,7 +691,9 @@
     <MESSAGE value="Ajout de AmazonMovable dans Game" />
     <MESSAGE value="Modifier play de Random" />
     <MESSAGE value="Ajout de la classe Greedy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la classe Greedy" />
+    <MESSAGE value="Quelques tests de la classe Amazon" />
+    <MESSAGE value="Test de InitializePreset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test de InitializePreset" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

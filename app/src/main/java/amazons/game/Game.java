@@ -5,10 +5,7 @@ import amazons.figures.*;
 import amazons.player.Move;
 import amazons.player.Player;
 import amazons.player.PlayerID;
-import javafx.geometry.Pos;
-import javafx.scene.control.Alert;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -47,6 +44,8 @@ public class Game {
 
 
     public void initializeGame(Player player0, Player player1){
+        isThisIsTheEnd=false;
+        winner=null;
         bord.fill(new EmptyFigureGenerator()); // Assurez-vous que le plateau est rempli avec des figures vides.
         List<Amazon> positionZero=new ArrayList<>();
         List<Amazon> positionsOne=new ArrayList<>();
@@ -87,29 +86,6 @@ public class Game {
         }
         return allPlayersFigures;
     }
-
-
-    public List<MovableFigure> createPlayersFiguresWithDefaultPositionP1()
-    {
-        List<MovableFigure> allPlayersFigures = new ArrayList<>();
-        for(Position position: DEFAULT_PLAYER0_POSITIONS){
-            allPlayersFigures.add(new Amazon(position, PlayerID.PLAYER_ZERO));
-        }
-
-        return allPlayersFigures;
-    }
-
-    public List<MovableFigure> createPlayersFiguresWithDefaultPositionP2()
-    {
-        List<MovableFigure> allPlayersFigures = new ArrayList<>();
-        for(Position position: DEFAULT_PLAYER1_POSITIONS){
-            allPlayersFigures.add(new Amazon(position, PlayerID.PLAYER_ONE));
-        }
-        return allPlayersFigures;
-    }
-
-
-
 
 
 
