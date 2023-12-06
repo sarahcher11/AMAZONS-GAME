@@ -2,6 +2,7 @@ package amazons.controller;
 
 import amazons.board.Board;
 import amazons.board.Position;
+import amazons.figures.EmptyFigure;
 import amazons.game.Game;
 import amazons.game.TurnPhase;
 import amazons.player.*;
@@ -59,6 +60,19 @@ public class GameController {
        view.updateFields();
        menu.setStatusText("");
        startGame();
+    }
+
+    public void undo()
+    {
+        if (lastMove!=Move.DUMMY_MOVE)
+        {
+            getBoard().setFigure(lastAmazonStartPosition,
+                    getBoard().getFigure(lastAmazonDstPosition));
+            getBoard().setFigure(lastArrowDstPosition,EmptyFigure.EMPTY_FIGURE);
+            getBoard().setFigure(lastArrowDstPosition,EmptyFigure.EMPTY_FIGURE);
+            lastMove=Move.DUMMY_MOVE;
+        }
+
     }
     private void setPauseAnimation(){
         pause.setOnFinished(e -> setPhase(TurnPhase.END_PHASE));
