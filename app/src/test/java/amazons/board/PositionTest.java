@@ -12,12 +12,9 @@ class PositionTest {
     private final Position position00 = new Position(0,0);
     private final Position position10 = new Position(1,0);
     private final Position position20 = new Position(2,0);
-
     private final Position position02 = new Position(0,2);
     private final Position position12 = new Position(1,2);
     private final Position position22 = new Position(2,2);
-
-
     private final Position position01 = new Position(0,1);
     private final Position position11 = new Position(1,1);
     private final Position position21 = new Position(2,1);
@@ -66,7 +63,7 @@ class PositionTest {
 
 
 
-    /*
+
     @Test
     void testHashCode() {
         // two positions must have same hash code if and
@@ -74,7 +71,7 @@ class PositionTest {
         assertThat(position00.hashCode()).isNotEqualTo(position01.hashCode());
         assertThat(position00.hashCode()).isEqualTo(new Position(0,0).hashCode());
     }
-    */
+
 
 
 }
