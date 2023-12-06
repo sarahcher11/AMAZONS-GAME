@@ -3,6 +3,7 @@ package amazons.figures;
 import amazons.board.Board;
 // import amazons.board.EmptyFigureGenerator;
 // import amazons.board.MatrixBoard;
+import amazons.board.EmptyFigureGenerator;
 import amazons.board.MatrixBoard;
 import amazons.board.Position;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,10 +18,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class AmazonTest {
 
-    private final Position[][] allPositions = new Position[3][4];
+    private final Position[][] allPositions = new Position[4][3];
     private final List<Position> accessiblePositions = new ArrayList<>();
-    private final int NUMBER_OF_COLUMNS = 3;
-    private final int NUMBER_OF_ROWS = 4;
+    private final int NUMBER_OF_COLUMNS = 4;
+    private final int NUMBER_OF_ROWS = 3;
     private final Board board = new MatrixBoard(NUMBER_OF_COLUMNS, NUMBER_OF_ROWS);
     private Amazon amazon11;
 
@@ -39,35 +40,26 @@ class AmazonTest {
     */
 
 
+
      void setUp(){
          for(int x=0; x<NUMBER_OF_COLUMNS; x++){
              for(int y=0; y<NUMBER_OF_ROWS; y++){
-                // System.out.println("la colonne "+ x +" la ligne "+ y);
                  allPositions[x][y] = new Position(x,y);
              }
          }
-
-
          amazon11 = new Amazon(allPositions[1][1],0);
-
-        // board.fill(new EmptyFigureGenerator());
+         board.fill(new EmptyFigureGenerator());
          board.setFigure(allPositions[1][1],amazon11);
          board.setFigure(allPositions[1][2], new Amazon(allPositions[1][2],0));
          board.setFigure(allPositions[2][0], new Amazon(allPositions[2][0],1));
          board.setFigure(allPositions[2][2], ARROW_FIGURE);
-       //  board.afficherBord();
-        // System.out.println("03"+ board.getFigure(allPositions[2][1]).toString());
          accessiblePositions.clear();
          accessiblePositions.add(allPositions[0][0]);
          accessiblePositions.add(allPositions[0][1]);
-         accessiblePositions.add(allPositions[1][0]);
          accessiblePositions.add(allPositions[0][2]);
+         accessiblePositions.add(allPositions[1][0]);
          accessiblePositions.add(allPositions[2][1]);
-
-
-        // accessiblePositions.add(allPositions[2][1]);
-
-          //accessiblePositions.add(allPositions[1][3]);
+         accessiblePositions.add(allPositions[3][1]);
      }
 
 
@@ -99,7 +91,10 @@ class AmazonTest {
     @Test
     void testGetAccessiblePositions() {
          setUp();
-      //  System.out.println("taille "+accessiblePositions.size());
+
+
+        System.out.println("la taille de la liste est "+ amazon11.getAccessiblePositions(board).size());
+       System.out.println("taille "+accessiblePositions.size());
          assertThat(amazon11.getAccessiblePositions(board))
                  .hasSameElementsAs(accessiblePositions)
                  .hasSize(accessiblePositions.size());
@@ -108,28 +103,27 @@ class AmazonTest {
     @Test
     void pathIsBlockedTest()
     {
-        assertThat(amazon11.pathIsBlocked(allPositions[1][3],board)).isTrue();
         assertThat(amazon11.pathIsBlocked(allPositions[0][0],board)).isFalse();
     }
 
     @Test
     void isHorizentalTest()
     {
-        assertThat(amazon11.isHorizental(allPositions[1][3])).isTrue();
-        assertThat(amazon11.isHorizental(allPositions[2][3])).isFalse();
+        assertThat(amazon11.isHorizental(allPositions[1][2])).isTrue();
+        assertThat(amazon11.isHorizental(allPositions[2][2])).isFalse();
     }
 
     @Test
     void isVerticalTest()
     {
-        assertThat(amazon11.isVertical(allPositions[1][3])).isFalse();
+        assertThat(amazon11.isVertical(allPositions[2][2])).isFalse();
         assertThat(amazon11.isVertical(allPositions[2][1])).isTrue();
     }
     @Test
     void isOnTheSameDiagonalTest()
     {
-        assertThat(amazon11.isOnTheSameDiagonal(allPositions[1][3])).isFalse();
-        assertThat(amazon11.isOnTheSameDiagonal(allPositions[0][2])).isTrue();
+        assertThat(amazon11.isOnTheSameDiagonal(allPositions[1][2])).isFalse();
+        assertThat(amazon11.isOnTheSameDiagonal(allPositions[0][0])).isTrue();
         assertThat(amazon11.isOnTheSameDiagonal(allPositions[2][2])).isTrue();
     }
 

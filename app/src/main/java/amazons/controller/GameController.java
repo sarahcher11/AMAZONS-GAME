@@ -192,7 +192,7 @@ public class GameController {
     }
 
     public void setPlayerGreedy(PlayerID playerID){
-        // TODO
+        setPlayer(new Greedy(),playerID);
     }
 
 
