@@ -8,11 +8,15 @@ import java.util.List;
 
 public class Random implements Player {
 
+    /**
+     * L'identifiant du joueur
+     */
     private PlayerID playerID;
+
     private java.util.Random randomUtil;
     private Game game;
 
-    public static GameController controller;
+
 
     public Random(java.util.Random randomUtil, Game game)
     {

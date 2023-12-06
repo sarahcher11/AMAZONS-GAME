@@ -91,7 +91,7 @@ public class Game {
 
     public void updateGame(Move move){
         if (hasLost(getPlayerID())) {
-            winner = players[(turn+1)%NUMBER_OF_PLAYERS].getPlayerID(); // L'autre joueur est le gagnant
+            winner = getPlayerID().opponent();
             isThisIsTheEnd = true;
 
 

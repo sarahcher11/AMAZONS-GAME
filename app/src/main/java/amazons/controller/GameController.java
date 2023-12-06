@@ -45,6 +45,8 @@ public class GameController {
 
     private void initialize(){
         game.initializeGame(players[0], players[1]);
+        System.out.println("player 0"+players[0].getClass());
+        System.out.println("player 1"+players[1].getClass());
         lastMove = Move.DUMMY_MOVE;
         resetPhase();
         addEndPhaseListener();

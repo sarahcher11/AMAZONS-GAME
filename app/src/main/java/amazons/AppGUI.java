@@ -31,7 +31,6 @@ public class AppGUI extends Application {
         Basic basic=new Basic(game);
         Basic basic2=new Basic(game);
         GameController controller = new GameController(game,  new GUIPLayer(),random2);
-        Random.controller=controller;
         int numberOfColumns =  game.getNumberOfColumns();
         int numberOfRows =  game.getNumberOfRows();
 
