@@ -26,11 +26,7 @@ public class AppGUI extends Application {
     public void start(Stage primaryStage) {
         Game game = new Game();
 
-        amazons.player.Random random1=new Random(new java.util.Random(),game);
-        Random random2=new Random(new java.util.Random(),game);
-        Basic basic=new Basic(game);
-        Basic basic2=new Basic(game);
-        GameController controller = new GameController(game,  new GUIPLayer(),random2);
+        GameController controller = new GameController(game,  new GUIPLayer(),new GUIPLayer());
         int numberOfColumns =  game.getNumberOfColumns();
         int numberOfRows =  game.getNumberOfRows();
 

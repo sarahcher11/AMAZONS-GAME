@@ -45,6 +45,7 @@ public class GameController {
 
     private void initialize(){
         game.initializeGame(players[0], players[1]);
+
         System.out.println("player 0"+players[0].getClass());
         System.out.println("player 1"+players[1].getClass());
         lastMove = Move.DUMMY_MOVE;
@@ -156,21 +157,13 @@ public class GameController {
     }
 
 
-    public void checkGameEnd() {
-
-        if (game.hasEnded()) {
-            setPauseAnimation();
-            String winnerID = game.getWinner().toString();
-            showGameEndDialog(winnerID);
-        }
-    }
-
     // call by the view
     public void shootArrow(Position startPosition, Position arrowDstPosition){
         game.updateGameArrowShot(startPosition, arrowDstPosition);
         lastArrowDstPosition = arrowDstPosition;
        // lastMove = new Move(lastAmazonStartPosition, lastAmazonDstPosition, lastArrowDstPosition);
     }
+
 
     private void showGameEndDialog(String winnerID) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -180,6 +173,16 @@ public class GameController {
 
         alert.showAndWait();
     }
+
+    public void checkTheEnd()
+    {
+        if(game.hasLost(getCurrentPlayerID()))
+        {
+            setPauseAnimation();
+            showGameEndDialog(getCurrentPlayerID().opponent().toString());
+        }
+    }
+
 
     /**
      * jouer en GUI
@@ -195,7 +198,9 @@ public class GameController {
      * @param playerID l'identifiant du joueur
      */
     public void setPlayerBasic(PlayerID playerID){
+
         setPlayer(new Basic(game),playerID);
+        resetGame();
     }
 
 
@@ -206,10 +211,12 @@ public class GameController {
     public void setPlayerRandom(PlayerID playerID){
         amazons.player.Random random1 = new amazons.player.Random(random, game);
         setPlayer(random1, playerID);
+         resetGame();
     }
 
     public void setPlayerGreedy(PlayerID playerID){
         setPlayer(new Greedy(),playerID);
+        resetGame();
     }
 
 

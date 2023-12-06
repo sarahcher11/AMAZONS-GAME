@@ -26,8 +26,8 @@ import static amazons.figures.ArrowFigure.ARROW_FIGURE;
 import static amazons.figures.EmptyFigure.EMPTY_FIGURE;
 
 public class FieldView extends Label {
-    private static final String defaultStyleBlack = "-fx-background-color: gray;";
-    private static final String defaultStyleWhite = "-fx-background-color: white;";
+    private static final String defaultStyleBlack = "-fx-background-color: #8B4513;";
+    private static final String defaultStyleWhite = "-fx-background-color: #F5F5DC;";
     private static final String highlightStyleBlack = "-fx-background-color: forestgreen;";
     private static final String highlightStyleWhite = "-fx-background-color: palegreen;";
     private static final String highlightShootStyleBlack = "-fx-background-color: darkred;";
@@ -191,6 +191,7 @@ public class FieldView extends Label {
             Position startPosition = ((FieldView) e.getGestureSource()).position;
                 switch (controller.getPhase()) {
                     case AMAZON_PHASE -> {
+                        controller.checkTheEnd();
                         controller.moveFigure(startPosition, position);
                         setFigureIcon();
                         isAmazonDst = true;

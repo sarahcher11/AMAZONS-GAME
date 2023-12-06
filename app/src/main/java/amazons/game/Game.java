@@ -16,11 +16,7 @@ public class Game {
     public static final int DEFAULT_NUMBER_OF_AMAZONS = 4;
     private static final int DEFAULT_NUMBER_OF_COLUMNS = 10;
     private static  final int DEFAULT_NUMBER_OF_ROWS = 10;
-
     private Board bord;
-
-
-
     private List<Amazon>[] positionsAmazons=new List[NUMBER_OF_PLAYERS];
 
     private static final List<Position> DEFAULT_PLAYER0_POSITIONS =
@@ -129,7 +125,7 @@ public class Game {
 
 
 
-    private boolean hasLost(PlayerID playerID) {
+    public boolean hasLost(PlayerID playerID) {
 
        return amazonMovable(playerID).isEmpty();
 
@@ -180,14 +176,6 @@ public class Game {
         return players;
     }
 
-     public void afficherPos(PlayerID playerID)
-     {
-         List<Amazon> positions=positionsAmazons[playerID.index];
-         for (Amazon position:positions)
-         {
-             System.out.println("la posiition de sara "+ position.getPosition().toString());
-         }
-     }
 
     /**
      * Une méthode qui retourne que les amazones d'un joueurs qui sont movables

@@ -26,6 +26,7 @@ public class MenuView extends BorderPane {
         options.add(new PlayerMenuButton("images/" + PlayerID.PLAYER_ZERO.color + "_queen.png",
                         "select player " + PlayerID.PLAYER_ZERO.index, PlayerID.PLAYER_ZERO, controller),
                 0, 0 ,1 ,1);
+
         setRight(options);
 
         //status text
