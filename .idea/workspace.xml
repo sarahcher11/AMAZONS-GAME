@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="Ajout de la méthode undo">
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/images/undo.png" afterDir="false" />
+    <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/AppGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/Random.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Random.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/Greedy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Greedy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +72,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Xz3Lh3NyAVjxEMBcr3DpLWsRrk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -266,13 +268,7 @@
       <workItem from="1701689728084" duration="5127000" />
       <workItem from="1701775869124" duration="397000" />
       <workItem from="1701934236595" duration="281000" />
-    </task>
-    <task id="LOCAL-00072" summary="Redéfinition de hashCode et equals">
-      <created>1700947202110</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1700947202110</updated>
+      <workItem from="1701934549234" duration="2719000" />
     </task>
     <task id="LOCAL-00073" summary="Redéfinition de toString">
       <created>1700947498289</created>
@@ -610,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701898166418</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="Correction des erreurs">
+      <created>1701934721082</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1701934721082</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -666,7 +669,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modifier la classe FieldView" />
     <MESSAGE value="Modifier getAccessiblePositions de AMazon" />
     <MESSAGE value="AJout de la méthode positionsAccessible" />
     <MESSAGE value="Ajout de la classe IntelligenceArt" />
@@ -691,7 +693,8 @@
     <MESSAGE value="Ajout d'une image de undo" />
     <MESSAGE value="Ajout du bouton undo" />
     <MESSAGE value="Ajout de la méthode undo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la méthode undo" />
+    <MESSAGE value="Correction des erreurs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction des erreurs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

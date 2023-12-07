@@ -12,7 +12,7 @@ import javafx.animation.PauseTransition;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.scene.control.Alert;
 import javafx.util.Duration;
-import amazons.player.Random;
+
 
 
 
@@ -55,6 +55,7 @@ public class GameController {
         addEndPhaseListener();
         setPauseAnimation();
         startGame();
+        game.resetTurn();
     }
     public void resetGame(){
        initialize();
@@ -228,13 +229,13 @@ public class GameController {
      * @param playerID l'identifiant du joueur
      */
     public void setPlayerRandom(PlayerID playerID){
-        amazons.player.Random random1 = new amazons.player.Random(random, game);
+        Random random1 = new Random(random, game);
         setPlayer(random1, playerID);
          resetGame();
     }
 
     public void setPlayerGreedy(PlayerID playerID){
-        setPlayer(new Greedy(),playerID);
+        setPlayer(new Greedy(game),playerID);
         resetGame();
     }
 

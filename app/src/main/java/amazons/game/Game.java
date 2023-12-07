@@ -163,6 +163,11 @@ public class Game {
 
     public int getTurn() {return turn; }
 
+    public void resetTurn()
+    {
+        this.turn=0;
+    }
+
 
     public int getNumberOfColumns(){
         return bord.getNumberOfColumns();

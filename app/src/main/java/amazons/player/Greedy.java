@@ -1,10 +1,25 @@
 package amazons.player;
 
 import amazons.board.Position;
+import amazons.figures.Amazon;
+import amazons.game.Game;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Greedy implements Player{
+
+    Map<List<Position>,PlayerID> score=new HashMap<>();
+      Game game;
+
+
+      public Greedy(Game game)
+      {
+          this.game=game;
+      }
+
+
     /**
      * Play one turn of the game. Receives as input the move of the other player.
      * Return the move of  this player
@@ -14,6 +29,9 @@ public class Greedy implements Player{
      */
     @Override
     public Move play(Move opponentMove) {
+
+
+
         return null;
     }
 
@@ -27,7 +45,7 @@ public class Greedy implements Player{
      */
     @Override
     public void initialize(int boardHeight, int boardWidth, PlayerID playerID, List<Position>[] initialPositions) {
-
+           //player
     }
 
     /**
