@@ -1,6 +1,5 @@
 package amazons.player;
 import amazons.board.Position;
-import amazons.controller.GameController;
 import amazons.figures.Amazon;
 import amazons.game.Game;
 

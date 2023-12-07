@@ -12,13 +12,14 @@ import javafx.animation.PauseTransition;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.scene.control.Alert;
 import javafx.util.Duration;
-import java.util.Random;
+import amazons.player.Random;
+
 
 
 public class GameController {
 
     private final Game game;
-    private static final Random random = new Random();
+    private static final java.util.Random random = new java.util.Random();
 
     private Position lastAmazonStartPosition;
     private Position lastAmazonDstPosition;
@@ -208,6 +209,7 @@ public class GameController {
     public void setPlayerGUI(PlayerID playerID){
 
         setPlayer(new GUIPLayer(), playerID);
+        resetGame();
     }
 
     /**

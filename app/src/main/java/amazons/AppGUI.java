@@ -6,7 +6,7 @@ import amazons.figures.Amazon;
 import amazons.game.Game;
 import amazons.player.Basic;
 import amazons.player.GUIPLayer;
-import amazons.player.Random;
+
 import amazons.util.ImageUtil;
 import amazons.viewer.BoardView;
 import amazons.viewer.MenuView;
