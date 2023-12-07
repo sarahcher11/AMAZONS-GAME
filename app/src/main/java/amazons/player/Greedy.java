@@ -4,6 +4,7 @@ import amazons.board.Position;
 import amazons.figures.Amazon;
 import amazons.game.Game;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,6 +13,8 @@ public class Greedy implements Player{
 
     Map<List<Position>,PlayerID> score=new HashMap<>();
       Game game;
+
+       private PlayerID playerID;
 
 
       public Greedy(Game game)
@@ -45,7 +48,30 @@ public class Greedy implements Player{
      */
     @Override
     public void initialize(int boardHeight, int boardWidth, PlayerID playerID, List<Position>[] initialPositions) {
-           //player
+        this.playerID=playerID;
+        //le joueur actuel
+           List<Amazon> movableFigureAmazon=game.amazonMovable(playerID);
+           List<Position> positions=new ArrayList<>();
+           List<Position> position2=new ArrayList<>();
+           List<Position> newPos;
+           for (Amazon amazon:movableFigureAmazon)
+           {
+               newPos=amazon.getAccessiblePositions(game.getBoard());
+               positions.addAll(newPos);
+           }
+
+           score.put(positions,playerID);
+           // le second joueur
+
+        movableFigureAmazon=game.amazonMovable(playerID.opponent());
+        for (Amazon amazon: movableFigureAmazon)
+        {
+            newPos=amazon.getPositionAdjacente(game.getBoard());
+            position2.addAll(newPos);
+
+        }
+        score.put(position2,playerID.opponent());
+
     }
 
     /**

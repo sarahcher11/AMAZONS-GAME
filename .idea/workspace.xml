@@ -7,7 +7,6 @@
     <list default="true" id="f0ac77af-9bf1-47cc-a9a0-0dd0e10750b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/amazons/player/Greedy.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/amazons/player/Greedy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -268,14 +267,7 @@
       <workItem from="1701689728084" duration="5127000" />
       <workItem from="1701775869124" duration="397000" />
       <workItem from="1701934236595" duration="281000" />
-      <workItem from="1701934549234" duration="2719000" />
-    </task>
-    <task id="LOCAL-00073" summary="Redéfinition de toString">
-      <created>1700947498289</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1700947498289</updated>
+      <workItem from="1701934549234" duration="4762000" />
     </task>
     <task id="LOCAL-00074" summary="Ajout de la méthode testToString">
       <created>1700947997750</created>
@@ -613,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701934721082</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Correction des erreurs de compilations">
+      <created>1701937341451</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1701937341451</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers>
       <Gitlab url="https://etulab.univ-amu.fr/m23024284">
         <option name="currentProject">
@@ -669,7 +668,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modifier getAccessiblePositions de AMazon" />
     <MESSAGE value="AJout de la méthode positionsAccessible" />
     <MESSAGE value="Ajout de la classe IntelligenceArt" />
     <MESSAGE value="Ajout de la classe Random" />
@@ -694,7 +692,8 @@
     <MESSAGE value="Ajout du bouton undo" />
     <MESSAGE value="Ajout de la méthode undo" />
     <MESSAGE value="Correction des erreurs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction des erreurs" />
+    <MESSAGE value="Correction des erreurs de compilations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction des erreurs de compilations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
